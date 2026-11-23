@@ -24,7 +24,7 @@ export function Sources() {
   return <><div className="page-intro"><p className="eyebrow">SOURCES & COVERAGE</p><h1>出典と、この教材の範囲。</h1><p>確認日 {config.checkedAt} · {config.targetVersion}</p></div>
     <Panel><h2>非公式の学習補助教材・重点学習教材</h2><p>講義・設問・解説・図・架空事例は本制作で作成したものです。AI作成で、人の専門家による監修は未実施です。</p><p className="notice">{config.scopeNotice}</p><p>{config.practiceNotice}</p><p>14日は分割単位です。合格・受注・収益・学習効果を保証しません。公式過去問・市販問題・非公開問題は収録していません。</p></Panel>
     <div className="source-list">{sources.map(source=><Panel key={source.id}><span className="tag">{source.role}</span><h2>{source.title}</h2><dl><div><dt>確認日</dt><dd>{source.checkedAt}</dd></div><div><dt>適用版</dt><dd>{source.appliesTo}</dd></div><div><dt>参照箇所</dt><dd>{source.location}</dd></div></dl><p>{source.notes}</p>{source.url&&<a className="source-link" href={source.url} target="_blank" rel="noopener noreferrer">資料を開く<ExternalLink size={14}/></a>}</Panel>)}</div>
-    <Panel><h2>素材とライセンス</h2><p>案内役はユーザーの制作資料に付属した「ミニススメくん」の元PNGです。再生成や絵の加工は行っていません。画像の来歴と確認範囲は配布ソースのdocs/content-provenance.mdに記録しています。</p><p>図とアイコンは独自に作成し、公式ロゴや資格バッジは使っていません。</p><a className="source-link" href={import.meta.env.BASE_URL+'THIRD_PARTY_NOTICES.txt'} target="_blank" rel="noopener noreferrer">ライブラリの版・ライセンス表示<ExternalLink size={14}/></a></Panel>
+    <Panel><h2>素材とライセンス</h2><p>案内役はユーザーの制作資料に付属した「ミニススメくん」の元PNGです。再生成や絵の加工は行っていません。画像の来歴と確認範囲は配布ソースのdocs/content-provenance.mdに記録しています。</p><p>図は独自に作成し、UIアイコンにはLucide（ISCライセンス）を使用しています。公式ロゴや資格バッジは使っていません。</p><a className="source-link" href={import.meta.env.BASE_URL+'THIRD_PARTY_NOTICES.txt'} target="_blank" rel="noopener noreferrer">ライブラリの版・ライセンス表示<ExternalLink size={14}/></a></Panel>
   </>
 }
 export function Help() {
@@ -56,7 +56,7 @@ export function Help() {
   }
   return <>
     <div className="page-intro"><p className="eyebrow">HOW TO USE</p><h1>使い方と、学習記録の保存。</h1><p>学習は、登録なしでこの端末から。</p></div>
-    <Panel><h2>基本の使い方</h2><ol><li>ホームで学習する日を選び、講義を読みます。すべての日を自由に選び直せます。</li><li>練習では条件を読み、選択肢または数値を入力します。実践課題にはPC操作や自己確認もあります。</li><li>回答を確定すると解説が開きます。金額の前提や端数処理も確認します。</li><li>間違えた問題は復習へ集まります。正解すれば復習待ちから外れます。</li><li>図解と実践課題で、講義と仕事の場面のつながりを確認します。</li></ol>
+    <Panel><h2>基本の使い方</h2><ol><li>ホームで学習する日を選び、講義を読みます。すべての日を自由に選び直せます。</li><li>練習では条件を読み、選択肢または数値を入力します。実践課題にはPC操作や自己確認もあります。</li><li>回答を確定すると解説が開きます。数値の前提や端数処理も確認します。</li><li>間違えた問題は復習へ集まります。正解すれば復習待ちから外れます。</li><li>図解と実践課題で、講義と仕事の場面のつながりを確認します。</li></ol>
       <p>14日は学習を分ける単位です。合格・受注・収益・学習効果を保証するものではありません。</p>
     </Panel>
     <Panel><h2>iPhoneのホーム画面で使う</h2><p>このアプリのHTTPS URLをSafariで開き、共有メニューの「ホーム画面に追加」を選びます。最初はオンラインで開き、画面上の「オフライン利用OK」を確認してください。</p>
