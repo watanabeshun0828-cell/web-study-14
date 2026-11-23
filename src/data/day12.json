@@ -1,0 +1,338 @@
+{
+  "schemaVersion": 1,
+  "id": "web26-day12",
+  "day": 12,
+  "title": "表示と公開前の確認を進める",
+  "category": "確認と運用",
+  "goals": [
+    "保存したファイル、読み込まれた内容、表示結果を照合します。",
+    "表示だけでなく、公開する範囲と作業環境も点検します。"
+  ],
+  "referenceIds": [
+    "web-scope",
+    "web-practical",
+    "css-snapshot",
+    "wcag22",
+    "practice-assumptions"
+  ],
+  "sections": [
+    {
+      "id": "web26-day12-s1",
+      "title": "ブラウザーで確かめる",
+      "paragraphs": [
+        "保存した変更をブラウザーで再表示し、HTMLとCSSが読み込まれたか確認します。別のブラウザーや画面幅でも同じ目的を達成できるかを見ます。キャッシュで古いファイルが表示される場合も考えます。",
+        "開発者ツールは要素へ適用されたスタイルや読込みの失敗を調べる道具です。画面だけを眺めず、ファイル名や参照先も確かめます。道具の操作はその環境の説明で確認しましょう。"
+      ],
+      "keyPoint": "保存したファイル、読み込まれた内容、表示結果を照合します。",
+      "referenceIds": [
+        "web-scope",
+        "web-practical",
+        "css-snapshot"
+      ]
+    },
+    {
+      "id": "web26-day12-s2",
+      "title": "公開と作業環境のチェック",
+      "paragraphs": [
+        "公開先へ置くファイルと、作業中の控えや個人情報を含むファイルを区別します。移動したページや画像のパス、リンク切れ、入力欄のラベル、キーボード操作を確認します。",
+        "長く作業するときは、機器の置き方や姿勢、休憩など作業環境を見直します。本教材は医療判断を行いません。安全衛生も公式範囲に含まれるため、試験細目を参照して追加の学習を行ってください。"
+      ],
+      "keyPoint": "表示だけでなく、公開する範囲と作業環境も点検します。",
+      "referenceIds": [
+        "web-scope",
+        "wcag22",
+        "practice-assumptions"
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "web26-day12-q01",
+      "sectionId": "web26-day12-s1",
+      "category": "確認と運用",
+      "prompt": "CSSを修正したが表示が変わらない。最初の確認の組合せはどれですか。",
+      "explanation": "編集したファイルと、ブラウザーが読んだファイルが一致するかを確認します。",
+      "referenceIds": [
+        "web-scope",
+        "web-practical",
+        "css-snapshot",
+        "wcag22",
+        "practice-assumptions"
+      ],
+      "assumptions": "この設例は独自の練習用仮定です。記載したファイル構成・寸法・確認条件を使います。実在店舗・実物の個人情報・公式実技問題ではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "保存したか、正しいファイルを読んでいるか、再表示したか"
+        },
+        {
+          "id": "c2",
+          "text": "氏名だけ増やす"
+        },
+        {
+          "id": "c3",
+          "text": "全画像を削除する"
+        },
+        {
+          "id": "c4",
+          "text": "所有者名を変えるだけ"
+        }
+      ],
+      "correctChoiceId": "c1"
+    },
+    {
+      "id": "web26-day12-q02",
+      "sectionId": "web26-day12-s1",
+      "category": "確認と運用",
+      "prompt": "別の画面幅でレイアウトを調べる理由はどれですか。",
+      "explanation": "制作時とは違う条件でも読めるかを見るためです。一つの幅だけで判断しません。",
+      "referenceIds": [
+        "web-scope",
+        "web-practical",
+        "css-snapshot",
+        "wcag22",
+        "practice-assumptions"
+      ],
+      "assumptions": "この設例は独自の練習用仮定です。記載したファイル構成・寸法・確認条件を使います。実在店舗・実物の個人情報・公式実技問題ではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "広い画面ならHTMLの意味が不要になる"
+        },
+        {
+          "id": "c2",
+          "text": "幅や文字量によって表示が変わる可能性がある"
+        },
+        {
+          "id": "c3",
+          "text": "狭い画面では確認を省略できる"
+        },
+        {
+          "id": "c4",
+          "text": "画面幅はファイル名だけで決まる"
+        }
+      ],
+      "correctChoiceId": "c2"
+    },
+    {
+      "id": "web26-day12-q03",
+      "sectionId": "web26-day12-s1",
+      "category": "確認と運用",
+      "prompt": "ブラウザーの開発者ツールで調べやすいものはどれですか。",
+      "explanation": "表示の原因を技術面から切り分ける道具です。権利や合格を自動判断するものではありません。",
+      "referenceIds": [
+        "web-scope",
+        "web-practical",
+        "css-snapshot",
+        "wcag22",
+        "practice-assumptions"
+      ],
+      "assumptions": "この設例は独自の練習用仮定です。記載したファイル構成・寸法・確認条件を使います。実在店舗・実物の個人情報・公式実技問題ではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "写真の利用権が自動であること"
+        },
+        {
+          "id": "c2",
+          "text": "すべての法律の適法性"
+        },
+        {
+          "id": "c3",
+          "text": "適用されたCSSや読込み失敗の情報"
+        },
+        {
+          "id": "c4",
+          "text": "本試験の合格確率"
+        }
+      ],
+      "correctChoiceId": "c3"
+    },
+    {
+      "id": "web26-day12-q04",
+      "sectionId": "web26-day12-s1",
+      "category": "確認と運用",
+      "prompt": "公開後に画像だけが欠けた。優先して確認するものはどれですか。",
+      "explanation": "必要な画像が配信され、正しい場所を参照しているかを見ます。手元と配信先の違いも確認します。",
+      "referenceIds": [
+        "web-scope",
+        "web-practical",
+        "css-snapshot",
+        "wcag22",
+        "practice-assumptions"
+      ],
+      "assumptions": "この設例は独自の練習用仮定です。記載したファイル構成・寸法・確認条件を使います。実在店舗・実物の個人情報・公式実技問題ではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "見出しの色だけ"
+        },
+        {
+          "id": "c2",
+          "text": "本文の敬語だけ"
+        },
+        {
+          "id": "c3",
+          "text": "ページの文字数だけ"
+        },
+        {
+          "id": "c4",
+          "text": "配信した画像と、HTML/CSS内の参照先"
+        }
+      ],
+      "correctChoiceId": "c4"
+    },
+    {
+      "id": "web26-day12-q05",
+      "sectionId": "web26-day12-s2",
+      "category": "確認と運用",
+      "prompt": "作業フォルダをそのまま全部公開する前に行うことはどれですか。",
+      "explanation": "作業用の情報と、公開する成果物を分けます。リンクされていないファイルも範囲に注意します。",
+      "referenceIds": [
+        "web-scope",
+        "web-practical",
+        "css-snapshot",
+        "wcag22",
+        "practice-assumptions"
+      ],
+      "assumptions": "この設例は独自の練習用仮定です。記載したファイル構成・寸法・確認条件を使います。実在店舗・実物の個人情報・公式実技問題ではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "公開するファイルの範囲と不要データを点検する"
+        },
+        {
+          "id": "c2",
+          "text": "すべてのメモを必ず含める"
+        },
+        {
+          "id": "c3",
+          "text": "個人情報を小さい文字にして残す"
+        },
+        {
+          "id": "c4",
+          "text": "古いバックアップほど多く公開する"
+        }
+      ],
+      "correctChoiceId": "c1"
+    },
+    {
+      "id": "web26-day12-q06",
+      "sectionId": "web26-day12-s2",
+      "category": "確認と運用",
+      "prompt": "2026年度第3回3級実技の一般会場環境について、確認済みの説明はどれですか。",
+      "explanation": "この回の実技概要で確認した環境です。別の回や会場は公式の案内を確認してください。",
+      "referenceIds": [
+        "web-scope",
+        "web-practical",
+        "css-snapshot",
+        "wcag22",
+        "practice-assumptions"
+      ],
+      "assumptions": "この設例は独自の練習用仮定です。記載したファイル構成・寸法・確認条件を使います。実在店舗・実物の個人情報・公式実技問題ではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "スマホだけで同じ試験を受ける"
+        },
+        {
+          "id": "c2",
+          "text": "Windows 11と指定されたブラウザー・エディターを用いる"
+        },
+        {
+          "id": "c3",
+          "text": "すべての会場が必ず自分のMacを使う"
+        },
+        {
+          "id": "c4",
+          "text": "好きなソフトを無条件で持ち込む"
+        }
+      ],
+      "correctChoiceId": "c2"
+    },
+    {
+      "id": "web26-day12-q07",
+      "sectionId": "web26-day12-s2",
+      "category": "確認と運用",
+      "prompt": "本教材のHTML/CSSの対象規格を確かめる資料の組合せはどれですか。",
+      "explanation": "現行の要項はHTML Living StandardとCSS Snapshot 2026の指定箇所を示しています。範囲と実装の普及状況は別です。",
+      "referenceIds": [
+        "web-scope",
+        "web-practical",
+        "css-snapshot",
+        "wcag22",
+        "practice-assumptions"
+      ],
+      "assumptions": "この設例は独自の練習用仮定です。記載したファイル構成・寸法・確認条件を使います。実在店舗・実物の個人情報・公式実技問題ではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "HTMLのファイル名だけ"
+        },
+        {
+          "id": "c2",
+          "text": "SNSの人気色だけ"
+        },
+        {
+          "id": "c3",
+          "text": "HTML Living Standardと、その回が示すCSS Snapshot"
+        },
+        {
+          "id": "c4",
+          "text": "他者の答案だけ"
+        }
+      ],
+      "correctChoiceId": "c3"
+    },
+    {
+      "id": "web26-day12-q08",
+      "sectionId": "web26-day12-s2",
+      "category": "確認と運用",
+      "prompt": "長時間作業の確認項目として、本教材が追加学習を案内する分野はどれですか。",
+      "explanation": "公式細目には安全衛生も含まれます。医療判断ではなく、範囲として別途学ぶ必要があることを示しています。",
+      "referenceIds": [
+        "web-scope",
+        "web-practical",
+        "css-snapshot",
+        "wcag22",
+        "practice-assumptions"
+      ],
+      "assumptions": "この設例は独自の練習用仮定です。記載したファイル構成・寸法・確認条件を使います。実在店舗・実物の個人情報・公式実技問題ではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "画像名だけの暗記"
+        },
+        {
+          "id": "c2",
+          "text": "他者アプリの配色の複写"
+        },
+        {
+          "id": "c3",
+          "text": "合格率の推測"
+        },
+        {
+          "id": "c4",
+          "text": "安全衛生と作業環境"
+        }
+      ],
+      "correctChoiceId": "c4"
+    }
+  ]
+}

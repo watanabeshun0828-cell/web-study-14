@@ -1,0 +1,342 @@
+{
+  "schemaVersion": 1,
+  "id": "web26-day06",
+  "day": 6,
+  "title": "CSSで変更する対象を選ぶ",
+  "category": "CSS",
+  "goals": [
+    "対象の選び方と設定内容を分けて読みます。",
+    "優先順位を考える前に、要素へ一致するルールを確かめます。"
+  ],
+  "referenceIds": [
+    "web-scope",
+    "css-selectors",
+    "css-snapshot",
+    "css-cascade"
+  ],
+  "sections": [
+    {
+      "id": "web26-day06-s1",
+      "title": "セレクターと宣言",
+      "paragraphs": [
+        "CSSのルールは「どの要素へ」「何を設定するか」に分かれます。クラスnoticeを選ぶなら.notice、idがmainなら#mainを使います。単語が同じでも、記号によって選ぶ対象が変わります。",
+        "宣言はプロパティと値の組で、例えばcolorは文字色を指定します。複数の宣言を区切り、意図しない場所へ適用されていないかをブラウザーで確認します。HTMLとCSSのクラス名が対応していることも点検します。"
+      ],
+      "keyPoint": "対象の選び方と設定内容を分けて読みます。",
+      "referenceIds": [
+        "web-scope",
+        "css-selectors",
+        "css-snapshot",
+        "css-cascade"
+      ]
+    },
+    {
+      "id": "web26-day06-s2",
+      "title": "複数のルールを整理する",
+      "paragraphs": [
+        "同じ要素に複数のルールが関わるときは、対象の絞り方や優先順位、記述順などによって適用値が決まります。「一番下なら必ず勝つ」とだけ覚えず、どのルールが関わるかを調べます。",
+        "色や文字サイズなどは親から引き継ぐ場合がありますが、すべての設定が引き継がれるわけではありません。開発者ツールで、実際に適用された値と取り消された宣言を確認する習慣を付けましょう。"
+      ],
+      "keyPoint": "優先順位を考える前に、要素へ一致するルールを確かめます。",
+      "referenceIds": [
+        "web-scope",
+        "css-selectors",
+        "css-snapshot",
+        "css-cascade"
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "web26-day06-q01",
+      "sectionId": "web26-day06-s1",
+      "category": "CSS",
+      "prompt": "class=\"notice\"の要素へ文字色を付けたい。対応するセレクターはどれですか。",
+      "explanation": ".はクラスの選択です。記号を付けない場合は要素の種類を選ぶ書き方になります。",
+      "referenceIds": [
+        "web-scope",
+        "css-selectors",
+        "css-snapshot",
+        "css-cascade",
+        "practice-assumptions"
+      ],
+      "assumptions": "この設例は独自の練習用仮定です。記載したファイル構成・寸法・確認条件を使います。実在店舗・実物の個人情報・公式実技問題ではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": ".notice"
+        },
+        {
+          "id": "c2",
+          "text": "#notice"
+        },
+        {
+          "id": "c3",
+          "text": "noticeだけ"
+        },
+        {
+          "id": "c4",
+          "text": "@notice"
+        }
+      ],
+      "correctChoiceId": "c1"
+    },
+    {
+      "id": "web26-day06-q02",
+      "sectionId": "web26-day06-s1",
+      "category": "CSS",
+      "prompt": "id=\"main\"の要素を選ぶセレクターはどれですか。",
+      "explanation": "#はIDを選びます。クラスとIDを取り違えないよう、HTML側の属性も確認します。",
+      "referenceIds": [
+        "web-scope",
+        "css-selectors",
+        "css-snapshot",
+        "css-cascade",
+        "practice-assumptions"
+      ],
+      "assumptions": "この設例は独自の練習用仮定です。記載したファイル構成・寸法・確認条件を使います。実在店舗・実物の個人情報・公式実技問題ではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": ".main"
+        },
+        {
+          "id": "c2",
+          "text": "#main"
+        },
+        {
+          "id": "c3",
+          "text": "mainだけ"
+        },
+        {
+          "id": "c4",
+          "text": "/main"
+        }
+      ],
+      "correctChoiceId": "c2"
+    },
+    {
+      "id": "web26-day06-q03",
+      "sectionId": "web26-day06-s1",
+      "category": "CSS",
+      "prompt": "p要素へ設定する型セレクターはどれですか。",
+      "explanation": "要素名だけのセレクターで、その種類の要素を選べます。クラスpやID pとは違います。",
+      "referenceIds": [
+        "web-scope",
+        "css-selectors",
+        "css-snapshot",
+        "css-cascade",
+        "practice-assumptions"
+      ],
+      "assumptions": "この設例は独自の練習用仮定です。記載したファイル構成・寸法・確認条件を使います。実在店舗・実物の個人情報・公式実技問題ではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": ".p"
+        },
+        {
+          "id": "c2",
+          "text": "#p"
+        },
+        {
+          "id": "c3",
+          "text": "p"
+        },
+        {
+          "id": "c4",
+          "text": "@p"
+        }
+      ],
+      "correctChoiceId": "c3"
+    },
+    {
+      "id": "web26-day06-q04",
+      "sectionId": "web26-day06-s1",
+      "category": "CSS",
+      "prompt": "このルールで変更する内容はどれですか。",
+      "explanation": ".noteはクラスを選び、colorで文字色を指定します。セレクターと宣言を分けて読みます。",
+      "referenceIds": [
+        "web-scope",
+        "css-selectors",
+        "css-snapshot",
+        "css-cascade",
+        "practice-assumptions"
+      ],
+      "assumptions": "この設例は独自の練習用仮定です。記載したファイル構成・寸法・確認条件を使います。実在店舗・実物の個人情報・公式実技問題ではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "noteというIDの幅"
+        },
+        {
+          "id": "c2",
+          "text": "全画像の高さ"
+        },
+        {
+          "id": "c3",
+          "text": "リンクの行き先"
+        },
+        {
+          "id": "c4",
+          "text": "noteクラスの文字色"
+        }
+      ],
+      "correctChoiceId": "c4",
+      "code": ".note { color: navy; }"
+    },
+    {
+      "id": "web26-day06-q05",
+      "sectionId": "web26-day06-s2",
+      "category": "CSS",
+      "prompt": "下のHTMLにCSSが効かない。まずそろえるべきものはどれですか。",
+      "explanation": "HTMLとCSSで異なるクラス名を使っています。意図する対応を一致させます。",
+      "referenceIds": [
+        "web-scope",
+        "css-selectors",
+        "css-snapshot",
+        "css-cascade",
+        "practice-assumptions"
+      ],
+      "assumptions": "この設例は独自の練習用仮定です。記載したファイル構成・寸法・確認条件を使います。実在店舗・実物の個人情報・公式実技問題ではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "HTMLのクラス名とCSSのクラス名"
+        },
+        {
+          "id": "c2",
+          "text": "ファイル名をすべて同一にする"
+        },
+        {
+          "id": "c3",
+          "text": "すべての文字を大文字にする"
+        },
+        {
+          "id": "c4",
+          "text": "画像のaltを削除する"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "code": "<p class=\"news\">お知らせ</p>\n.notice { color: teal; }"
+    },
+    {
+      "id": "web26-day06-q06",
+      "sectionId": "web26-day06-s2",
+      "category": "CSS",
+      "prompt": "記事の中のpを選ぶ読み方として適切なのはどれですか。",
+      "explanation": "空白でつないだセレクターは子孫関係を表します。直下の子だけに限る指定とは区別します。",
+      "referenceIds": [
+        "web-scope",
+        "css-selectors",
+        "css-snapshot",
+        "css-cascade",
+        "practice-assumptions"
+      ],
+      "assumptions": "この設例は独自の練習用仮定です。記載したファイル構成・寸法・確認条件を使います。実在店舗・実物の個人情報・公式実技問題ではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "articleとpという名前の2ファイル"
+        },
+        {
+          "id": "c2",
+          "text": "articleの子孫にあるp"
+        },
+        {
+          "id": "c3",
+          "text": "pの親が必ずbodyだけ"
+        },
+        {
+          "id": "c4",
+          "text": "記事の画像だけ"
+        }
+      ],
+      "correctChoiceId": "c2",
+      "code": "article p { line-height: 1.8; }"
+    },
+    {
+      "id": "web26-day06-q07",
+      "sectionId": "web26-day06-s2",
+      "category": "CSS",
+      "prompt": "CSSの適用を調べるとき、記述順だけで結論を出さない理由はどれですか。",
+      "explanation": "同じ対象か、どのルールが優先されるかを確認します。開発者ツールでも適用値を確かめられます。",
+      "referenceIds": [
+        "web-scope",
+        "css-selectors",
+        "css-snapshot",
+        "css-cascade",
+        "practice-assumptions"
+      ],
+      "assumptions": "この設例は独自の練習用仮定です。記載したファイル構成・寸法・確認条件を使います。実在店舗・実物の個人情報・公式実技問題ではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "CSSには順番がまったくない"
+        },
+        {
+          "id": "c2",
+          "text": "下に書けば常にすべて上書きされる"
+        },
+        {
+          "id": "c3",
+          "text": "一致する対象や優先順位なども関わる"
+        },
+        {
+          "id": "c4",
+          "text": "HTMLの意味が必ず消える"
+        }
+      ],
+      "correctChoiceId": "c3"
+    },
+    {
+      "id": "web26-day06-q08",
+      "sectionId": "web26-day06-s2",
+      "category": "CSS",
+      "prompt": "「文字色は親の指定を引き継ぐ場合がある」という説明の注意点はどれですか。",
+      "explanation": "継承される性質かどうかはプロパティごとに異なります。実際に適用された値を確認します。",
+      "referenceIds": [
+        "web-scope",
+        "css-selectors",
+        "css-snapshot",
+        "css-cascade",
+        "practice-assumptions"
+      ],
+      "assumptions": "この設例は独自の練習用仮定です。記載したファイル構成・寸法・確認条件を使います。実在店舗・実物の個人情報・公式実技問題ではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "marginも必ず同じ値になる"
+        },
+        {
+          "id": "c2",
+          "text": "画像のファイル名も継承される"
+        },
+        {
+          "id": "c3",
+          "text": "リンク先も必ず同じになる"
+        },
+        {
+          "id": "c4",
+          "text": "すべてのプロパティが同じように継承されるわけではない"
+        }
+      ],
+      "correctChoiceId": "c4"
+    }
+  ]
+}

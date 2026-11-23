@@ -1,0 +1,380 @@
+{
+  "schemaVersion": 1,
+  "id": "web26-day07",
+  "day": 7,
+  "title": "余白と幅を数で確かめる",
+  "category": "CSS",
+  "goals": [
+    "paddingとmarginを「内側」「外側」で区別します。",
+    "幅の計算前に、box-sizingと含める範囲を確認します。"
+  ],
+  "referenceIds": [
+    "web-scope",
+    "css-box",
+    "css-sizing"
+  ],
+  "sections": [
+    {
+      "id": "web26-day07-s1",
+      "title": "箱の内側と外側",
+      "paragraphs": [
+        "要素の箱は、内容、内側の余白padding、境界線border、その外側の余白marginとして考えます。箱のどの部分を増やすかで、背景の広がりや隣の要素との間隔が変わります。",
+        "paddingは内容と枠の間、marginは枠の外側の間隔です。まず上下左右のどの間隔を調整したいのかを決めましょう。margin同士の扱いには状況による違いがあり、単純な足し算で説明できない場合もあります。"
+      ],
+      "keyPoint": "paddingとmarginを「内側」「外側」で区別します。",
+      "referenceIds": [
+        "web-scope",
+        "css-box"
+      ],
+      "diagram": {
+        "title": "箱の内外",
+        "description": "内容を中心に、padding、border、marginの順に外側へ広がります。",
+        "items": [
+          {
+            "label": "content",
+            "detail": "文字や画像"
+          },
+          {
+            "label": "padding",
+            "detail": "内側の余白"
+          },
+          {
+            "label": "border",
+            "detail": "境界線"
+          },
+          {
+            "label": "margin",
+            "detail": "外側の間隔"
+          }
+        ]
+      }
+    },
+    {
+      "id": "web26-day07-s2",
+      "title": "content-boxとborder-box",
+      "paragraphs": [
+        "content-boxでは、指定幅にpaddingとborderを加えて枠までの幅を求めます。練習条件が幅180px、左右padding10px、左右border2pxなら、枠までの幅は204pxです。この計算にmarginは入れていません。",
+        "border-boxでは指定幅にpaddingとborderを含みます。寸法を計算するときはbox-sizingを先に確認します。ここでは通常の正の寸法を使い、複雑なレイアウトの特殊な制約は別の練習とします。"
+      ],
+      "keyPoint": "幅の計算前に、box-sizingと含める範囲を確認します。",
+      "referenceIds": [
+        "web-scope",
+        "css-box",
+        "css-sizing"
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "web26-day07-q01",
+      "sectionId": "web26-day07-s1",
+      "category": "CSS",
+      "prompt": "内容と枠線の間に余白を作りたい。中心となるプロパティはどれですか。",
+      "explanation": "paddingは内容と境界線の間の余白です。隣の箱との外側の間隔はmarginと分けます。",
+      "referenceIds": [
+        "web-scope",
+        "css-box",
+        "css-sizing",
+        "practice-assumptions"
+      ],
+      "assumptions": "この設例は独自の練習用仮定です。記載したファイル構成・寸法・確認条件を使います。実在店舗・実物の個人情報・公式実技問題ではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "padding"
+        },
+        {
+          "id": "c2",
+          "text": "marginだけ"
+        },
+        {
+          "id": "c3",
+          "text": "href"
+        },
+        {
+          "id": "c4",
+          "text": "alt"
+        }
+      ],
+      "correctChoiceId": "c1"
+    },
+    {
+      "id": "web26-day07-q02",
+      "sectionId": "web26-day07-s1",
+      "category": "CSS",
+      "prompt": "枠線の外側で、隣の要素との間隔を考えるものはどれですか。",
+      "explanation": "marginは境界線の外側の余白です。内側へ余白を置く指定と混ぜません。",
+      "referenceIds": [
+        "web-scope",
+        "css-box",
+        "css-sizing",
+        "practice-assumptions"
+      ],
+      "assumptions": "この設例は独自の練習用仮定です。記載したファイル構成・寸法・確認条件を使います。実在店舗・実物の個人情報・公式実技問題ではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "paddingだけ"
+        },
+        {
+          "id": "c2",
+          "text": "margin"
+        },
+        {
+          "id": "c3",
+          "text": "font-family"
+        },
+        {
+          "id": "c4",
+          "text": "charset"
+        }
+      ],
+      "correctChoiceId": "c2"
+    },
+    {
+      "id": "web26-day07-q03",
+      "sectionId": "web26-day07-s1",
+      "category": "CSS",
+      "prompt": "content-box、幅180px、左右padding各10px、左右border各2px。marginを除く枠までの幅はどれですか。",
+      "explanation": "180＋10＋10＋2＋2＝204pxです。content-boxの指定幅にはpaddingとborderが含まれません。",
+      "referenceIds": [
+        "web-scope",
+        "css-box",
+        "css-sizing",
+        "practice-assumptions"
+      ],
+      "assumptions": "この設例は独自の練習用仮定です。記載したファイル構成・寸法・確認条件を使います。実在店舗・実物の個人情報・公式実技問題ではありません。 寸法は整数pxで計算し、端数処理は行いません。",
+      "calculations": [
+        {
+          "expression": "180＋10＋10＋2＋2＝204",
+          "operator": "sum",
+          "operands": [
+            180,
+            10,
+            10,
+            2,
+            2
+          ],
+          "result": 204,
+          "unit": "px",
+          "rounding": "none"
+        }
+      ],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "180px"
+        },
+        {
+          "id": "c2",
+          "text": "192px"
+        },
+        {
+          "id": "c3",
+          "text": "204px"
+        },
+        {
+          "id": "c4",
+          "text": "224px"
+        }
+      ],
+      "correctChoiceId": "c3"
+    },
+    {
+      "id": "web26-day07-q04",
+      "sectionId": "web26-day07-s1",
+      "category": "CSS",
+      "prompt": "border-box、指定幅204px、左右padding各10px、左右border各2px。内容部分の幅はどれですか。",
+      "explanation": "204−10−10−2−2＝180pxです。正の寸法という本問の条件で計算します。",
+      "referenceIds": [
+        "web-scope",
+        "css-box",
+        "css-sizing",
+        "practice-assumptions"
+      ],
+      "assumptions": "この設例は独自の練習用仮定です。記載したファイル構成・寸法・確認条件を使います。実在店舗・実物の個人情報・公式実技問題ではありません。 寸法は整数pxで計算し、端数処理は行いません。",
+      "calculations": [
+        {
+          "expression": "204−10−10−2−2＝180",
+          "operator": "difference",
+          "operands": [
+            204,
+            10,
+            10,
+            2,
+            2
+          ],
+          "result": 180,
+          "unit": "px",
+          "rounding": "none"
+        }
+      ],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "204px"
+        },
+        {
+          "id": "c2",
+          "text": "228px"
+        },
+        {
+          "id": "c3",
+          "text": "200px"
+        },
+        {
+          "id": "c4",
+          "text": "180px"
+        }
+      ],
+      "correctChoiceId": "c4"
+    },
+    {
+      "id": "web26-day07-q05",
+      "sectionId": "web26-day07-s2",
+      "category": "CSS",
+      "prompt": "幅の計算に入れる範囲を判断するとき、先に確認するものはどれですか。",
+      "explanation": "content-boxかborder-boxかで、指定幅が含む範囲が違います。",
+      "referenceIds": [
+        "web-scope",
+        "css-box",
+        "css-sizing",
+        "practice-assumptions"
+      ],
+      "assumptions": "この設例は独自の練習用仮定です。記載したファイル構成・寸法・確認条件を使います。実在店舗・実物の個人情報・公式実技問題ではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "box-sizing"
+        },
+        {
+          "id": "c2",
+          "text": "リンクの文字だけ"
+        },
+        {
+          "id": "c3",
+          "text": "画像の撮影者だけ"
+        },
+        {
+          "id": "c4",
+          "text": "titleの文字数だけ"
+        }
+      ],
+      "correctChoiceId": "c1"
+    },
+    {
+      "id": "web26-day07-q06",
+      "sectionId": "web26-day07-s2",
+      "category": "CSS",
+      "prompt": "この記述の左のpaddingは何pxですか。",
+      "explanation": "4つの値は上、右、下、左の順です。左右を同じと思い込まず読みます。",
+      "referenceIds": [
+        "web-scope",
+        "css-box",
+        "css-sizing",
+        "practice-assumptions"
+      ],
+      "assumptions": "この設例は独自の練習用仮定です。記載したファイル構成・寸法・確認条件を使います。実在店舗・実物の個人情報・公式実技問題ではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "4px"
+        },
+        {
+          "id": "c2",
+          "text": "12px"
+        },
+        {
+          "id": "c3",
+          "text": "8px"
+        },
+        {
+          "id": "c4",
+          "text": "16px"
+        }
+      ],
+      "correctChoiceId": "c2",
+      "code": ".card { padding: 4px 8px 16px 12px; }"
+    },
+    {
+      "id": "web26-day07-q07",
+      "sectionId": "web26-day07-s2",
+      "category": "CSS",
+      "prompt": "上下10px・左右18pxのpaddingにする指定はどれですか。",
+      "explanation": "2値のpaddingでは最初が上下、次が左右です。marginとは別の指定です。",
+      "referenceIds": [
+        "web-scope",
+        "css-box",
+        "css-sizing",
+        "practice-assumptions"
+      ],
+      "assumptions": "この設例は独自の練習用仮定です。記載したファイル構成・寸法・確認条件を使います。実在店舗・実物の個人情報・公式実技問題ではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "padding: 18px 10px;"
+        },
+        {
+          "id": "c2",
+          "text": "margin: 10px 18px;"
+        },
+        {
+          "id": "c3",
+          "text": "padding: 10px 18px;"
+        },
+        {
+          "id": "c4",
+          "text": "color: 10px 18px;"
+        }
+      ],
+      "correctChoiceId": "c3"
+    },
+    {
+      "id": "web26-day07-q08",
+      "sectionId": "web26-day07-s2",
+      "category": "CSS",
+      "prompt": "上下のmarginの見え方を調べるときの姿勢として適切なのはどれですか。",
+      "explanation": "marginには状況による相殺などの扱いがあります。箱の種類や配置条件を見ながら確認します。",
+      "referenceIds": [
+        "web-scope",
+        "css-box",
+        "css-sizing",
+        "practice-assumptions"
+      ],
+      "assumptions": "この設例は独自の練習用仮定です。記載したファイル構成・寸法・確認条件を使います。実在店舗・実物の個人情報・公式実技問題ではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "必ず全marginが単純に足されると決める"
+        },
+        {
+          "id": "c2",
+          "text": "すべてのmarginをwidthへ加える"
+        },
+        {
+          "id": "c3",
+          "text": "paddingという名前へ一括置換すれば同じ結果になる"
+        },
+        {
+          "id": "c4",
+          "text": "配置条件によって扱いが異なるため実際の結果を確かめる"
+        }
+      ],
+      "correctChoiceId": "c4"
+    }
+  ]
+}

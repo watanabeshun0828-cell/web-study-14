@@ -1,0 +1,337 @@
+{
+  "schemaVersion": 1,
+  "id": "web26-day04",
+  "day": 4,
+  "title": "画像の役割を文章でも伝える",
+  "category": "画像",
+  "goals": [
+    "画像の目的と周囲の文脈から代替テキストを考えます。",
+    "画像の意味、形式、表示寸法をそれぞれ確認します。"
+  ],
+  "referenceIds": [
+    "web-scope",
+    "html-images",
+    "wcag22",
+    "css-sizing"
+  ],
+  "sections": [
+    {
+      "id": "web26-day04-s1",
+      "title": "情報を持つ画像と装飾",
+      "paragraphs": [
+        "画像がどの情報を伝えるかを先に考えます。店舗への入口を説明する図なら、画像を見られない読者にも分かる代替テキストを用意します。飾りだけなら、空のaltで不要な読み上げを減らせる場合があります。",
+        "altはファイル名の説明ではなく、その場の画像が伝える情報を補うものです。隣の本文が同じ内容を十分伝えている場合など、文脈を踏まえて決めます。すべての画像に長文を付ける規則ではありません。"
+      ],
+      "keyPoint": "画像の目的と周囲の文脈から代替テキストを考えます。",
+      "referenceIds": [
+        "web-scope",
+        "html-images",
+        "wcag22"
+      ]
+    },
+    {
+      "id": "web26-day04-s2",
+      "title": "形式と大きさ",
+      "paragraphs": [
+        "写真、図形、透明な背景など、必要な表現に合わせてファイル形式を選びます。SVGは図形を記述する形式で、図や単純なマークに利用できます。写真の内容をSVGへ保存するだけで軽くなるとは限りません。",
+        "幅だけを変えた結果、縦横比が崩れていないかを確認します。画像が本文領域からはみ出す場合は、表示幅の上限や高さの扱いを調整します。ダウンロード課題の画像はこの教材で描いた架空の図です。"
+      ],
+      "keyPoint": "画像の意味、形式、表示寸法をそれぞれ確認します。",
+      "referenceIds": [
+        "web-scope",
+        "html-images",
+        "css-sizing"
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "web26-day04-q01",
+      "sectionId": "web26-day04-s1",
+      "category": "画像",
+      "prompt": "入口の位置を示す案内図で、画像が見えない人へ意味を伝える属性はどれですか。",
+      "explanation": "altで画像が伝える情報を補います。単なるファイル名より、その場の役割を説明します。",
+      "referenceIds": [
+        "web-scope",
+        "html-images",
+        "wcag22",
+        "css-sizing",
+        "practice-assumptions"
+      ],
+      "assumptions": "この設例は独自の練習用仮定です。記載したファイル構成・寸法・確認条件を使います。実在店舗・実物の個人情報・公式実技問題ではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "alt"
+        },
+        {
+          "id": "c2",
+          "text": "margin"
+        },
+        {
+          "id": "c3",
+          "text": "hrefだけ"
+        },
+        {
+          "id": "c4",
+          "text": "font-sizeだけ"
+        }
+      ],
+      "correctChoiceId": "c1"
+    },
+    {
+      "id": "web26-day04-q02",
+      "sectionId": "web26-day04-s1",
+      "category": "画像",
+      "prompt": "本文の意味に関係しない飾りの線の画像は、どう扱う方法がありますか。",
+      "explanation": "装飾画像は情報を重ねて読み上げる必要がない場合があります。文脈から判断します。",
+      "referenceIds": [
+        "web-scope",
+        "html-images",
+        "wcag22",
+        "css-sizing",
+        "practice-assumptions"
+      ],
+      "assumptions": "この設例は独自の練習用仮定です。記載したファイル構成・寸法・確認条件を使います。実在店舗・実物の個人情報・公式実技問題ではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "必ず長い説明文を付ける"
+        },
+        {
+          "id": "c2",
+          "text": "装飾ならaltを空にして不要な説明を減らす"
+        },
+        {
+          "id": "c3",
+          "text": "altへ他人の氏名を書く"
+        },
+        {
+          "id": "c4",
+          "text": "すべてh1へ変える"
+        }
+      ],
+      "correctChoiceId": "c2"
+    },
+    {
+      "id": "web26-day04-q03",
+      "sectionId": "web26-day04-s1",
+      "category": "画像",
+      "prompt": "画像だけのリンクがアクセス案内へ移動する。代替テキストの候補として適切なのはどれですか。",
+      "explanation": "この場合はリンクの目的が伝わる名前が必要です。色やファイル名だけでは行き先を判断しにくくなります。",
+      "referenceIds": [
+        "web-scope",
+        "html-images",
+        "wcag22",
+        "css-sizing",
+        "practice-assumptions"
+      ],
+      "assumptions": "この設例は独自の練習用仮定です。記載したファイル構成・寸法・確認条件を使います。実在店舗・実物の個人情報・公式実技問題ではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "arrow-final-2.png"
+        },
+        {
+          "id": "c2",
+          "text": "画像"
+        },
+        {
+          "id": "c3",
+          "text": "アクセス案内"
+        },
+        {
+          "id": "c4",
+          "text": "緑"
+        }
+      ],
+      "correctChoiceId": "c3"
+    },
+    {
+      "id": "web26-day04-q04",
+      "sectionId": "web26-day04-s1",
+      "category": "画像",
+      "prompt": "画像の横幅を半分にしたところ縦に伸びた。何を確かめますか。",
+      "explanation": "寸法を別々に固定すると縦横比が崩れる場合があります。元の比率と表示条件を確認します。",
+      "referenceIds": [
+        "web-scope",
+        "html-images",
+        "wcag22",
+        "css-sizing",
+        "practice-assumptions"
+      ],
+      "assumptions": "この設例は独自の練習用仮定です。記載したファイル構成・寸法・確認条件を使います。実在店舗・実物の個人情報・公式実技問題ではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "ページの著作権表示だけ"
+        },
+        {
+          "id": "c2",
+          "text": "リンクの文字コードだけ"
+        },
+        {
+          "id": "c3",
+          "text": "サーバー名の長さだけ"
+        },
+        {
+          "id": "c4",
+          "text": "幅と高さの指定および元の縦横比"
+        }
+      ],
+      "correctChoiceId": "c4"
+    },
+    {
+      "id": "web26-day04-q05",
+      "sectionId": "web26-day04-s2",
+      "category": "画像",
+      "prompt": "図形を記述した拡大縮小しやすい自作のマークに使える形式はどれですか。",
+      "explanation": "SVGは図形を記述する形式です。この教材では自作の単純な図を用意しています。",
+      "referenceIds": [
+        "web-scope",
+        "html-images",
+        "wcag22",
+        "css-sizing",
+        "practice-assumptions"
+      ],
+      "assumptions": "この設例は独自の練習用仮定です。記載したファイル構成・寸法・確認条件を使います。実在店舗・実物の個人情報・公式実技問題ではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "SVG"
+        },
+        {
+          "id": "c2",
+          "text": "HTMLのtitleだけ"
+        },
+        {
+          "id": "c3",
+          "text": "CSSのmarginだけ"
+        },
+        {
+          "id": "c4",
+          "text": "TXTの拡張子だけ"
+        }
+      ],
+      "correctChoiceId": "c1"
+    },
+    {
+      "id": "web26-day04-q06",
+      "sectionId": "web26-day04-s2",
+      "category": "画像",
+      "prompt": "画像の代替テキストに「photo3.png」とだけ書いた。見直す理由として適切なのはどれですか。",
+      "explanation": "altは主に画像の情報を代替するために使います。ファイル管理用の名前とは役割が違います。",
+      "referenceIds": [
+        "web-scope",
+        "html-images",
+        "wcag22",
+        "css-sizing",
+        "practice-assumptions"
+      ],
+      "assumptions": "この設例は独自の練習用仮定です。記載したファイル構成・寸法・確認条件を使います。実在店舗・実物の個人情報・公式実技問題ではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "数字が入ると必ずHTMLが無効になる"
+        },
+        {
+          "id": "c2",
+          "text": "その画像が伝える内容や役割が分かりにくい"
+        },
+        {
+          "id": "c3",
+          "text": "pngにはaltを使えない"
+        },
+        {
+          "id": "c4",
+          "text": "altは通信速度の指定だから"
+        }
+      ],
+      "correctChoiceId": "c2"
+    },
+    {
+      "id": "web26-day04-q07",
+      "sectionId": "web26-day04-s2",
+      "category": "画像",
+      "prompt": "本文より大きい画像が320px幅で飛び出す。検討する指定はどれですか。",
+      "explanation": "画像を内容領域に合わせ、縦横比も保てるように検討します。複数の幅で実際に確認します。",
+      "referenceIds": [
+        "web-scope",
+        "html-images",
+        "wcag22",
+        "css-sizing",
+        "practice-assumptions"
+      ],
+      "assumptions": "この設例は独自の練習用仮定です。記載したファイル構成・寸法・確認条件を使います。実在店舗・実物の個人情報・公式実技問題ではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "すべての本文を非表示にする"
+        },
+        {
+          "id": "c2",
+          "text": "個人情報を画像へ埋め込む"
+        },
+        {
+          "id": "c3",
+          "text": "表示幅の上限と高さの調整"
+        },
+        {
+          "id": "c4",
+          "text": "HTMLの終了タグを消す"
+        }
+      ],
+      "correctChoiceId": "c3"
+    },
+    {
+      "id": "web26-day04-q08",
+      "sectionId": "web26-day04-s2",
+      "category": "画像",
+      "prompt": "説明文に同じ情報がすぐ隣にある画像について、適切な判断はどれですか。",
+      "explanation": "代替テキストは文脈に依存します。一律の長さだけで判断せず、必要な情報が伝わるかを見ます。",
+      "referenceIds": [
+        "web-scope",
+        "html-images",
+        "wcag22",
+        "css-sizing",
+        "practice-assumptions"
+      ],
+      "assumptions": "この設例は独自の練習用仮定です。記載したファイル構成・寸法・確認条件を使います。実在店舗・実物の個人情報・公式実技問題ではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "必ず同じ文章を3回読み上げさせる"
+        },
+        {
+          "id": "c2",
+          "text": "すべての画像を装飾と決めつける"
+        },
+        {
+          "id": "c3",
+          "text": "ファイル名が短ければ何も確認しない"
+        },
+        {
+          "id": "c4",
+          "text": "画像の役割と文脈を見て説明の重複も検討する"
+        }
+      ],
+      "correctChoiceId": "c4"
+    }
+  ]
+}

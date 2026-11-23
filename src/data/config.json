@@ -1,0 +1,18 @@
+{
+  "appId": "web-study-14",
+  "title": "WEB STUDY 14",
+  "word": "WEB",
+  "qualName": "ウェブデザイン技能検定3級",
+  "kind": "web",
+  "port": 4191,
+  "contentVersion": "2026.1",
+  "checkedAt": "2026-11-23",
+  "targetVersion": "2026年度第3回の要項・2025年掲載の試験細目",
+  "guideCharacterUrl": "assets/mini-susume-kun.png",
+  "tagline": "コードを読み、直して、理由を説明する。",
+  "guideMessage": "条件を読み、手を動かして確かめましょう。分からないところは、講義と復習へ戻れます。",
+  "practiceNotice": "スマホの理解確認と、PCでファイルを編集・表示確認する独自制作課題を組み合わせます。実技試験の採点を再現しません。",
+  "scopeNotice": "3級の重点教材です。HTML/CSSを中心に、情報設計・運用・安全の基礎を扱います。実際の試験環境は受検回の公式要項で確認してください。",
+  "positioning": "非公式の学習補助教材・重点学習教材",
+  "notice": "14日は学習を分ける単位です。合格に必要な期間や標準学習時間ではありません。"
+}

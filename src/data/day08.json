@@ -1,0 +1,371 @@
+{
+  "schemaVersion": 1,
+  "id": "web26-day08",
+  "day": 8,
+  "title": "画面幅に合わせて配置する",
+  "category": "レイアウト",
+  "goals": [
+    "HTMLの読む順番を保ち、必要な部分へ配置を設定します。",
+    "文字量と画面幅を変え、読む順番とはみ出しを点検します。"
+  ],
+  "referenceIds": [
+    "web-scope",
+    "css-snapshot",
+    "wcag22",
+    "css-sizing",
+    "css-flex",
+    "css-media",
+    "css-grid"
+  ],
+  "sections": [
+    {
+      "id": "web26-day08-s1",
+      "title": "並べる方法を選ぶ",
+      "paragraphs": [
+        "通常の文書の流れを基準にして、並べたい部分へCSSを適用します。Flexboxは一方向へ並べる調整、Gridは行と列を持つ配置に利用できます。表データを見せるtableとは役割が違います。",
+        "要素をすべて固定位置に置くと、文字量や画面幅が変わったときに重なることがあります。まず読める順番でHTMLを書き、必要な部分へ配置の指定を足していきます。"
+      ],
+      "keyPoint": "HTMLの読む順番を保ち、必要な部分へ配置を設定します。",
+      "referenceIds": [
+        "web-scope",
+        "css-snapshot",
+        "wcag22",
+        "css-flex",
+        "css-media",
+        "css-grid"
+      ]
+    },
+    {
+      "id": "web26-day08-s2",
+      "title": "狭い画面でも読む",
+      "paragraphs": [
+        "表示領域が狭くなっても、文字や操作が隠れないかを確かめます。固定幅の箱が画面より大きいなら、幅の上限や可変幅を検討します。メディアクエリーは条件に応じてスタイルを切り替える手段です。",
+        "見出しの長さ、画像の大きさ、余白をまとめて確認します。320pxで収まっても別の幅で崩れる場合があるため、複数の幅で見ます。小さく縮めるだけより、1列に並べ直す方が読みやすいこともあります。"
+      ],
+      "keyPoint": "文字量と画面幅を変え、読む順番とはみ出しを点検します。",
+      "referenceIds": [
+        "web-scope",
+        "css-sizing",
+        "css-snapshot",
+        "wcag22",
+        "css-flex",
+        "css-media",
+        "css-grid"
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "web26-day08-q01",
+      "sectionId": "web26-day08-s1",
+      "category": "レイアウト",
+      "prompt": "横一列に並べる部品の調整に使える仕組みはどれですか。",
+      "explanation": "Flexboxは一方向の並びを調整する仕組みです。内容の構造そのものと分けて使います。",
+      "referenceIds": [
+        "web-scope",
+        "css-snapshot",
+        "wcag22",
+        "css-sizing",
+        "css-flex",
+        "css-media",
+        "css-grid",
+        "practice-assumptions"
+      ],
+      "assumptions": "この設例は独自の練習用仮定です。記載したファイル構成・寸法・確認条件を使います。実在店舗・実物の個人情報・公式実技問題ではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Flexbox"
+        },
+        {
+          "id": "c2",
+          "text": "画像のaltだけ"
+        },
+        {
+          "id": "c3",
+          "text": "titleだけ"
+        },
+        {
+          "id": "c4",
+          "text": "文字コードだけ"
+        }
+      ],
+      "correctChoiceId": "c1"
+    },
+    {
+      "id": "web26-day08-q02",
+      "sectionId": "web26-day08-s1",
+      "category": "レイアウト",
+      "prompt": "行と列を持つカードの配置を考える仕組みはどれですか。",
+      "explanation": "Gridは二次元の配置に利用できます。行列の意味を持つ表データと同じ役割ではありません。",
+      "referenceIds": [
+        "web-scope",
+        "css-snapshot",
+        "wcag22",
+        "css-sizing",
+        "css-flex",
+        "css-media",
+        "css-grid",
+        "practice-assumptions"
+      ],
+      "assumptions": "この設例は独自の練習用仮定です。記載したファイル構成・寸法・確認条件を使います。実在店舗・実物の個人情報・公式実技問題ではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "meta charsetだけ"
+        },
+        {
+          "id": "c2",
+          "text": "CSS Grid"
+        },
+        {
+          "id": "c3",
+          "text": "aのhrefだけ"
+        },
+        {
+          "id": "c4",
+          "text": "画像のファイル名だけ"
+        }
+      ],
+      "correctChoiceId": "c2"
+    },
+    {
+      "id": "web26-day08-q03",
+      "sectionId": "web26-day08-s1",
+      "category": "レイアウト",
+      "prompt": "画面幅が小さいときにCSSを切り替える仕組みはどれですか。",
+      "explanation": "表示領域などの条件に応じてスタイルを適用できます。実際に幅を変えて確認します。",
+      "referenceIds": [
+        "web-scope",
+        "css-snapshot",
+        "wcag22",
+        "css-sizing",
+        "css-flex",
+        "css-media",
+        "css-grid",
+        "practice-assumptions"
+      ],
+      "assumptions": "この設例は独自の練習用仮定です。記載したファイル構成・寸法・確認条件を使います。実在店舗・実物の個人情報・公式実技問題ではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "著作権表示"
+        },
+        {
+          "id": "c2",
+          "text": "相対リンクのラベル"
+        },
+        {
+          "id": "c3",
+          "text": "メディアクエリー"
+        },
+        {
+          "id": "c4",
+          "text": "画像のalt"
+        }
+      ],
+      "correctChoiceId": "c3"
+    },
+    {
+      "id": "web26-day08-q04",
+      "sectionId": "web26-day08-s1",
+      "category": "レイアウト",
+      "prompt": "幅320pxの表示領域に、幅600px固定のカードがはみ出した。適切な検討はどれですか。",
+      "explanation": "小さく読めなくするのではなく、内容領域に合う幅や配置を検討します。",
+      "referenceIds": [
+        "web-scope",
+        "css-snapshot",
+        "wcag22",
+        "css-sizing",
+        "css-flex",
+        "css-media",
+        "css-grid",
+        "practice-assumptions"
+      ],
+      "assumptions": "この設例は独自の練習用仮定です。記載したファイル構成・寸法・確認条件を使います。実在店舗・実物の個人情報・公式実技問題ではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "すべての本文を0pxにする"
+        },
+        {
+          "id": "c2",
+          "text": "見出しを画像にして隠す"
+        },
+        {
+          "id": "c3",
+          "text": "横幅は確認しない"
+        },
+        {
+          "id": "c4",
+          "text": "可変幅やmax-widthなどで領域へ収める"
+        }
+      ],
+      "correctChoiceId": "c4"
+    },
+    {
+      "id": "web26-day08-q05",
+      "sectionId": "web26-day08-s2",
+      "category": "レイアウト",
+      "prompt": "カードを左右に並べるためだけにtableを使う案は、どう考えますか。",
+      "explanation": "表は行と列の情報を表すものです。見た目の配置と情報の役割を分けます。",
+      "referenceIds": [
+        "web-scope",
+        "css-snapshot",
+        "wcag22",
+        "css-sizing",
+        "css-flex",
+        "css-media",
+        "css-grid",
+        "practice-assumptions"
+      ],
+      "assumptions": "この設例は独自の練習用仮定です。記載したファイル構成・寸法・確認条件を使います。実在店舗・実物の個人情報・公式実技問題ではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "行列のデータではないならCSSの配置を検討する"
+        },
+        {
+          "id": "c2",
+          "text": "すべての配置はtableでなければ無効"
+        },
+        {
+          "id": "c3",
+          "text": "tableを使えば自動で情報の意味が正しくなる"
+        },
+        {
+          "id": "c4",
+          "text": "CSSは配置に使えない"
+        }
+      ],
+      "correctChoiceId": "c1"
+    },
+    {
+      "id": "web26-day08-q06",
+      "sectionId": "web26-day08-s2",
+      "category": "レイアウト",
+      "prompt": "すべての文字を固定座標へ置く方法の注意点はどれですか。",
+      "explanation": "固定位置だけに頼らず、自然な文書の流れや可変の配置を検討します。",
+      "referenceIds": [
+        "web-scope",
+        "css-snapshot",
+        "wcag22",
+        "css-sizing",
+        "css-flex",
+        "css-media",
+        "css-grid",
+        "practice-assumptions"
+      ],
+      "assumptions": "この設例は独自の練習用仮定です。記載したファイル構成・寸法・確認条件を使います。実在店舗・実物の個人情報・公式実技問題ではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "文字が長くなっても必ず同じ見え方になる"
+        },
+        {
+          "id": "c2",
+          "text": "文字量や画面幅の変化で重なることがある"
+        },
+        {
+          "id": "c3",
+          "text": "読み順の確認が不要になる"
+        },
+        {
+          "id": "c4",
+          "text": "すべての画像が自動圧縮される"
+        }
+      ],
+      "correctChoiceId": "c2"
+    },
+    {
+      "id": "web26-day08-q07",
+      "sectionId": "web26-day08-s2",
+      "category": "レイアウト",
+      "prompt": "PCで2列のカードを狭い画面で1列にする目的として適切なのはどれですか。",
+      "explanation": "複数の画面で内容を使えるようにする調整です。実測していない成果は保証しません。",
+      "referenceIds": [
+        "web-scope",
+        "css-snapshot",
+        "wcag22",
+        "css-sizing",
+        "css-flex",
+        "css-media",
+        "css-grid",
+        "practice-assumptions"
+      ],
+      "assumptions": "この設例は独自の練習用仮定です。記載したファイル構成・寸法・確認条件を使います。実在店舗・実物の個人情報・公式実技問題ではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "元の文章を無断で変える"
+        },
+        {
+          "id": "c2",
+          "text": "必ず本試験の得点を増やす"
+        },
+        {
+          "id": "c3",
+          "text": "本文と操作領域を読みやすく保つ"
+        },
+        {
+          "id": "c4",
+          "text": "全利用者の端末を同じ幅にする"
+        }
+      ],
+      "correctChoiceId": "c3"
+    },
+    {
+      "id": "web26-day08-q08",
+      "sectionId": "web26-day08-s2",
+      "category": "レイアウト",
+      "prompt": "見た目の左右順をCSSで変えた。合わせて確認したいことはどれですか。",
+      "explanation": "視覚的な配置と、読み上げ・操作の順番が食い違わないかを確かめます。",
+      "referenceIds": [
+        "web-scope",
+        "css-snapshot",
+        "wcag22",
+        "css-sizing",
+        "css-flex",
+        "css-media",
+        "css-grid",
+        "practice-assumptions"
+      ],
+      "assumptions": "この設例は独自の練習用仮定です。記載したファイル構成・寸法・確認条件を使います。実在店舗・実物の個人情報・公式実技問題ではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "余白の単位だけ"
+        },
+        {
+          "id": "c2",
+          "text": "ファイル容量が0になったか"
+        },
+        {
+          "id": "c3",
+          "text": "文字コードを消せるか"
+        },
+        {
+          "id": "c4",
+          "text": "HTMLの読む順番やキーボード操作が理解できるか"
+        }
+      ],
+      "correctChoiceId": "c4"
+    }
+  ]
+}

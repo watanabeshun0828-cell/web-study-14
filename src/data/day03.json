@@ -1,0 +1,358 @@
+{
+  "schemaVersion": 1,
+  "id": "web26-day03",
+  "day": 3,
+  "title": "リンクと相対パスをたどる",
+  "category": "リンクとファイル",
+  "goals": [
+    "リンクの表示文字とhrefの両方で行き先を確かめます。",
+    "相対パスはリンクを書くファイルの位置から計算します。"
+  ],
+  "referenceIds": [
+    "web-scope",
+    "html-structure",
+    "wcag22",
+    "practice-assumptions",
+    "html-links"
+  ],
+  "sections": [
+    {
+      "id": "web26-day03-s1",
+      "title": "リンクの行き先とラベル",
+      "paragraphs": [
+        "a要素のhrefには移動先を記します。リンクの文字は「こちら」だけよりも、「営業時間を見る」のように移動先の内容を表すと判断しやすくなります。URLそのものと表示文字は別の情報です。",
+        "同じページの特定の節へ移動するときは、移動先のidと#を付けたhrefを対応させます。実際に押して、目的の見出しへ移動するかを確認します。"
+      ],
+      "keyPoint": "リンクの表示文字とhrefの両方で行き先を確かめます。",
+      "referenceIds": [
+        "web-scope",
+        "html-structure",
+        "wcag22",
+        "html-links"
+      ]
+    },
+    {
+      "id": "web26-day03-s2",
+      "title": "現在のファイルから考える",
+      "paragraphs": [
+        "相対パスは、現在のファイルがある場所を出発点にします。同じ階層のファイルは名前で、1つ上のフォルダへは../で進みます。PCの作業フォルダ全体を紙に描くと整理しやすくなります。",
+        "Webのパスでは通常スラッシュ/を使い、別のPCだけにあるデスクトップの場所を納品用リンクへ残しません。ファイル名と拡張子の大小文字も、配信環境で区別される可能性を考えてそろえます。"
+      ],
+      "keyPoint": "相対パスはリンクを書くファイルの位置から計算します。",
+      "referenceIds": [
+        "web-scope",
+        "html-structure",
+        "practice-assumptions",
+        "html-links"
+      ],
+      "diagram": {
+        "title": "pages/access.htmlからの戻り道",
+        "description": "現在のファイルのフォルダから1階層上へ戻り、index.htmlへ進みます。",
+        "items": [
+          {
+            "label": "pages/access.html",
+            "detail": "現在地"
+          },
+          {
+            "label": "../",
+            "detail": "1つ上のフォルダ"
+          },
+          {
+            "label": "index.html",
+            "detail": "戻る先のファイル"
+          }
+        ]
+      }
+    }
+  ],
+  "questions": [
+    {
+      "id": "web26-day03-q01",
+      "sectionId": "web26-day03-s1",
+      "category": "リンクとファイル",
+      "prompt": "index.htmlとaccess.htmlが同じフォルダにある。アクセス案内へ移動するhrefはどれですか。",
+      "explanation": "同じ階層のファイルはファイル名で参照できます。作業PCにしかない絶対パスを残しません。",
+      "referenceIds": [
+        "web-scope",
+        "html-structure",
+        "wcag22",
+        "practice-assumptions",
+        "html-links"
+      ],
+      "assumptions": "この設例は独自の練習用仮定です。記載したファイル構成・寸法・確認条件を使います。実在店舗・実物の個人情報・公式実技問題ではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "access.html"
+        },
+        {
+          "id": "c2",
+          "text": "../access/index.html"
+        },
+        {
+          "id": "c3",
+          "text": "images/access.png"
+        },
+        {
+          "id": "c4",
+          "text": "C:\\\\Desktop\\\\access.html"
+        }
+      ],
+      "correctChoiceId": "c1"
+    },
+    {
+      "id": "web26-day03-q02",
+      "sectionId": "web26-day03-s1",
+      "category": "リンクとファイル",
+      "prompt": "index.htmlの下にpages/access.htmlがある。indexからの正しい相対パスはどれですか。",
+      "explanation": "現在のindex.htmlからpagesフォルダへ進みます。1つ上へ戻る必要はありません。",
+      "referenceIds": [
+        "web-scope",
+        "html-structure",
+        "wcag22",
+        "practice-assumptions",
+        "html-links"
+      ],
+      "assumptions": "この設例は独自の練習用仮定です。記載したファイル構成・寸法・確認条件を使います。実在店舗・実物の個人情報・公式実技問題ではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "../pages/access.html"
+        },
+        {
+          "id": "c2",
+          "text": "pages/access.html"
+        },
+        {
+          "id": "c3",
+          "text": "access/pages.html"
+        },
+        {
+          "id": "c4",
+          "text": "style.css/access.html"
+        }
+      ],
+      "correctChoiceId": "c2"
+    },
+    {
+      "id": "web26-day03-q03",
+      "sectionId": "web26-day03-s1",
+      "category": "リンクとファイル",
+      "prompt": "pages/access.htmlから、1つ上にあるindex.htmlへ戻るhrefはどれですか。",
+      "explanation": "../で1階層上へ戻ります。そこにあるindex.htmlを指定します。",
+      "referenceIds": [
+        "web-scope",
+        "html-structure",
+        "wcag22",
+        "practice-assumptions",
+        "html-links"
+      ],
+      "assumptions": "この設例は独自の練習用仮定です。記載したファイル構成・寸法・確認条件を使います。実在店舗・実物の個人情報・公式実技問題ではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "pages/index.html"
+        },
+        {
+          "id": "c2",
+          "text": "../../../../index.html"
+        },
+        {
+          "id": "c3",
+          "text": "../index.html"
+        },
+        {
+          "id": "c4",
+          "text": "index.css"
+        }
+      ],
+      "correctChoiceId": "c3"
+    },
+    {
+      "id": "web26-day03-q04",
+      "sectionId": "web26-day03-s1",
+      "category": "リンクとファイル",
+      "prompt": "営業時間の節へページ内移動したい。正しい組合せはどれですか。",
+      "explanation": "ページ内のフラグメント識別子#と、移動先のidを対応させます。",
+      "referenceIds": [
+        "web-scope",
+        "html-structure",
+        "wcag22",
+        "practice-assumptions",
+        "html-links"
+      ],
+      "assumptions": "この設例は独自の練習用仮定です。記載したファイル構成・寸法・確認条件を使います。実在店舗・実物の個人情報・公式実技問題ではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "href=\"hours.css\"とclass=\"hours\""
+        },
+        {
+          "id": "c2",
+          "text": "href=\"hours\"とtitle=\"hours\""
+        },
+        {
+          "id": "c3",
+          "text": "src=\"#hours\"とname=\"hours.css\""
+        },
+        {
+          "id": "c4",
+          "text": "href=\"#hours\"とid=\"hours\""
+        }
+      ],
+      "correctChoiceId": "c4"
+    },
+    {
+      "id": "web26-day03-q05",
+      "sectionId": "web26-day03-s2",
+      "category": "リンクとファイル",
+      "prompt": "リンクの文字を改善したい。移動先がアクセス案内ならどれが分かりやすいですか。",
+      "explanation": "リンク名から行き先の内容が分かると、前後の文章を見られない場合も判断しやすくなります。",
+      "referenceIds": [
+        "web-scope",
+        "html-structure",
+        "wcag22",
+        "practice-assumptions",
+        "html-links"
+      ],
+      "assumptions": "この設例は独自の練習用仮定です。記載したファイル構成・寸法・確認条件を使います。実在店舗・実物の個人情報・公式実技問題ではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "アクセス案内を見る"
+        },
+        {
+          "id": "c2",
+          "text": "ここ"
+        },
+        {
+          "id": "c3",
+          "text": "押す"
+        },
+        {
+          "id": "c4",
+          "text": "文字"
+        }
+      ],
+      "correctChoiceId": "c1"
+    },
+    {
+      "id": "web26-day03-q06",
+      "sectionId": "web26-day03-s2",
+      "category": "リンクとファイル",
+      "prompt": "リンクの表示文字だけ変えたが、クリックすると古いページへ進む。まず確認するものはどれですか。",
+      "explanation": "リンクの文字と移動先は別に設定します。表示が変わってもhrefが古ければ行き先は変わりません。",
+      "referenceIds": [
+        "web-scope",
+        "html-structure",
+        "wcag22",
+        "practice-assumptions",
+        "html-links"
+      ],
+      "assumptions": "この設例は独自の練習用仮定です。記載したファイル構成・寸法・確認条件を使います。実在店舗・実物の個人情報・公式実技問題ではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "文字の太さだけ"
+        },
+        {
+          "id": "c2",
+          "text": "hrefの値"
+        },
+        {
+          "id": "c3",
+          "text": "marginの上下だけ"
+        },
+        {
+          "id": "c4",
+          "text": "背景の明るさだけ"
+        }
+      ],
+      "correctChoiceId": "c2"
+    },
+    {
+      "id": "web26-day03-q07",
+      "sectionId": "web26-day03-s2",
+      "category": "リンクとファイル",
+      "prompt": "配信先でAbout.htmlへのリンクだけ失敗する。ファイルはabout.html。適切な対処はどれですか。",
+      "explanation": "環境によって大小文字が区別されます。保存された名前と参照先をそろえます。",
+      "referenceIds": [
+        "web-scope",
+        "html-structure",
+        "wcag22",
+        "practice-assumptions",
+        "html-links"
+      ],
+      "assumptions": "この設例は独自の練習用仮定です。記載したファイル構成・寸法・確認条件を使います。実在店舗・実物の個人情報・公式実技問題ではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "ブラウザーを画像へ変える"
+        },
+        {
+          "id": "c2",
+          "text": "無条件ですべて拡張子を削る"
+        },
+        {
+          "id": "c3",
+          "text": "ファイル名と参照の大小文字を一致させる"
+        },
+        {
+          "id": "c4",
+          "text": "altへabout.htmlを書けば直る"
+        }
+      ],
+      "correctChoiceId": "c3"
+    },
+    {
+      "id": "web26-day03-q08",
+      "sectionId": "web26-day03-s2",
+      "category": "リンクとファイル",
+      "prompt": "サイト内の戻るリンクをPC内の場所で書いていた。適切な修正はどれですか。",
+      "explanation": "納品先でも同じ構成のファイルを参照できるようにします。個人のPC内の場所へ依存させません。",
+      "referenceIds": [
+        "web-scope",
+        "html-structure",
+        "wcag22",
+        "practice-assumptions",
+        "html-links"
+      ],
+      "assumptions": "この設例は独自の練習用仮定です。記載したファイル構成・寸法・確認条件を使います。実在店舗・実物の個人情報・公式実技問題ではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "他人にも同じデスクトップがあると想定する"
+        },
+        {
+          "id": "c2",
+          "text": "利用者のパスワードをhrefへ書く"
+        },
+        {
+          "id": "c3",
+          "text": "ファイル名を空にする"
+        },
+        {
+          "id": "c4",
+          "text": "配布するフォルダ内でたどれる相対パスにする"
+        }
+      ],
+      "correctChoiceId": "c4"
+    }
+  ]
+}

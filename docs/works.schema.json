@@ -1,0 +1,155 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "id": {
+        "type": "string",
+        "minLength": 1
+      },
+      "day": {
+        "type": "integer",
+        "minimum": 1,
+        "maximum": 14
+      },
+      "title": {
+        "type": "string",
+        "minLength": 1
+      },
+      "intro": {
+        "type": "string",
+        "minLength": 1
+      },
+      "kind": {
+        "type": "string",
+        "enum": [
+          "excel",
+          "web",
+          "color",
+          "it"
+        ]
+      },
+      "referenceIds": {
+        "minItems": 1,
+        "type": "array",
+        "items": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "instructions": {
+        "minItems": 1,
+        "type": "array",
+        "items": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "checks": {
+        "minItems": 1,
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "minLength": 1
+            },
+            "label": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "id",
+            "label"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "prompt": {
+        "type": "string",
+        "minLength": 1
+      },
+      "starterUrl": {
+        "type": "string",
+        "minLength": 1
+      },
+      "answerUrl": {
+        "type": "string",
+        "minLength": 1
+      },
+      "fileLabel": {
+        "type": "string",
+        "minLength": 1
+      },
+      "starterHTML": {
+        "type": "string",
+        "minLength": 1
+      },
+      "answerHTML": {
+        "type": "string",
+        "minLength": 1
+      },
+      "css": {
+        "type": "string"
+      },
+      "initial": {
+        "type": "object",
+        "propertyNames": {
+          "type": "string"
+        },
+        "additionalProperties": {
+          "type": "number"
+        }
+      },
+      "rules": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "key": {
+              "type": "string",
+              "minLength": 1
+            },
+            "op": {
+              "type": "string",
+              "enum": [
+                "eq",
+                "gte",
+                "lte"
+              ]
+            },
+            "value": {
+              "type": "number"
+            },
+            "label": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "key",
+            "op",
+            "value",
+            "label"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    "required": [
+      "id",
+      "day",
+      "title",
+      "intro",
+      "kind",
+      "referenceIds",
+      "instructions",
+      "checks",
+      "prompt"
+    ],
+    "additionalProperties": false
+  }
+}

@@ -1,0 +1,242 @@
+[
+  {
+    "id": "web-term01",
+    "term": "HTML",
+    "referenceIds": [
+      "html-structure"
+    ],
+    "description": "文書の情報に見出し・段落などの役割を付ける言語。"
+  },
+  {
+    "id": "web-term02",
+    "term": "CSS",
+    "referenceIds": [
+      "css-box"
+    ],
+    "description": "色、余白、配置など表示方法を指定する仕組み。"
+  },
+  {
+    "id": "web-term03",
+    "term": "ブラウザー",
+    "referenceIds": [
+      "http-semantics"
+    ],
+    "description": "Webの情報を読み取り、画面へ表示するソフト。"
+  },
+  {
+    "id": "web-term04",
+    "term": "Webサーバー",
+    "referenceIds": [
+      "http-semantics"
+    ],
+    "description": "要求に応じてページなどのデータを返す側。"
+  },
+  {
+    "id": "web-term05",
+    "term": "HTTPS",
+    "referenceIds": [
+      "http-semantics"
+    ],
+    "description": "HTTPの通信を保護する仕組みを含む方式。掲載内容の正しさまで保証しない。"
+  },
+  {
+    "id": "web-term06",
+    "term": "title",
+    "referenceIds": [
+      "html-structure"
+    ],
+    "description": "タブなどに表示される文書の名前を表すHTML要素。"
+  },
+  {
+    "id": "web-term07",
+    "term": "見出し",
+    "referenceIds": [
+      "html-headings"
+    ],
+    "description": "文書の主題や節のまとまりを示す情報。h1〜h6で階層を表す。"
+  },
+  {
+    "id": "web-term08",
+    "term": "段落",
+    "referenceIds": [
+      "html-groups"
+    ],
+    "description": "ひとまとまりの文章。HTMLではp要素で表す。"
+  },
+  {
+    "id": "web-term09",
+    "term": "リンク",
+    "referenceIds": [
+      "html-links"
+    ],
+    "description": "別の場所へ移動するための仕組み。a要素のhrefに行き先を書く。"
+  },
+  {
+    "id": "web-term10",
+    "term": "相対パス",
+    "referenceIds": [
+      "practice-assumptions"
+    ],
+    "description": "現在のファイルの場所を基準に表す、別のファイルへの道順。"
+  },
+  {
+    "id": "web-term11",
+    "term": "代替テキスト",
+    "referenceIds": [
+      "html-images"
+    ],
+    "description": "画像を見られない場合にも、その画像の役割や情報を伝える文章。"
+  },
+  {
+    "id": "web-term12",
+    "term": "装飾画像",
+    "referenceIds": [
+      "html-images"
+    ],
+    "description": "情報を加える目的ではなく、飾りとして使う画像。文脈に応じて空のaltを使う。"
+  },
+  {
+    "id": "web-term13",
+    "term": "リスト",
+    "referenceIds": [
+      "html-groups"
+    ],
+    "description": "関連する項目の集まり。順序に意味がある場合はol、そうでない場合はulを使う。"
+  },
+  {
+    "id": "web-term14",
+    "term": "表見出し",
+    "referenceIds": [
+      "html-tables"
+    ],
+    "description": "表の行や列の意味を示すセル。th要素で表す。"
+  },
+  {
+    "id": "web-term15",
+    "term": "ラベル",
+    "referenceIds": [
+      "html-forms"
+    ],
+    "description": "入力欄の意味を読者へ示す表示。labelと入力部品を対応させる。"
+  },
+  {
+    "id": "web-term16",
+    "term": "セレクター",
+    "referenceIds": [
+      "css-selectors"
+    ],
+    "description": "CSSをどの要素に適用するかを選ぶ指定。"
+  },
+  {
+    "id": "web-term17",
+    "term": "クラス",
+    "referenceIds": [
+      "css-selectors"
+    ],
+    "description": "複数の要素へ共通の分類を付ける属性。CSSでは点に続けて名前を書く。"
+  },
+  {
+    "id": "web-term18",
+    "term": "ID",
+    "referenceIds": [
+      "html-structure"
+    ],
+    "description": "文書内の要素を識別する名前。同じ文書内で重複させない。"
+  },
+  {
+    "id": "web-term19",
+    "term": "padding",
+    "referenceIds": [
+      "css-box"
+    ],
+    "description": "内容と境界線の間にある内側の余白。"
+  },
+  {
+    "id": "web-term20",
+    "term": "border",
+    "referenceIds": [
+      "css-box"
+    ],
+    "description": "内容とpaddingの外側にある境界線の領域。"
+  },
+  {
+    "id": "web-term21",
+    "term": "margin",
+    "referenceIds": [
+      "css-box"
+    ],
+    "description": "境界線のさらに外側の余白。"
+  },
+  {
+    "id": "web-term22",
+    "term": "content-box",
+    "referenceIds": [
+      "css-sizing"
+    ],
+    "description": "幅の指定を内容領域として計算するbox-sizingの値。"
+  },
+  {
+    "id": "web-term23",
+    "term": "border-box",
+    "referenceIds": [
+      "css-sizing"
+    ],
+    "description": "幅の指定にpaddingとborderを含めるbox-sizingの値。marginは含まない。"
+  },
+  {
+    "id": "web-term24",
+    "term": "Flexbox",
+    "referenceIds": [
+      "css-flex"
+    ],
+    "description": "要素を一方向に配置し、必要に応じて折り返すCSSの仕組み。"
+  },
+  {
+    "id": "web-term25",
+    "term": "メディアクエリー",
+    "referenceIds": [
+      "css-media"
+    ],
+    "description": "画面幅などの条件に応じてCSSを適用する仕組み。"
+  },
+  {
+    "id": "web-term26",
+    "term": "フォーカス",
+    "referenceIds": [
+      "wcag22"
+    ],
+    "description": "キーボードなどで現在操作の対象になっている場所。見える表示も確認する。"
+  },
+  {
+    "id": "web-term27",
+    "term": "アクセシビリティ",
+    "referenceIds": [
+      "wcag22"
+    ],
+    "description": "さまざまな人が、さまざまな方法で情報や機能を利用できるようにする視点。"
+  },
+  {
+    "id": "web-term28",
+    "term": "キャッシュ",
+    "referenceIds": [
+      "http-semantics"
+    ],
+    "description": "前に取得した情報を再利用するために保存したもの。修正後の確認では古い表示に注意する。"
+  },
+  {
+    "id": "web-term29",
+    "term": "著作権",
+    "referenceIds": [
+      "bunka-copyright"
+    ],
+    "description": "文章や画像などの著作物に関係する権利。利用目的に応じて条件を確認する。"
+  },
+  {
+    "id": "web-term30",
+    "term": "個人情報",
+    "referenceIds": [
+      "ppc-personal"
+    ],
+    "description": "生きている個人に関する情報で、特定の個人を識別できるものなど。"
+  }
+]

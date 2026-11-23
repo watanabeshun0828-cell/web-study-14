@@ -1,0 +1,10 @@
+{
+  "guide": {
+    "file": "public/assets/mini-susume-kun.png",
+    "sha256": "4b3514b8270ad274af8a9ab7a4fd63f5f2431af23f99ccfc7ad4eed7c535b39e",
+    "source": "ユーザー指定の制作資料に付属した元PNG",
+    "modified": false
+  },
+  "icons": "Lucide ISC / 独自の書籍アイコン",
+  "diagrams": "独自HTML/CSS"
+}

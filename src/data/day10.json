@@ -1,0 +1,328 @@
+{
+  "schemaVersion": 1,
+  "id": "web26-day10",
+  "day": 10,
+  "title": "使いやすさを操作で確かめる",
+  "category": "アクセシビリティ",
+  "goals": [
+    "操作方法を変え、フォーカスと情報の伝わり方を確かめます。",
+    "誰が、どの方法で、何を達成したいかを基準に見直します。"
+  ],
+  "referenceIds": [
+    "web-scope",
+    "wcag22",
+    "html-forms"
+  ],
+  "sections": [
+    {
+      "id": "web26-day10-s1",
+      "title": "見えることだけで終わらない",
+      "paragraphs": [
+        "読者は、マウス、タッチ、キーボード、読み上げなどさまざまな方法でページを使います。見た目が整っていても、キーボードでリンクや操作部品へ進めないなら使いにくい場合があります。",
+        "Tabキーなどで操作部品へ移動し、今どこにいるか分かる表示を確認します。色だけで「必須」「エラー」を伝えず、文字などの手掛かりも用意します。"
+      ],
+      "keyPoint": "操作方法を変え、フォーカスと情報の伝わり方を確かめます。",
+      "referenceIds": [
+        "web-scope",
+        "wcag22",
+        "html-forms"
+      ]
+    },
+    {
+      "id": "web26-day10-s2",
+      "title": "文章と動線を整える",
+      "paragraphs": [
+        "アクセシビリティは、ページを利用できるようにする配慮を含みます。ユーザビリティは、目的に対する使いやすさを考える視点です。重なる部分はありますが、同じ言葉として済ませません。",
+        "リンク名、見出し、ラベル、説明の順番を確認します。「この画面で何ができるか」「次に何を押すか」が分かるか、初めて読む人の立場で操作してみましょう。"
+      ],
+      "keyPoint": "誰が、どの方法で、何を達成したいかを基準に見直します。",
+      "referenceIds": [
+        "web-scope",
+        "wcag22",
+        "html-forms"
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "web26-day10-q01",
+      "sectionId": "web26-day10-s1",
+      "category": "アクセシビリティ",
+      "prompt": "マウスを使わずページの操作を確認する方法はどれですか。",
+      "explanation": "キーボードで目的の操作へ進めるかを実際に試します。見た目の確認だけでは分からない問題があります。",
+      "referenceIds": [
+        "web-scope",
+        "wcag22",
+        "html-forms",
+        "practice-assumptions"
+      ],
+      "assumptions": "この設例は独自の練習用仮定です。記載したファイル構成・寸法・確認条件を使います。実在店舗・実物の個人情報・公式実技問題ではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Tabキー等で移動しリンクやボタンを操作する"
+        },
+        {
+          "id": "c2",
+          "text": "画像のファイル名だけ読む"
+        },
+        {
+          "id": "c3",
+          "text": "すべての見出しを削除する"
+        },
+        {
+          "id": "c4",
+          "text": "通信量だけ確認する"
+        }
+      ],
+      "correctChoiceId": "c1"
+    },
+    {
+      "id": "web26-day10-q02",
+      "sectionId": "web26-day10-s1",
+      "category": "アクセシビリティ",
+      "prompt": "フォーカスの枠をすべて消した。見直す理由はどれですか。",
+      "explanation": "キーボード操作ではフォーカス位置が重要な手掛かりです。見やすい表示を保ちます。",
+      "referenceIds": [
+        "web-scope",
+        "wcag22",
+        "html-forms",
+        "practice-assumptions"
+      ],
+      "assumptions": "この設例は独自の練習用仮定です。記載したファイル構成・寸法・確認条件を使います。実在店舗・実物の個人情報・公式実技問題ではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "リンクが必ず高速になる"
+        },
+        {
+          "id": "c2",
+          "text": "今どこを操作しているか分かりにくくなる"
+        },
+        {
+          "id": "c3",
+          "text": "画像が必ず軽くなる"
+        },
+        {
+          "id": "c4",
+          "text": "相対パスが不要になる"
+        }
+      ],
+      "correctChoiceId": "c2"
+    },
+    {
+      "id": "web26-day10-q03",
+      "sectionId": "web26-day10-s1",
+      "category": "アクセシビリティ",
+      "prompt": "必須入力を赤色だけで示している。改善案として適切なのはどれですか。",
+      "explanation": "色の見分けだけへ依存しない伝え方を用意します。文字や記号の意味も説明します。",
+      "referenceIds": [
+        "web-scope",
+        "wcag22",
+        "html-forms",
+        "practice-assumptions"
+      ],
+      "assumptions": "この設例は独自の練習用仮定です。記載したファイル構成・寸法・確認条件を使います。実在店舗・実物の個人情報・公式実技問題ではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "赤を少し薄くするだけ"
+        },
+        {
+          "id": "c2",
+          "text": "全ラベルを削る"
+        },
+        {
+          "id": "c3",
+          "text": "「必須」など文字の手掛かりも付ける"
+        },
+        {
+          "id": "c4",
+          "text": "必須情報を画像ファイル名に隠す"
+        }
+      ],
+      "correctChoiceId": "c3"
+    },
+    {
+      "id": "web26-day10-q04",
+      "sectionId": "web26-day10-s1",
+      "category": "アクセシビリティ",
+      "prompt": "画面のリンク名がすべて「こちら」だった。改善の方向はどれですか。",
+      "explanation": "リンクの目的が単独でも判断しやすい名前を考えます。周囲の文脈も合わせて確認します。",
+      "referenceIds": [
+        "web-scope",
+        "wcag22",
+        "html-forms",
+        "practice-assumptions"
+      ],
+      "assumptions": "この設例は独自の練習用仮定です。記載したファイル構成・寸法・確認条件を使います。実在店舗・実物の個人情報・公式実技問題ではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "すべて数字1へ変える"
+        },
+        {
+          "id": "c2",
+          "text": "リンクを透明にする"
+        },
+        {
+          "id": "c3",
+          "text": "hrefだけ画像の名前へ変える"
+        },
+        {
+          "id": "c4",
+          "text": "それぞれの行き先が分かる名前にする"
+        }
+      ],
+      "correctChoiceId": "c4"
+    },
+    {
+      "id": "web26-day10-q05",
+      "sectionId": "web26-day10-s2",
+      "category": "アクセシビリティ",
+      "prompt": "アクセシビリティを確認する姿勢として適切なのはどれですか。",
+      "explanation": "利用方法や必要な支援は人によって異なります。複数の観点から確認します。",
+      "referenceIds": [
+        "web-scope",
+        "wcag22",
+        "html-forms",
+        "practice-assumptions"
+      ],
+      "assumptions": "この設例は独自の練習用仮定です。記載したファイル構成・寸法・確認条件を使います。実在店舗・実物の個人情報・公式実技問題ではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "異なる操作方法でも必要な内容と機能を使えるか考える"
+        },
+        {
+          "id": "c2",
+          "text": "同じ画面幅だけで判断する"
+        },
+        {
+          "id": "c3",
+          "text": "自分が見えれば十分とする"
+        },
+        {
+          "id": "c4",
+          "text": "文字をすべて絵にする"
+        }
+      ],
+      "correctChoiceId": "c1"
+    },
+    {
+      "id": "web26-day10-q06",
+      "sectionId": "web26-day10-s2",
+      "category": "アクセシビリティ",
+      "prompt": "入力欄をクリックできるが、何を入力するのか分からない。まず検討するものはどれですか。",
+      "explanation": "操作できることと、目的を理解できることは別です。必要な説明を入力欄に対応させます。",
+      "referenceIds": [
+        "web-scope",
+        "wcag22",
+        "html-forms",
+        "practice-assumptions"
+      ],
+      "assumptions": "この設例は独自の練習用仮定です。記載したファイル構成・寸法・確認条件を使います。実在店舗・実物の個人情報・公式実技問題ではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "枠線の装飾を増やすだけ"
+        },
+        {
+          "id": "c2",
+          "text": "目的が伝わるラベルと説明"
+        },
+        {
+          "id": "c3",
+          "text": "フォーカスを消す"
+        },
+        {
+          "id": "c4",
+          "text": "ファイル名を短くするだけ"
+        }
+      ],
+      "correctChoiceId": "c2"
+    },
+    {
+      "id": "web26-day10-q07",
+      "sectionId": "web26-day10-s2",
+      "category": "アクセシビリティ",
+      "prompt": "表示幅を変えると案内順が分かりにくい。何を確かめますか。",
+      "explanation": "読者が情報を追う流れを確認します。配置だけを変えて意味の順番を壊さないようにします。",
+      "referenceIds": [
+        "web-scope",
+        "wcag22",
+        "html-forms",
+        "practice-assumptions"
+      ],
+      "assumptions": "この設例は独自の練習用仮定です。記載したファイル構成・寸法・確認条件を使います。実在店舗・実物の個人情報・公式実技問題ではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "ページの画像の著作者だけ"
+        },
+        {
+          "id": "c2",
+          "text": "インターネットの料金だけ"
+        },
+        {
+          "id": "c3",
+          "text": "見出しと本文の順番、操作の流れ"
+        },
+        {
+          "id": "c4",
+          "text": "フォント名の文字数だけ"
+        }
+      ],
+      "correctChoiceId": "c3"
+    },
+    {
+      "id": "web26-day10-q08",
+      "sectionId": "web26-day10-s2",
+      "category": "アクセシビリティ",
+      "prompt": "自分の好みの配色と、使いやすさの評価の関係として適切なのはどれですか。",
+      "explanation": "好みだけでは使いやすさを判断できません。必要な情報と操作が伝わるかを確かめます。",
+      "referenceIds": [
+        "web-scope",
+        "wcag22",
+        "html-forms",
+        "practice-assumptions"
+      ],
+      "assumptions": "この設例は独自の練習用仮定です。記載したファイル構成・寸法・確認条件を使います。実在店舗・実物の個人情報・公式実技問題ではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "好きな色なら全員が必ず読める"
+        },
+        {
+          "id": "c2",
+          "text": "好きでなければHTMLは無効"
+        },
+        {
+          "id": "c3",
+          "text": "色の好みが本試験の採点そのもの"
+        },
+        {
+          "id": "c4",
+          "text": "好みとは別に文字の判読や操作を確認する"
+        }
+      ],
+      "correctChoiceId": "c4"
+    }
+  ]
+}

@@ -1,0 +1,352 @@
+{
+  "schemaVersion": 1,
+  "id": "web26-day02",
+  "day": 2,
+  "title": "HTMLを文書として組み立てる",
+  "category": "HTML",
+  "goals": [
+    "headのページ情報とbodyの本文を混ぜずに記述します。",
+    "見出しの役割をHTMLで、見た目の大きさをCSSで表します。"
+  ],
+  "referenceIds": [
+    "web-scope",
+    "html-structure",
+    "wcag22",
+    "html-headings",
+    "html-groups"
+  ],
+  "sections": [
+    {
+      "id": "web26-day02-s1",
+      "title": "文書の基本構造",
+      "paragraphs": [
+        "HTMLはタグで情報の役割を示す言語です。headにはタイトルなどのページ情報、bodyには読者が読む本文を記します。titleはタブなどに表示され、本文の見出しとは別に用意します。",
+        "ページの言語をlangで示し、日本語を含む文書の文字コードをUTF-8としてそろえます。文字化けや読み上げの誤りを減らすため、表示される文字だけでなく文書の情報も点検します。"
+      ],
+      "keyPoint": "headのページ情報とbodyの本文を混ぜずに記述します。",
+      "referenceIds": [
+        "web-scope",
+        "html-structure",
+        "html-headings",
+        "html-groups"
+      ]
+    },
+    {
+      "id": "web26-day02-s2",
+      "title": "見出しと段落",
+      "paragraphs": [
+        "見出しは、文章のまとまりを読者へ知らせる道しるべです。この教材の案内ページでは、ページの主題をh1、主題の下の節をh2にします。文字を大きくする目的だけで見出しの階層を選びません。",
+        "段落はpで区切り、見出しの内容に続く説明を記します。見た目の大きさはCSSで調整できます。見出しの順番を読み上げて、文章の流れが伝わるかも確認しましょう。"
+      ],
+      "keyPoint": "見出しの役割をHTMLで、見た目の大きさをCSSで表します。",
+      "referenceIds": [
+        "web-scope",
+        "html-structure",
+        "wcag22",
+        "html-headings",
+        "html-groups"
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "web26-day02-q01",
+      "sectionId": "web26-day02-s1",
+      "category": "HTML",
+      "prompt": "ページのタブに表示する名前を整えるには、どこを直しますか。",
+      "explanation": "titleはページ情報です。本文に表示するh1とは別に設定します。",
+      "referenceIds": [
+        "web-scope",
+        "html-structure",
+        "wcag22",
+        "html-headings",
+        "html-groups",
+        "practice-assumptions"
+      ],
+      "assumptions": "この設例は独自の練習用仮定です。記載したファイル構成・寸法・確認条件を使います。実在店舗・実物の個人情報・公式実技問題ではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "title要素"
+        },
+        {
+          "id": "c2",
+          "text": "画像のaltだけ"
+        },
+        {
+          "id": "c3",
+          "text": "本文末尾のbrだけ"
+        },
+        {
+          "id": "c4",
+          "text": "CSSのpaddingだけ"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "code": "<head><title>無題</title></head><body><h1>こもれび工房</h1></body>"
+    },
+    {
+      "id": "web26-day02-q02",
+      "sectionId": "web26-day02-s1",
+      "category": "HTML",
+      "prompt": "日本語のページの言語を示す設定として適切なのはどれですか。",
+      "explanation": "langは文書などの言語を表します。文字色やリンク先の指定と混ぜません。",
+      "referenceIds": [
+        "web-scope",
+        "html-structure",
+        "wcag22",
+        "html-headings",
+        "html-groups",
+        "practice-assumptions"
+      ],
+      "assumptions": "この設例は独自の練習用仮定です。記載したファイル構成・寸法・確認条件を使います。実在店舗・実物の個人情報・公式実技問題ではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "body要素のcolor=\"ja\""
+        },
+        {
+          "id": "c2",
+          "text": "html要素のlang=\"ja\""
+        },
+        {
+          "id": "c3",
+          "text": "h1要素のsize=\"ja\""
+        },
+        {
+          "id": "c4",
+          "text": "title要素のhref=\"ja\""
+        }
+      ],
+      "correctChoiceId": "c2"
+    },
+    {
+      "id": "web26-day02-q03",
+      "sectionId": "web26-day02-s1",
+      "category": "HTML",
+      "prompt": "この教材で、ページの主題を1つの最上位見出しにする要件を満たす修正はどれですか。",
+      "explanation": "設例では主題をh1で表すことが要件です。字の大きさだけでなく情報の階層を整えます。",
+      "referenceIds": [
+        "web-scope",
+        "html-structure",
+        "wcag22",
+        "html-headings",
+        "html-groups",
+        "practice-assumptions"
+      ],
+      "assumptions": "この設例は独自の練習用仮定です。記載したファイル構成・寸法・確認条件を使います。実在店舗・実物の個人情報・公式実技問題ではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "店名をbrだけで囲む"
+        },
+        {
+          "id": "c2",
+          "text": "すべての文字をimgにする"
+        },
+        {
+          "id": "c3",
+          "text": "店名のpをh1にする"
+        },
+        {
+          "id": "c4",
+          "text": "店名をtitleから削除する"
+        }
+      ],
+      "correctChoiceId": "c3",
+      "code": "<p>こもれび工房のご案内</p><h2>営業時間</h2>"
+    },
+    {
+      "id": "web26-day02-q04",
+      "sectionId": "web26-day02-s1",
+      "category": "HTML",
+      "prompt": "営業時間の説明文を段落として表す要素はどれですか。",
+      "explanation": "本文の文章のまとまりにはpを使います。titleやmetaは通常head内の情報です。",
+      "referenceIds": [
+        "web-scope",
+        "html-structure",
+        "wcag22",
+        "html-headings",
+        "html-groups",
+        "practice-assumptions"
+      ],
+      "assumptions": "この設例は独自の練習用仮定です。記載したファイル構成・寸法・確認条件を使います。実在店舗・実物の個人情報・公式実技問題ではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "title"
+        },
+        {
+          "id": "c2",
+          "text": "link"
+        },
+        {
+          "id": "c3",
+          "text": "meta"
+        },
+        {
+          "id": "c4",
+          "text": "p"
+        }
+      ],
+      "correctChoiceId": "c4"
+    },
+    {
+      "id": "web26-day02-q05",
+      "sectionId": "web26-day02-s2",
+      "category": "HTML",
+      "prompt": "見出しを大きく見せたいときの考え方として適切なのはどれですか。",
+      "explanation": "見出しの階層と見た目の大きさは別です。構造を保ったまま表示を調整します。",
+      "referenceIds": [
+        "web-scope",
+        "html-structure",
+        "wcag22",
+        "html-headings",
+        "html-groups",
+        "practice-assumptions"
+      ],
+      "assumptions": "この設例は独自の練習用仮定です。記載したファイル構成・寸法・確認条件を使います。実在店舗・実物の個人情報・公式実技問題ではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "役割に合う見出しを選び、見た目はCSSで調整する"
+        },
+        {
+          "id": "c2",
+          "text": "大きくしたいだけなら階層を無視してh1にする"
+        },
+        {
+          "id": "c3",
+          "text": "すべて見出しを消す"
+        },
+        {
+          "id": "c4",
+          "text": "CSSでは文字の大きさを変えられない"
+        }
+      ],
+      "correctChoiceId": "c1"
+    },
+    {
+      "id": "web26-day02-q06",
+      "sectionId": "web26-day02-s2",
+      "category": "HTML",
+      "prompt": "headに置くものとして、この組合せで適切なのはどれですか。",
+      "explanation": "headにはページの情報を置きます。読者が読む中心の本文はbodyへ記します。",
+      "referenceIds": [
+        "web-scope",
+        "html-structure",
+        "wcag22",
+        "html-headings",
+        "html-groups",
+        "practice-assumptions"
+      ],
+      "assumptions": "この設例は独自の練習用仮定です。記載したファイル構成・寸法・確認条件を使います。実在店舗・実物の個人情報・公式実技問題ではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "店舗の全本文だけ"
+        },
+        {
+          "id": "c2",
+          "text": "titleと文字コードのmeta"
+        },
+        {
+          "id": "c3",
+          "text": "ページの全段落だけ"
+        },
+        {
+          "id": "c4",
+          "text": "来店案内のulだけ"
+        }
+      ],
+      "correctChoiceId": "c2"
+    },
+    {
+      "id": "web26-day02-q07",
+      "sectionId": "web26-day02-s2",
+      "category": "HTML",
+      "prompt": "段落が不自然に入れ子になっている。意図を明確にする修正はどれですか。",
+      "explanation": "段落を分ける意図なら、独立した段落として並べます。ブラウザーの補正に頼らず構造を確かめます。",
+      "referenceIds": [
+        "web-scope",
+        "html-structure",
+        "wcag22",
+        "html-headings",
+        "html-groups",
+        "practice-assumptions"
+      ],
+      "assumptions": "この設例は独自の練習用仮定です。記載したファイル構成・寸法・確認条件を使います。実在店舗・実物の個人情報・公式実技問題ではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "pの中へさらにpを増やす"
+        },
+        {
+          "id": "c2",
+          "text": "すべての終了タグを削る"
+        },
+        {
+          "id": "c3",
+          "text": "2つのpを並ぶ段落に直す"
+        },
+        {
+          "id": "c4",
+          "text": "文字コードを画像名にする"
+        }
+      ],
+      "correctChoiceId": "c3",
+      "code": "<p>営業日です。<p>月曜は休みです。</p></p>"
+    },
+    {
+      "id": "web26-day02-q08",
+      "sectionId": "web26-day02-s2",
+      "category": "HTML",
+      "prompt": "同じ節の小見出しをそろえる理由として適切なのはどれですか。",
+      "explanation": "見出しは文章の構造を知らせます。表示以外の効果を保証するものではありません。",
+      "referenceIds": [
+        "web-scope",
+        "html-structure",
+        "wcag22",
+        "html-headings",
+        "html-groups",
+        "practice-assumptions"
+      ],
+      "assumptions": "この設例は独自の練習用仮定です。記載したファイル構成・寸法・確認条件を使います。実在店舗・実物の個人情報・公式実技問題ではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "ファイルの拡張子を消すため"
+        },
+        {
+          "id": "c2",
+          "text": "通信速度を必ず倍にするため"
+        },
+        {
+          "id": "c3",
+          "text": "画像の権利を取得するため"
+        },
+        {
+          "id": "c4",
+          "text": "文書内のまとまりと階層を読み取りやすくする"
+        }
+      ],
+      "correctChoiceId": "c4"
+    }
+  ]
+}

@@ -1,0 +1,324 @@
+[
+  {
+    "id": "web-work01",
+    "day": 2,
+    "title": "見出しの階層を整える",
+    "intro": "主題と二つの節を、読む順番が伝わる文書へ直します。 画面の見本は比較用です。実際の保存・ファイル移動・相対パスの操作はダウンロードしたPC用ファイルで確認します。",
+    "kind": "web",
+    "referenceIds": [
+      "html-headings",
+      "html-groups",
+      "practice-assumptions"
+    ],
+    "instructions": [
+      "index.htmlをテキストエディターで開く。",
+      "主題をh1、営業時間とアクセスを同じ階層のh2へ直す。本文の内容は変えない。",
+      "保存し、ブラウザーで再表示する。見出しだけを読むと構成が分かるか確かめる。"
+    ],
+    "checks": [
+      {
+        "id": "web-work01-check01",
+        "label": "店名がこのページのh1になっている"
+      },
+      {
+        "id": "web-work01-check02",
+        "label": "営業時間とアクセスが同じ階層のh2になっている"
+      },
+      {
+        "id": "web-work01-check03",
+        "label": "段落が見出しへ誤って変わっていない"
+      }
+    ],
+    "prompt": "どこを、何のために直しましたか。コード上の変更とブラウザーでの確認方法を自分の言葉で記録してください。",
+    "starterUrl": "practice/web-starter.zip",
+    "answerUrl": "practice/web-answer.zip",
+    "fileLabel": "task01/index.html",
+    "starterHTML": "<!doctype html>\n<html lang=\"ja\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><title>見出しの階層を整える</title><style>body{font-family:system-ui,sans-serif;line-height:1.8;color:#17333c;background:#f3f8f7;margin:0;padding:20px}main{max-width:680px;margin:auto}h1{font-size:1.6rem}h2{font-size:1.2rem}a{color:#075e63}a:focus-visible,input:focus-visible{outline:3px solid #bc6500;outline-offset:3px}section,.card{background:#fff;padding:16px;margin:16px 0;border:1px solid #a8bfbd}label{display:block}input{padding:10px;max-width:100%;box-sizing:border-box}img{max-width:100%;height:auto}table{border-collapse:collapse}th,td{border:1px solid #657f85;padding:8px}\n.title{font-size:1.6rem;font-weight:bold}</style></head><body><main><p class=\"title\">こもれび工房</p><p>小さな木工品を作る架空のお店です。</p><h4>営業時間</h4><p>10時〜17時です。</p><h4>アクセス</h4><p>架空のこもれび広場の北側です。</p></main></body></html>\n",
+    "answerHTML": "<!doctype html>\n<html lang=\"ja\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><title>見出しの階層を整える</title><style>body{font-family:system-ui,sans-serif;line-height:1.8;color:#17333c;background:#f3f8f7;margin:0;padding:20px}main{max-width:680px;margin:auto}h1{font-size:1.6rem}h2{font-size:1.2rem}a{color:#075e63}a:focus-visible,input:focus-visible{outline:3px solid #bc6500;outline-offset:3px}section,.card{background:#fff;padding:16px;margin:16px 0;border:1px solid #a8bfbd}label{display:block}input{padding:10px;max-width:100%;box-sizing:border-box}img{max-width:100%;height:auto}table{border-collapse:collapse}th,td{border:1px solid #657f85;padding:8px}\n</style></head><body><main><h1>こもれび工房</h1><p>小さな木工品を作る架空のお店です。</p><h2>営業時間</h2><p>10時〜17時です。</p><h2>アクセス</h2><p>架空のこもれび広場の北側です。</p></main></body></html>\n",
+    "css": ""
+  },
+  {
+    "id": "web-work02",
+    "day": 3,
+    "title": "相対リンクを修正する",
+    "intro": "トップページから案内へ進み、案内からトップへ戻れるようにします。 画面の見本は比較用です。実際の保存・ファイル移動・相対パスの操作はダウンロードしたPC用ファイルで確認します。",
+    "kind": "web",
+    "referenceIds": [
+      "html-links",
+      "practice-assumptions"
+    ],
+    "instructions": [
+      "task02/index.htmlとpages/access.htmlの配置を確認する。",
+      "トップのhrefをpages/access.htmlへ、表示文字をアクセス案内を見るへ直す。",
+      "pages/access.htmlの戻るリンクを../index.htmlへ直す。",
+      "両方向へ押して移動できるか、PCのブラウザーで確認する。"
+    ],
+    "checks": [
+      {
+        "id": "web-work02-check01",
+        "label": "トップからpages/access.htmlへ移動できる"
+      },
+      {
+        "id": "web-work02-check02",
+        "label": "案内から../index.htmlへ戻れる"
+      },
+      {
+        "id": "web-work02-check03",
+        "label": "行き先が分かるリンク名になっている"
+      }
+    ],
+    "prompt": "どこを、何のために直しましたか。コード上の変更とブラウザーでの確認方法を自分の言葉で記録してください。",
+    "starterUrl": "practice/web-starter.zip",
+    "answerUrl": "practice/web-answer.zip",
+    "fileLabel": "task02/index.html",
+    "starterHTML": "<!doctype html>\n<html lang=\"ja\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><title>相対リンクを修正する</title><style>body{font-family:system-ui,sans-serif;line-height:1.8;color:#17333c;background:#f3f8f7;margin:0;padding:20px}main{max-width:680px;margin:auto}h1{font-size:1.6rem}h2{font-size:1.2rem}a{color:#075e63}a:focus-visible,input:focus-visible{outline:3px solid #bc6500;outline-offset:3px}section,.card{background:#fff;padding:16px;margin:16px 0;border:1px solid #a8bfbd}label{display:block}input{padding:10px;max-width:100%;box-sizing:border-box}img{max-width:100%;height:auto}table{border-collapse:collapse}th,td{border:1px solid #657f85;padding:8px}\n</style></head><body><main><h1>こもれび工房</h1><p>案内へのリンクを確認してください。</p><a href=\"#destination\">こちら</a><section id=\"destination\"><h2>案内の見本</h2><p>実際の相対パスはPC用ファイルで確認します。</p></section></main></body></html>\n",
+    "answerHTML": "<!doctype html>\n<html lang=\"ja\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><title>相対リンクを修正する</title><style>body{font-family:system-ui,sans-serif;line-height:1.8;color:#17333c;background:#f3f8f7;margin:0;padding:20px}main{max-width:680px;margin:auto}h1{font-size:1.6rem}h2{font-size:1.2rem}a{color:#075e63}a:focus-visible,input:focus-visible{outline:3px solid #bc6500;outline-offset:3px}section,.card{background:#fff;padding:16px;margin:16px 0;border:1px solid #a8bfbd}label{display:block}input{padding:10px;max-width:100%;box-sizing:border-box}img{max-width:100%;height:auto}table{border-collapse:collapse}th,td{border:1px solid #657f85;padding:8px}\n</style></head><body><main><h1>こもれび工房</h1><p>案内へのリンクを確認してください。</p><a href=\"#destination\">アクセス案内を見る</a><section id=\"destination\"><h2>案内の見本</h2><p>実際の相対パスはPC用ファイルで確認します。</p></section></main></body></html>\n",
+    "css": ""
+  },
+  {
+    "id": "web-work03",
+    "day": 4,
+    "title": "画像の情報を補う",
+    "intro": "架空店舗の入口を示す図に、目的に合う代替テキストを付けます。 画面の見本は比較用です。実際の保存・ファイル移動・相対パスの操作はダウンロードしたPC用ファイルで確認します。",
+    "kind": "web",
+    "referenceIds": [
+      "html-images",
+      "wcag22",
+      "practice-assumptions"
+    ],
+    "instructions": [
+      "assets/shop.svgは本教材で作った架空の図。まず画像の役割を確認する。",
+      "altを、正面中央の入口と右側の矢印が伝わる文章へ直す。完成例と同じ文章でなくてもよい。",
+      "ファイル名や画像という語だけで説明を済ませない。",
+      "画像が表示できない場合にも必要な案内が伝わるか確認する。"
+    ],
+    "checks": [
+      {
+        "id": "web-work03-check01",
+        "label": "画像の役割を説明したaltがある"
+      },
+      {
+        "id": "web-work03-check02",
+        "label": "実在の住所・個人情報を追加していない"
+      },
+      {
+        "id": "web-work03-check03",
+        "label": "画像の縦横比を崩していない"
+      }
+    ],
+    "prompt": "どこを、何のために直しましたか。コード上の変更とブラウザーでの確認方法を自分の言葉で記録してください。",
+    "starterUrl": "practice/web-starter.zip",
+    "answerUrl": "practice/web-answer.zip",
+    "fileLabel": "task03/index.html",
+    "starterHTML": "<!doctype html>\n<html lang=\"ja\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><title>画像の情報を補う</title><style>body{font-family:system-ui,sans-serif;line-height:1.8;color:#17333c;background:#f3f8f7;margin:0;padding:20px}main{max-width:680px;margin:auto}h1{font-size:1.6rem}h2{font-size:1.2rem}a{color:#075e63}a:focus-visible,input:focus-visible{outline:3px solid #bc6500;outline-offset:3px}section,.card{background:#fff;padding:16px;margin:16px 0;border:1px solid #a8bfbd}label{display:block}input{padding:10px;max-width:100%;box-sizing:border-box}img{max-width:100%;height:auto}table{border-collapse:collapse}th,td{border:1px solid #657f85;padding:8px}\n</style></head><body><main><h1>入口の案内</h1><img src=\"data:image/png;base64,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\" alt=\"画像\"><p>矢印は入口の場所を示しています。</p></main></body></html>\n",
+    "answerHTML": "<!doctype html>\n<html lang=\"ja\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><title>画像の情報を補う</title><style>body{font-family:system-ui,sans-serif;line-height:1.8;color:#17333c;background:#f3f8f7;margin:0;padding:20px}main{max-width:680px;margin:auto}h1{font-size:1.6rem}h2{font-size:1.2rem}a{color:#075e63}a:focus-visible,input:focus-visible{outline:3px solid #bc6500;outline-offset:3px}section,.card{background:#fff;padding:16px;margin:16px 0;border:1px solid #a8bfbd}label{display:block}input{padding:10px;max-width:100%;box-sizing:border-box}img{max-width:100%;height:auto}table{border-collapse:collapse}th,td{border:1px solid #657f85;padding:8px}\n</style></head><body><main><h1>入口の案内</h1><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAbgAAAC0CAYAAADmfzl8AAAACXBIWXMAAAsTAAALEwEAmpwYAAANR0lEQVR4nO3dMaumVxXF8fkMNia9oDZ+CQtBLEYrLZIqlYKIhUXAQrBNoWDERgsLiRYGDBYxmsJGUgWjoCagnGonk0IEJyDEV97ISJxkZu6duTNrn/38igXJzeTmZp111n/2fp5759r6R52IBzIgAzIgA2uYB9fSXwDxQAZkQAZkYAGcECgCGZABGZCBMsEJgSKQARmQgTqsB1aUDQ6BeCADMiADBXBCoAhkQAZkQAaWCU4IFIEMyIAMrIN6YEXZ4BCIBzIgAzJQACcEikAGZEAGZGCZ4IRAEciADMjAOqgHVpQNDoF4IAMyIAMFcEKgCGRABmRABpYJTggUgQzIgAysg3pgRdngEIgHMiADMlAAJwSKQAZkQAZkYJnghEARyIAMyMA6qAdWlA0OgXggAzIgAwVwQqAIZEAGZEAGlglOCBRBPgN/uvG307O//Nnps09/9T2d//r8sfTXRTxYwz2womxwCDTTg5f++Mrpaz945vSpp754+tgT1/9P54+d/9n516S/TuLBGuoBwDU4BJo5rd0OtTvJVJc/N6qRHgBcg0Og2dPaRWWqy58j1SgPAK7BIdBxpjVTXf7cqA7jAcA1OAQ63rRmqsufI9V4DwCuwSHQsac1U13+fKlGegBwDQ6B+nrwKKc1U13+vKlGeQBwDQ6BennQYVoz1eVzQLW9BwDX4BCohwcdpzVTXT4XVNt6AHANDoFyHuw0rZnq3BVdUQAnBIpg8rRmqpNvHVcmOCFQBNOnNVOdjOu5sqIUguMWwRGmNVNdPmdU7TzwDK7BIdDVe3Dkac1U507plAI4IZhXBKY1U106g1RtPDDBNTgEejAPTGumOndIjyyAE4JJRWBa86wunUGq1h6Y4BocAl3cA9OaZ3Xui85YACcEk4rAtJZ/KcWfV5e/B1SX8sAEJzRtL41pra/8KeT5+0EFcEKw30UwreUBZqrL3wOqB/bABCdILS6SaS0PK1Nd/h5QXakHACdU0UtlWsuDyVQHLGuoBwDX4BCOJtNaHkKmuvw9oHroHgCcoD2yi2ZaywPHVAcs60AeAFyDQ5gs01oeLt3kDcz8vVwHEcA1OISJMq3lQdJdvq8uf0/XcAFcg0OYItNaHhq7ylSXv79roACuwSHsLtNaHhBTZKrL3+c1SADX4BB2lGktD4PpMtXl7/naXADX4BB2kmktX/xHk6kuf+/XpgK4BofQXaa1fMmTqS7dA2tDAVyDQ+gq0xqwdAWrqS7fD2sDAVyDQ+gk01q+vOlyHnhWl++N1VQA1+AQOsi0Biy7g9VUl++R1UwAd2CZ1vKlTA/HA1Ndvl86COAOKNMasBwFrKa6ivcNwDUwYrpMa/mypawHpro6nExww2VaAxZgNdWtBl0EcA0MmSDTGqiBmqluNeiitExwg2RaAzZg86wu3UOrkQBuc5nWQA3UPKtL99BqKoDbVKY1YAM2b2Cme2g1F8BtJNMaqIGaNzDTPbQ2EsBtINMasAFbjwz4vrqK9yHADZBpLV9mxAPfV1fxLgS4QTKtKVVg3SsDprpqKyvKBodgWsuXFPHgKjLgp6VUvE8BrolMa0oVWGdmwFRXLWSCM63Fy4B4MDkDproCuDTpTWv5IiAeTM6Aqa5McGkQdVf6khIPjpyB9P2nupQHVpSbhSZ9wYkHR85A+v5TAdzkENx+4U7/+jvxQAYeUgYArraWCa7BIQCcggbpnhkAuIp3HsA1MBLg8mVEPAC4fEetRjLBbSYrSiUO5Ca4dA+tTQRwDQ4B4EALtHpmwIqy4p0HcA2MBLh8GREPAC7fUauRTHCbyYpSiQO5CS7dQ2sTAVyDQwA40AKtnhmwoqx45wFcAyMBLl9GxAOAy3fUaiQT3GayolTiQG6CS/fQ2kQA1+AQAA60QKtnBqwoK955ANfASIDLlxHxAODyHbUayQS3mawolTiQm+DSPbQ2EcA1OASAAy3Q6pkBK8qKdx7ANTAS4PJlRFfvweu/+N7p9ReePay3AFfxzgO4BkYCXL6M6Go9uPHab07Pff7x03PXP3p669VfHdJfgKt45wFcAyMBLl9GdHUevPPm66fnn/zk6Sef+8h7+vkTHz/drD8fzmOAq3jnAVwDIwEuX0Z0NR68e/PG6aVvfOZ/cLulF7/+6dO7/3zzUD4DXMU7D+AaGAlw+TKiq/Hgle98+QNwu6XfPfPUoXwGuIp3HsA1MBLg8mVED+7B+YWSO8Htlo700gnAVbzzAK6BkQCXLyO6mpdK7gW4I710AnD5zgO4BkYCXL6M6P49uPnmX07PP/mJe8Ltls6/9vzvTPcc4CreeQDXwEiAy5cRXe1LJffSEV46AbiKdx7ANTAS4PJlRFf/Usm9NP2lE4CreOcBXAMjAS5fRnR/P6nkfuF2hJdOAK7inQdwDYzcDXAvvP7G1koX3wTd+P2vT89df+xDXiJ57PTyN69/4OPnj93p158/V/r/52EI4CreeQDXwEiAA7idf1LJ+/XGC98/vfbjb33g4+eP3enbCKb+pBOAq3jnAVwDIwEO4Ca8VHLrmdqdAHf+Z6989yuHeekE4CreeQDXwEiAA7jdXyp5P6DuBriLAHKKAK7inQdwDYwEOIDb+aWS21eMdwPcvVack146AbiKdx7ANTAS4GYB7vZi664H+UklH/aTSe4FuLPe/sPLF/58uwrgKt55ANfASIADuO6A++23v3ThiesigDvrTi+dnP9baTgBXJ2OrmvpL4Au54FvEzDB3S/g/v3O26dXf/j0hZ6ZXRRwH/bSyfnv3735VhxOAFeH71eA2ywEAAdw9wu4W/rriz86/fQLj9/1rcfLAO7WSyfn74c7f4tBGkoAl++p1UQA1+AQAM4zuEexorz9edzdfljyZQB31vlznT9nGkgAl++o1UgA1+AQAA7gHjXg7qXLAm6qvGRS8c4DuAZGApyXTLq/ZAJwALcadBjANTCmqzyD8wwO4Exw6R5am8iKssEhAJwVpQkuv460oqx4vwFcA9MAbv6fJpBcN1pR5sHmGVyNkAluM1lRApwVJcCle2htIoBrcAgAZ4IzweWnNRNcxfsN4BqYBnBWlOmVpLcoAS7dRWsDmeA2kxWlFSXAmeDSPbQ2EcA1OASAs6I0weXXkVaUFe83gGtgGsBZUaZXklaUAJfuorWBTHCbyYrSihLgTHDpHlqbCOAaHALAWVGa4PLrSCvKivcbwDUwDeCsKNMrSStKgEt30dpAJrjNZEVpRQlwJrh0D61NBHANDgHgrChNcPl1pBVlxfsN4BqYBnBWlOmVpBUlwKW7aG0gE9xmsqK0ogQ4E1y6h9YmArgGhwBwVpQmuPw60oqy4v0GcA1MAzgryvRK0ooS4NJdtDaQCW4zWVFaUQKcCS7dQ2sTAVyDQwA4K0oTXH4daUVZ8X4DuAamAZwVZXolaUUJcOkuWhvIBLeZrCitKAHOBJfuobWJAK7BIQCcFaUJLr+OtKKseL8BXAPTAM6KMr2StKIEuHQXrQ1kgttMVpRWlABngkv30NpEANfgEADOitIEl19HWlFWvN8AroFpAGdFOX1FSf/14Haf0/ef6lIemOA2C40VpRUlwJng0j20NhHANTgEgLOiNMH1nBpNcBXvPIBrYCTAPdq15aMutu5Kg2CqAK7inQdwDYzcDXAEcDIAcKtBpwFcA6O6COAyv3PvLrAywaW7aTWUZ3ANDgHg+k2UaWABXD4DVpQV7zuAa2AiwOWLCODynk2UZ3C1tUxwm8lqCuCsKAEu3UNrEwFcg0MAuP6/c++utF9TZYKreOcBXAMjAW52sXVX2q+pAriKdx7ANTAS4GYXW3el/ZoqgKt45wFcAyMBbnaxdVfar6kCuIp3HsA1MBLgZhdbd6X9miqAq3jnAVwDIwFudrF1V9qvqQK4incewDUwEuBmF1t3pf2aKoCreOcBXAMjAW52sXVX2q+pAriKdx7ANTAS4GYXW3el/ZoqgKt45wFcAyMBbnaxdVfar6kCuIp3HsA1MBLgZhdbd6X9miqAq3jnAVwDIwFudrF1V9qvqQK4incewDUwEuBmF1t3pf2aKoCreOcBXAMjAW52sXVX2q+pAriKdx7ANTAS4GYXW3el/ZoqgKt45wFcAyMBbnaxdVfar6kCuIp3HsA1MBLgZhdbd6X9miqAq3jnAVwDIwFudrF1V9qvqQK4incewDUwEuBmF1t3pf2aKoCreOcBXAMjAW52sXVX2q+pAriKdx7ANTAS4GYXW3el/ZoqgKt45wFcAyMBbnaxdVfar6kCuIp3HsA1MBLgZhdbd6X9miqAq3jnAVwDIwFudrF1V9qvqQK4incewB0YcMQDGXh0GUjff6pLeXCNYXuFRpkBmgzkMpC+/1QANzkEyg3gZADg0j20NpEJrsEhABxogdYeGUjffyqAEwIXQQZkQAbq8B6Y4ITg8JdABmRABmqkBwDX4BCIBzIgAzJQACcEikAGZEAGZGCZ4IRAEciADMjAOqgHVpQNDoF4IAMyIAMFcEKgCGRABmRABpYJTggUgQzIgAysg3rwHw+AoB53399CAAAAAElFTkSuQmCC\" alt=\"正面の中央に入口があり、右側の矢印が案内の目印です\"><p>矢印は入口の場所を示しています。</p></main></body></html>\n",
+    "css": ""
+  },
+  {
+    "id": "web-work04",
+    "day": 6,
+    "title": "クラスの指定を直す",
+    "intro": "注意文だけに色と境界線を付け、通常の段落へ影響させません。 画面の見本は比較用です。実際の保存・ファイル移動・相対パスの操作はダウンロードしたPC用ファイルで確認します。",
+    "kind": "web",
+    "referenceIds": [
+      "css-selectors",
+      "css-box",
+      "practice-assumptions"
+    ],
+    "instructions": [
+      "HTMLのclass属性を確認する。",
+      "style.cssのpセレクターを、noticeクラスを選ぶ指定へ直す。",
+      "注意文の背景・線・余白が通常文に適用されないことを確かめる。",
+      "要予約という文字の説明も残し、色だけの案内にしない。"
+    ],
+    "checks": [
+      {
+        "id": "web-work04-check01",
+        "label": ".noticeというクラスセレクターを使っている"
+      },
+      {
+        "id": "web-work04-check02",
+        "label": "注意文だけに指定の装飾が適用される"
+      },
+      {
+        "id": "web-work04-check03",
+        "label": "通常の段落の背景を変えていない"
+      }
+    ],
+    "prompt": "どこを、何のために直しましたか。コード上の変更とブラウザーでの確認方法を自分の言葉で記録してください。",
+    "starterUrl": "practice/web-starter.zip",
+    "answerUrl": "practice/web-answer.zip",
+    "fileLabel": "task04/index.html",
+    "starterHTML": "<!doctype html>\n<html lang=\"ja\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><title>クラスの指定を直す</title><style>body{font-family:system-ui,sans-serif;line-height:1.8;color:#17333c;background:#f3f8f7;margin:0;padding:20px}main{max-width:680px;margin:auto}h1{font-size:1.6rem}h2{font-size:1.2rem}a{color:#075e63}a:focus-visible,input:focus-visible{outline:3px solid #bc6500;outline-offset:3px}section,.card{background:#fff;padding:16px;margin:16px 0;border:1px solid #a8bfbd}label{display:block}input{padding:10px;max-width:100%;box-sizing:border-box}img{max-width:100%;height:auto}table{border-collapse:collapse}th,td{border:1px solid #657f85;padding:8px}\np{background:#fff1cf;border-left:5px solid #a75a00;padding:12px}</style></head><body><main><h1>材料の受取り</h1><p class=\"notice\">要予約：受取り希望日の前日までに連絡してください。</p><p>架空の練習用案内です。</p></main></body></html>\n",
+    "answerHTML": "<!doctype html>\n<html lang=\"ja\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><title>クラスの指定を直す</title><style>body{font-family:system-ui,sans-serif;line-height:1.8;color:#17333c;background:#f3f8f7;margin:0;padding:20px}main{max-width:680px;margin:auto}h1{font-size:1.6rem}h2{font-size:1.2rem}a{color:#075e63}a:focus-visible,input:focus-visible{outline:3px solid #bc6500;outline-offset:3px}section,.card{background:#fff;padding:16px;margin:16px 0;border:1px solid #a8bfbd}label{display:block}input{padding:10px;max-width:100%;box-sizing:border-box}img{max-width:100%;height:auto}table{border-collapse:collapse}th,td{border:1px solid #657f85;padding:8px}\n.notice{background:#fff1cf;border-left:5px solid #a75a00;padding:12px}</style></head><body><main><h1>材料の受取り</h1><p class=\"notice\">要予約：受取り希望日の前日までに連絡してください。</p><p>架空の練習用案内です。</p></main></body></html>\n",
+    "css": ""
+  },
+  {
+    "id": "web-work05",
+    "day": 7,
+    "title": "幅の合計を合わせる",
+    "intro": "カードの外寸をpaddingとborder込みで240pxにします。 画面の見本は比較用です。実際の保存・ファイル移動・相対パスの操作はダウンロードしたPC用ファイルで確認します。",
+    "kind": "web",
+    "referenceIds": [
+      "css-sizing",
+      "css-box",
+      "practice-assumptions"
+    ],
+    "instructions": [
+      "この課題の外寸は左右の境界線までで、marginを含まない。単位はpx。",
+      "width:240px、padding:12px、border:2pxを保ち、box-sizingを調整する。",
+      "内容領域は240−12−12−2−2=212pxと検算する。端数処理は不要。",
+      "開発者ツール等で境界線を含む幅が240pxか確かめる。"
+    ],
+    "checks": [
+      {
+        "id": "web-work05-check01",
+        "label": "border-boxで幅を計算している"
+      },
+      {
+        "id": "web-work05-check02",
+        "label": "paddingは左右12px、borderは左右2pxのまま"
+      },
+      {
+        "id": "web-work05-check03",
+        "label": "境界線を含む横幅が240pxになっている"
+      }
+    ],
+    "prompt": "どこを、何のために直しましたか。コード上の変更とブラウザーでの確認方法を自分の言葉で記録してください。",
+    "starterUrl": "practice/web-starter.zip",
+    "answerUrl": "practice/web-answer.zip",
+    "fileLabel": "task05/index.html",
+    "starterHTML": "<!doctype html>\n<html lang=\"ja\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><title>幅の合計を合わせる</title><style>body{font-family:system-ui,sans-serif;line-height:1.8;color:#17333c;background:#f3f8f7;margin:0;padding:20px}main{max-width:680px;margin:auto}h1{font-size:1.6rem}h2{font-size:1.2rem}a{color:#075e63}a:focus-visible,input:focus-visible{outline:3px solid #bc6500;outline-offset:3px}section,.card{background:#fff;padding:16px;margin:16px 0;border:1px solid #a8bfbd}label{display:block}input{padding:10px;max-width:100%;box-sizing:border-box}img{max-width:100%;height:auto}table{border-collapse:collapse}th,td{border:1px solid #657f85;padding:8px}\n.cardbox{width:240px;padding:12px;border:2px solid #176366;box-sizing:content-box;background:white}</style></head><body><main><h1>サイズ練習</h1><div class=\"cardbox\">外寸を240pxにするカード</div></main></body></html>\n",
+    "answerHTML": "<!doctype html>\n<html lang=\"ja\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><title>幅の合計を合わせる</title><style>body{font-family:system-ui,sans-serif;line-height:1.8;color:#17333c;background:#f3f8f7;margin:0;padding:20px}main{max-width:680px;margin:auto}h1{font-size:1.6rem}h2{font-size:1.2rem}a{color:#075e63}a:focus-visible,input:focus-visible{outline:3px solid #bc6500;outline-offset:3px}section,.card{background:#fff;padding:16px;margin:16px 0;border:1px solid #a8bfbd}label{display:block}input{padding:10px;max-width:100%;box-sizing:border-box}img{max-width:100%;height:auto}table{border-collapse:collapse}th,td{border:1px solid #657f85;padding:8px}\n.cardbox{width:240px;padding:12px;border:2px solid #176366;box-sizing:border-box;background:white}</style></head><body><main><h1>サイズ練習</h1><div class=\"cardbox\">外寸を240pxにするカード</div></main></body></html>\n",
+    "css": ""
+  },
+  {
+    "id": "web-work06",
+    "day": 8,
+    "title": "細い画面に収める",
+    "intro": "画像を本文の幅からはみ出させず、縦横比を保ちます。 画面の見本は比較用です。実際の保存・ファイル移動・相対パスの操作はダウンロードしたPC用ファイルで確認します。",
+    "kind": "web",
+    "referenceIds": [
+      "css-sizing",
+      "html-images",
+      "practice-assumptions"
+    ],
+    "instructions": [
+      "style.cssでhero画像の固定幅と固定高さを見つける。",
+      "親の幅に収まり、縦横比を保つように画像のwidth・max-width・heightを調整する。",
+      "PCのブラウザーを320px相当と広い幅へ変えて確かめる。",
+      "画像の入口が縦や横に不自然に伸びていないか確認する。"
+    ],
+    "checks": [
+      {
+        "id": "web-work06-check01",
+        "label": "320px相当で画像による横はみ出しがない"
+      },
+      {
+        "id": "web-work06-check02",
+        "label": "広い画面でも画像が親の幅を超えない"
+      },
+      {
+        "id": "web-work06-check03",
+        "label": "height:autoで元の縦横比を保っている"
+      }
+    ],
+    "prompt": "どこを、何のために直しましたか。コード上の変更とブラウザーでの確認方法を自分の言葉で記録してください。",
+    "starterUrl": "practice/web-starter.zip",
+    "answerUrl": "practice/web-answer.zip",
+    "fileLabel": "task06/index.html",
+    "starterHTML": "<!doctype html>\n<html lang=\"ja\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><title>細い画面に収める</title><style>body{font-family:system-ui,sans-serif;line-height:1.8;color:#17333c;background:#f3f8f7;margin:0;padding:20px}main{max-width:680px;margin:auto}h1{font-size:1.6rem}h2{font-size:1.2rem}a{color:#075e63}a:focus-visible,input:focus-visible{outline:3px solid #bc6500;outline-offset:3px}section,.card{background:#fff;padding:16px;margin:16px 0;border:1px solid #a8bfbd}label{display:block}input{padding:10px;max-width:100%;box-sizing:border-box}img{max-width:100%;height:auto}table{border-collapse:collapse}th,td{border:1px solid #657f85;padding:8px}\n.frame{max-width:420px;border:1px solid #647a7c}.hero{width:600px;max-width:none;height:180px}</style></head><body><main><h1>工房の図</h1><div class=\"frame\"><img class=\"hero\" src=\"data:image/png;base64,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\" alt=\"中央に入口がある架空の工房\"></div></main></body></html>\n",
+    "answerHTML": "<!doctype html>\n<html lang=\"ja\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><title>細い画面に収める</title><style>body{font-family:system-ui,sans-serif;line-height:1.8;color:#17333c;background:#f3f8f7;margin:0;padding:20px}main{max-width:680px;margin:auto}h1{font-size:1.6rem}h2{font-size:1.2rem}a{color:#075e63}a:focus-visible,input:focus-visible{outline:3px solid #bc6500;outline-offset:3px}section,.card{background:#fff;padding:16px;margin:16px 0;border:1px solid #a8bfbd}label{display:block}input{padding:10px;max-width:100%;box-sizing:border-box}img{max-width:100%;height:auto}table{border-collapse:collapse}th,td{border:1px solid #657f85;padding:8px}\n.frame{max-width:420px;border:1px solid #647a7c}.hero{width:100%;max-width:100%;height:auto;display:block}</style></head><body><main><h1>工房の図</h1><div class=\"frame\"><img class=\"hero\" src=\"data:image/png;base64,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\" alt=\"中央に入口がある架空の工房\"></div></main></body></html>\n",
+    "css": ""
+  },
+  {
+    "id": "web-work07",
+    "day": 10,
+    "title": "入力欄と説明を結ぶ",
+    "intro": "架空の記入欄へラベルを対応させます。送信処理は作りません。 画面の見本は比較用です。実際の保存・ファイル移動・相対パスの操作はダウンロードしたPC用ファイルで確認します。",
+    "kind": "web",
+    "referenceIds": [
+      "html-forms",
+      "wcag22",
+      "practice-assumptions"
+    ],
+    "instructions": [
+      "説明文をlabel要素にし、forを入力欄のidと一致させる。",
+      "placeholderは例示として残し、ラベルの代わりにしない。",
+      "ラベルを押すと入力欄へ移動するか確認する。",
+      "Tabキーで入力欄とボタンへ進み、フォーカス表示も確かめる。ボタンに送信処理はない。"
+    ],
+    "checks": [
+      {
+        "id": "web-work07-check01",
+        "label": "labelのforとinputのidが一致する"
+      },
+      {
+        "id": "web-work07-check02",
+        "label": "ラベルを押すと入力欄へフォーカスする"
+      },
+      {
+        "id": "web-work07-check03",
+        "label": "placeholderを消しても何を入力するか分かる"
+      }
+    ],
+    "prompt": "どこを、何のために直しましたか。コード上の変更とブラウザーでの確認方法を自分の言葉で記録してください。",
+    "starterUrl": "practice/web-starter.zip",
+    "answerUrl": "practice/web-answer.zip",
+    "fileLabel": "task07/index.html",
+    "starterHTML": "<!doctype html>\n<html lang=\"ja\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><title>入力欄と説明を結ぶ</title><style>body{font-family:system-ui,sans-serif;line-height:1.8;color:#17333c;background:#f3f8f7;margin:0;padding:20px}main{max-width:680px;margin:auto}h1{font-size:1.6rem}h2{font-size:1.2rem}a{color:#075e63}a:focus-visible,input:focus-visible{outline:3px solid #bc6500;outline-offset:3px}section,.card{background:#fff;padding:16px;margin:16px 0;border:1px solid #a8bfbd}label{display:block}input{padding:10px;max-width:100%;box-sizing:border-box}img{max-width:100%;height:auto}table{border-collapse:collapse}th,td{border:1px solid #657f85;padding:8px}\n</style></head><body><main><h1>記入欄の練習</h1><p>実際の情報は入力しないでください。送信先はありません。</p><p>呼び名（架空）</p><input id=\"nickname\" placeholder=\"こもれびさん\"><button type=\"button\">確認の見本</button></main></body></html>\n",
+    "answerHTML": "<!doctype html>\n<html lang=\"ja\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><title>入力欄と説明を結ぶ</title><style>body{font-family:system-ui,sans-serif;line-height:1.8;color:#17333c;background:#f3f8f7;margin:0;padding:20px}main{max-width:680px;margin:auto}h1{font-size:1.6rem}h2{font-size:1.2rem}a{color:#075e63}a:focus-visible,input:focus-visible{outline:3px solid #bc6500;outline-offset:3px}section,.card{background:#fff;padding:16px;margin:16px 0;border:1px solid #a8bfbd}label{display:block}input{padding:10px;max-width:100%;box-sizing:border-box}img{max-width:100%;height:auto}table{border-collapse:collapse}th,td{border:1px solid #657f85;padding:8px}\n</style></head><body><main><h1>記入欄の練習</h1><p>実際の情報は入力しないでください。送信先はありません。</p><label for=\"nickname\">呼び名（架空）</label><input id=\"nickname\" placeholder=\"こもれびさん\"><button type=\"button\">確認の見本</button></main></body></html>\n",
+    "css": ""
+  },
+  {
+    "id": "web-work08",
+    "day": 13,
+    "title": "工房の案内をまとめて直す",
+    "intro": "見出し・リンク・ラベル・幅を、架空店舗の一つの案内で確かめます。 画面の見本は比較用です。実際の保存・ファイル移動・相対パスの操作はダウンロードしたPC用ファイルで確認します。",
+    "kind": "web",
+    "referenceIds": [
+      "html-headings",
+      "html-links",
+      "html-forms",
+      "css-sizing",
+      "wcag22",
+      "practice-assumptions"
+    ],
+    "instructions": [
+      "主題と二つの節の見出しを整える。",
+      "リンクのhrefを実在するidへ合わせ、表示文字を行き先の内容に直す。",
+      "ラベルと入力欄を対応させる。入力データを送る処理は追加しない。",
+      "カードが狭い画面にはみ出さないようCSSを直す。",
+      "キーボードと320px相当の表示で自己確認し、修正理由をメモする。"
+    ],
+    "checks": [
+      {
+        "id": "web-work08-check01",
+        "label": "見出しの階層がh1→h2になっている"
+      },
+      {
+        "id": "web-work08-check02",
+        "label": "アクセス案内へ正しく移動する"
+      },
+      {
+        "id": "web-work08-check03",
+        "label": "入力欄へ対応するlabelがある"
+      },
+      {
+        "id": "web-work08-check04",
+        "label": "320px相当で横はみ出しがない"
+      },
+      {
+        "id": "web-work08-check05",
+        "label": "実際の個人情報や送信先を追加していない"
+      }
+    ],
+    "prompt": "どこを、何のために直しましたか。コード上の変更とブラウザーでの確認方法を自分の言葉で記録してください。",
+    "starterUrl": "practice/web-starter.zip",
+    "answerUrl": "practice/web-answer.zip",
+    "fileLabel": "task08/index.html",
+    "starterHTML": "<!doctype html>\n<html lang=\"ja\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><title>工房の案内をまとめて直す</title><style>body{font-family:system-ui,sans-serif;line-height:1.8;color:#17333c;background:#f3f8f7;margin:0;padding:20px}main{max-width:680px;margin:auto}h1{font-size:1.6rem}h2{font-size:1.2rem}a{color:#075e63}a:focus-visible,input:focus-visible{outline:3px solid #bc6500;outline-offset:3px}section,.card{background:#fff;padding:16px;margin:16px 0;border:1px solid #a8bfbd}label{display:block}input{padding:10px;max-width:100%;box-sizing:border-box}img{max-width:100%;height:auto}table{border-collapse:collapse}th,td{border:1px solid #657f85;padding:8px}\n.title{font-size:1.6rem;font-weight:bold}.cardbox{width:600px;padding:20px;border:2px solid #176366}</style></head><body><main><p class=\"title\">こもれび工房</p><h4>営業時間</h4><p>10時〜17時です。</p><a href=\"#map\">こちら</a><section id=\"access\"><h4>アクセス</h4><p>架空の広場の北側。実在する住所ではありません。</p></section><div class=\"cardbox\"><p>架空の呼び名</p><input id=\"alias\" placeholder=\"木の葉さん\"></div></main></body></html>\n",
+    "answerHTML": "<!doctype html>\n<html lang=\"ja\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><title>工房の案内をまとめて直す</title><style>body{font-family:system-ui,sans-serif;line-height:1.8;color:#17333c;background:#f3f8f7;margin:0;padding:20px}main{max-width:680px;margin:auto}h1{font-size:1.6rem}h2{font-size:1.2rem}a{color:#075e63}a:focus-visible,input:focus-visible{outline:3px solid #bc6500;outline-offset:3px}section,.card{background:#fff;padding:16px;margin:16px 0;border:1px solid #a8bfbd}label{display:block}input{padding:10px;max-width:100%;box-sizing:border-box}img{max-width:100%;height:auto}table{border-collapse:collapse}th,td{border:1px solid #657f85;padding:8px}\n.cardbox{width:100%;max-width:600px;box-sizing:border-box;padding:20px;border:2px solid #176366}</style></head><body><main><h1>こもれび工房</h1><h2>営業時間</h2><p>10時〜17時です。</p><a href=\"#access\">アクセス案内へ進む</a><section id=\"access\"><h2>アクセス</h2><p>架空の広場の北側。実在する住所ではありません。</p></section><div class=\"cardbox\"><label for=\"alias\">架空の呼び名</label><input id=\"alias\" placeholder=\"木の葉さん\"></div></main></body></html>\n",
+    "css": ""
+  }
+]

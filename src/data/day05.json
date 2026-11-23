@@ -1,0 +1,362 @@
+{
+  "schemaVersion": 1,
+  "id": "web26-day05",
+  "day": 5,
+  "title": "一覧・表・入力欄に意味を付ける",
+  "category": "HTML",
+  "goals": [
+    "項目の種類と行列の関係を、適切なHTMLの役割で示します。",
+    "入力の目的を明示し、ラベルと部品の対応を確認します。"
+  ],
+  "referenceIds": [
+    "web-scope",
+    "html-structure",
+    "wcag22",
+    "html-groups",
+    "html-tables",
+    "html-forms"
+  ],
+  "sections": [
+    {
+      "id": "web26-day05-s1",
+      "title": "項目の集まりと表",
+      "paragraphs": [
+        "順番自体に意味がある手順はol、順序を強調しない項目の集まりはulを使い、各項目をliにします。表は行と列の対応を表す場合に使います。画面を左右に分けたいだけならCSSの配置を考えます。",
+        "表の見出しをth、データをtdで表し、captionで表の目的を示せます。数字を並べるだけでなく、何の列かを読み手が把握できるようにしましょう。"
+      ],
+      "keyPoint": "項目の種類と行列の関係を、適切なHTMLの役割で示します。",
+      "referenceIds": [
+        "web-scope",
+        "html-structure",
+        "wcag22",
+        "html-groups",
+        "html-tables",
+        "html-forms"
+      ]
+    },
+    {
+      "id": "web26-day05-s2",
+      "title": "入力欄の名前",
+      "paragraphs": [
+        "入力欄の目的は、見えるラベルと入力部品を対応させて伝えます。labelのforと入力欄のidを一致させる方法があります。placeholderだけでは入力中に説明が消えるため、ラベルの代わりに頼り切りません。",
+        "メールや電話など、入力内容に合う部品や種類を選びます。この教材の制作課題は見た目と構造を学ぶためのもので、実際に予約情報を送信する機能は付けません。実物の個人情報も入力しません。"
+      ],
+      "keyPoint": "入力の目的を明示し、ラベルと部品の対応を確認します。",
+      "referenceIds": [
+        "web-scope",
+        "html-structure",
+        "wcag22",
+        "html-groups",
+        "html-tables",
+        "html-forms"
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "web26-day05-q01",
+      "sectionId": "web26-day05-s1",
+      "category": "HTML",
+      "prompt": "来店前の手順を1番から順に示す。基本となる要素はどれですか。",
+      "explanation": "手順の順番に意味があるなら番号付きの一覧が使えます。各項目はliで表します。",
+      "referenceIds": [
+        "web-scope",
+        "html-structure",
+        "wcag22",
+        "html-groups",
+        "html-tables",
+        "html-forms",
+        "practice-assumptions"
+      ],
+      "assumptions": "この設例は独自の練習用仮定です。記載したファイル構成・寸法・確認条件を使います。実在店舗・実物の個人情報・公式実技問題ではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "ol"
+        },
+        {
+          "id": "c2",
+          "text": "ulだけ"
+        },
+        {
+          "id": "c3",
+          "text": "title"
+        },
+        {
+          "id": "c4",
+          "text": "meta"
+        }
+      ],
+      "correctChoiceId": "c1"
+    },
+    {
+      "id": "web26-day05-q02",
+      "sectionId": "web26-day05-s1",
+      "category": "HTML",
+      "prompt": "順不同の持ち物一覧を作る場合の組合せはどれですか。",
+      "explanation": "順序を強調しない項目の集まりはulで表せます。各項目をliで区切ります。",
+      "referenceIds": [
+        "web-scope",
+        "html-structure",
+        "wcag22",
+        "html-groups",
+        "html-tables",
+        "html-forms",
+        "practice-assumptions"
+      ],
+      "assumptions": "この設例は独自の練習用仮定です。記載したファイル構成・寸法・確認条件を使います。実在店舗・実物の個人情報・公式実技問題ではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "titleとmeta"
+        },
+        {
+          "id": "c2",
+          "text": "ulとli"
+        },
+        {
+          "id": "c3",
+          "text": "imgとlinkだけ"
+        },
+        {
+          "id": "c4",
+          "text": "h1とbrだけ"
+        }
+      ],
+      "correctChoiceId": "c2"
+    },
+    {
+      "id": "web26-day05-q03",
+      "sectionId": "web26-day05-s1",
+      "category": "HTML",
+      "prompt": "曜日と営業時間を行列で示す場合に適したものはどれですか。",
+      "explanation": "行と列の対応がある情報は表として表現できます。画面の配置だけを目的に使うものではありません。",
+      "referenceIds": [
+        "web-scope",
+        "html-structure",
+        "wcag22",
+        "html-groups",
+        "html-tables",
+        "html-forms",
+        "practice-assumptions"
+      ],
+      "assumptions": "この設例は独自の練習用仮定です。記載したファイル構成・寸法・確認条件を使います。実在店舗・実物の個人情報・公式実技問題ではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "ページ全体を画像1枚にする"
+        },
+        {
+          "id": "c2",
+          "text": "空白文字だけを連続させる"
+        },
+        {
+          "id": "c3",
+          "text": "table"
+        },
+        {
+          "id": "c4",
+          "text": "aを大量に重ねる"
+        }
+      ],
+      "correctChoiceId": "c3"
+    },
+    {
+      "id": "web26-day05-q04",
+      "sectionId": "web26-day05-s1",
+      "category": "HTML",
+      "prompt": "表の列名「曜日」を見出しセルとして記す要素はどれですか。",
+      "explanation": "thは表の見出しセルです。データセルとの役割を区別します。",
+      "referenceIds": [
+        "web-scope",
+        "html-structure",
+        "wcag22",
+        "html-groups",
+        "html-tables",
+        "html-forms",
+        "practice-assumptions"
+      ],
+      "assumptions": "この設例は独自の練習用仮定です。記載したファイル構成・寸法・確認条件を使います。実在店舗・実物の個人情報・公式実技問題ではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "tdのみ"
+        },
+        {
+          "id": "c2",
+          "text": "img"
+        },
+        {
+          "id": "c3",
+          "text": "meta"
+        },
+        {
+          "id": "c4",
+          "text": "th"
+        }
+      ],
+      "correctChoiceId": "c4"
+    },
+    {
+      "id": "web26-day05-q05",
+      "sectionId": "web26-day05-s2",
+      "category": "HTML",
+      "prompt": "表が何を示すかを短く説明するために使える要素はどれですか。",
+      "explanation": "captionで表の目的や名前を示せます。表の行列の情報と合わせて理解を助けます。",
+      "referenceIds": [
+        "web-scope",
+        "html-structure",
+        "wcag22",
+        "html-groups",
+        "html-tables",
+        "html-forms",
+        "practice-assumptions"
+      ],
+      "assumptions": "この設例は独自の練習用仮定です。記載したファイル構成・寸法・確認条件を使います。実在店舗・実物の個人情報・公式実技問題ではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "caption"
+        },
+        {
+          "id": "c2",
+          "text": "brだけ"
+        },
+        {
+          "id": "c3",
+          "text": "linkだけ"
+        },
+        {
+          "id": "c4",
+          "text": "hrだけ"
+        }
+      ],
+      "correctChoiceId": "c1"
+    },
+    {
+      "id": "web26-day05-q06",
+      "sectionId": "web26-day05-s2",
+      "category": "HTML",
+      "prompt": "このlabelと入力欄を対応させる修正はどれですか。",
+      "explanation": "forとidを一致させます。見えるラベルと操作部品の関連を伝えられます。",
+      "referenceIds": [
+        "web-scope",
+        "html-structure",
+        "wcag22",
+        "html-groups",
+        "html-tables",
+        "html-forms",
+        "practice-assumptions"
+      ],
+      "assumptions": "この設例は独自の練習用仮定です。記載したファイル構成・寸法・確認条件を使います。実在店舗・実物の個人情報・公式実技問題ではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "inputのidをnameのままにする"
+        },
+        {
+          "id": "c2",
+          "text": "inputのidをemailにする"
+        },
+        {
+          "id": "c3",
+          "text": "labelの文字を空にする"
+        },
+        {
+          "id": "c4",
+          "text": "inputをCSSの色名へ変える"
+        }
+      ],
+      "correctChoiceId": "c2",
+      "code": "<label for=\"email\">メール</label><input id=\"name\" type=\"email\">"
+    },
+    {
+      "id": "web26-day05-q07",
+      "sectionId": "web26-day05-s2",
+      "category": "HTML",
+      "prompt": "placeholderだけの入力欄を見直す理由はどれですか。",
+      "explanation": "目的が分かるラベルを用意し、入力後も何を入れる欄か確認できるようにします。",
+      "referenceIds": [
+        "web-scope",
+        "html-structure",
+        "wcag22",
+        "html-groups",
+        "html-tables",
+        "html-forms",
+        "practice-assumptions"
+      ],
+      "assumptions": "この設例は独自の練習用仮定です。記載したファイル構成・寸法・確認条件を使います。実在店舗・実物の個人情報・公式実技問題ではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "placeholderには日本語を書けない"
+        },
+        {
+          "id": "c2",
+          "text": "すべての入力が自動送信される"
+        },
+        {
+          "id": "c3",
+          "text": "入力すると説明が消えるなど、ラベルの代わりに頼り切れない"
+        },
+        {
+          "id": "c4",
+          "text": "入力欄には名前を付けられない"
+        }
+      ],
+      "correctChoiceId": "c3"
+    },
+    {
+      "id": "web26-day05-q08",
+      "sectionId": "web26-day05-s2",
+      "category": "HTML",
+      "prompt": "予約欄のHTML課題で、本教材が実装したと扱わないものはどれですか。",
+      "explanation": "制作練習は架空データで行います。送信機能や実務上の受付があるようには表示しません。",
+      "referenceIds": [
+        "web-scope",
+        "html-structure",
+        "wcag22",
+        "html-groups",
+        "html-tables",
+        "html-forms",
+        "practice-assumptions"
+      ],
+      "assumptions": "この設例は独自の練習用仮定です。記載したファイル構成・寸法・確認条件を使います。実在店舗・実物の個人情報・公式実技問題ではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "ラベルの対応を読む練習"
+        },
+        {
+          "id": "c2",
+          "text": "入力部品の種類を読む練習"
+        },
+        {
+          "id": "c3",
+          "text": "フォームの見た目の自己確認"
+        },
+        {
+          "id": "c4",
+          "text": "実店舗への予約送信や受付"
+        }
+      ],
+      "correctChoiceId": "c4"
+    }
+  ]
+}

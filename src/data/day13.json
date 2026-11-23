@@ -1,0 +1,372 @@
+{
+  "schemaVersion": 1,
+  "id": "web26-day13",
+  "day": 13,
+  "title": "架空店舗の案内ページを直す",
+  "category": "総合演習",
+  "goals": [
+    "要件と確認項目を対応させ、修正の理由を説明します。",
+    "機械で確かめる条件と、人が確かめる意味・見た目を分けます。"
+  ],
+  "referenceIds": [
+    "web-scope",
+    "html-structure",
+    "wcag22",
+    "practice-assumptions",
+    "web-practical",
+    "html-headings",
+    "html-links",
+    "html-forms"
+  ],
+  "sections": [
+    {
+      "id": "web26-day13-s1",
+      "title": "要件を小さく分ける",
+      "paragraphs": [
+        "総合課題は架空店舗こもれび工房の案内ページです。店名、営業時間、アクセス、画像、問い合わせの表示を、誰に何を伝えるかに分けて確認します。課題ファイルは本教材で作成したものです。",
+        "先に見出しと文章の構造を整え、次にリンクや画像、最後に余白や表示幅を確かめます。完成例と全く同じコードを書くことが目的ではありません。与えられた条件を満たすかを確認します。"
+      ],
+      "keyPoint": "要件と確認項目を対応させ、修正の理由を説明します。",
+      "referenceIds": [
+        "web-scope",
+        "html-structure",
+        "wcag22",
+        "practice-assumptions",
+        "html-headings",
+        "html-links",
+        "html-forms"
+      ]
+    },
+    {
+      "id": "web26-day13-s2",
+      "title": "確認できることを分ける",
+      "paragraphs": [
+        "属性の有無や参照するファイル名などは機械的に確認しやすい項目です。一方、文章の分かりやすさや画像の説明が十分かは文脈も含めて確かめます。どちらか片方だけでは確認が足りません。",
+        "このアプリの理解確認と、PC上で編集した成果物の自己確認を区別します。アプリはPCの操作履歴を取得しません。実際の技能検定の採点を再現した表示もしません。"
+      ],
+      "keyPoint": "機械で確かめる条件と、人が確かめる意味・見た目を分けます。",
+      "referenceIds": [
+        "web-scope",
+        "web-practical",
+        "practice-assumptions",
+        "html-headings",
+        "html-links",
+        "html-forms"
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "web26-day13-q01",
+      "sectionId": "web26-day13-s1",
+      "category": "総合演習",
+      "prompt": "架空店舗のトップページで、タイトル・主題・節を整える順序として適切なのはどれですか。",
+      "explanation": "伝える内容の構造を先に整理します。見た目はその構造を踏まえて調整します。",
+      "referenceIds": [
+        "web-scope",
+        "html-structure",
+        "wcag22",
+        "practice-assumptions",
+        "web-practical",
+        "html-headings",
+        "html-links",
+        "html-forms"
+      ],
+      "assumptions": "この設例は独自の練習用仮定です。記載したファイル構成・寸法・確認条件を使います。実在店舗・実物の個人情報・公式実技問題ではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "情報のまとまりを決め、HTMLの役割へ対応させる"
+        },
+        {
+          "id": "c2",
+          "text": "文字をすべて画像へ貼る"
+        },
+        {
+          "id": "c3",
+          "text": "ファイル名をすべて消す"
+        },
+        {
+          "id": "c4",
+          "text": "余白だけで見出しの意味を決める"
+        }
+      ],
+      "correctChoiceId": "c1"
+    },
+    {
+      "id": "web26-day13-q02",
+      "sectionId": "web26-day13-s1",
+      "category": "総合演習",
+      "prompt": "完成例とは違うが、要件を満たす有効なHTMLを提出した。確認の考え方はどれですか。",
+      "explanation": "有効な書き方は一つに限りません。機械的に確認できる範囲と人の確認を分けます。",
+      "referenceIds": [
+        "web-scope",
+        "html-structure",
+        "wcag22",
+        "practice-assumptions",
+        "web-practical",
+        "html-headings",
+        "html-links",
+        "html-forms"
+      ],
+      "assumptions": "この設例は独自の練習用仮定です。記載したファイル構成・寸法・確認条件を使います。実在店舗・実物の個人情報・公式実技問題ではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "完成例と違うだけで必ず誤りとする"
+        },
+        {
+          "id": "c2",
+          "text": "同じ文字列かだけでなく構造・機能・要件を調べる"
+        },
+        {
+          "id": "c3",
+          "text": "表示が似ていれば構造は調べない"
+        },
+        {
+          "id": "c4",
+          "text": "ファイルを開かず正解にする"
+        }
+      ],
+      "correctChoiceId": "c2"
+    },
+    {
+      "id": "web26-day13-q03",
+      "sectionId": "web26-day13-s1",
+      "category": "総合演習",
+      "prompt": "店舗案内のリンクが「こちら」だけで並ぶ。要件「行き先が分かる」を満たす修正はどれですか。",
+      "explanation": "利用者が行き先を判断できるラベルを付けます。実際に移動できることも確認します。",
+      "referenceIds": [
+        "web-scope",
+        "html-structure",
+        "wcag22",
+        "practice-assumptions",
+        "web-practical",
+        "html-headings",
+        "html-links",
+        "html-forms"
+      ],
+      "assumptions": "この設例は独自の練習用仮定です。記載したファイル構成・寸法・確認条件を使います。実在店舗・実物の個人情報・公式実技問題ではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "すべて同じ「押す」にする"
+        },
+        {
+          "id": "c2",
+          "text": "hrefをすべて空にする"
+        },
+        {
+          "id": "c3",
+          "text": "「営業時間」「アクセス」など目的を表す名前にする"
+        },
+        {
+          "id": "c4",
+          "text": "リンクを本文の背景色と同色にする"
+        }
+      ],
+      "correctChoiceId": "c3"
+    },
+    {
+      "id": "web26-day13-q04",
+      "sectionId": "web26-day13-s1",
+      "category": "総合演習",
+      "prompt": "表の曜日列が見出しとして指定されていない。まず検討する修正はどれですか。",
+      "explanation": "見た目の太字だけでなく、表内の役割をHTMLで表します。",
+      "referenceIds": [
+        "web-scope",
+        "html-structure",
+        "wcag22",
+        "practice-assumptions",
+        "web-practical",
+        "html-headings",
+        "html-links",
+        "html-forms"
+      ],
+      "assumptions": "この設例は独自の練習用仮定です。記載したファイル構成・寸法・確認条件を使います。実在店舗・実物の個人情報・公式実技問題ではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "すべての文字を太字だけにする"
+        },
+        {
+          "id": "c2",
+          "text": "セルを画像へ変える"
+        },
+        {
+          "id": "c3",
+          "text": "曜日をCSSファイル名へする"
+        },
+        {
+          "id": "c4",
+          "text": "適切なセルをthとして関係を示す"
+        }
+      ],
+      "correctChoiceId": "c4"
+    },
+    {
+      "id": "web26-day13-q05",
+      "sectionId": "web26-day13-s2",
+      "category": "総合演習",
+      "prompt": "問い合わせ欄の「メール」を押しても対応する欄へ移れない。調べるものはどれですか。",
+      "explanation": "ラベルと入力欄を関連付ける指定が一致しているかを確認します。説明の分かりやすさも別に見ます。",
+      "referenceIds": [
+        "web-scope",
+        "html-structure",
+        "wcag22",
+        "practice-assumptions",
+        "web-practical",
+        "html-headings",
+        "html-links",
+        "html-forms"
+      ],
+      "assumptions": "この設例は独自の練習用仮定です。記載したファイル構成・寸法・確認条件を使います。実在店舗・実物の個人情報・公式実技問題ではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "labelのforと入力欄のid"
+        },
+        {
+          "id": "c2",
+          "text": "画像の拡張子だけ"
+        },
+        {
+          "id": "c3",
+          "text": "ページの更新日だけ"
+        },
+        {
+          "id": "c4",
+          "text": "borderの色だけ"
+        }
+      ],
+      "correctChoiceId": "c1"
+    },
+    {
+      "id": "web26-day13-q06",
+      "sectionId": "web26-day13-s2",
+      "category": "総合演習",
+      "prompt": "配布ファイルに自分のPCの絶対パスが残る。なぜ修正しますか。",
+      "explanation": "この課題では配布するフォルダ内で参照できることが要件です。環境に依存する場所を残しません。",
+      "referenceIds": [
+        "web-scope",
+        "html-structure",
+        "wcag22",
+        "practice-assumptions",
+        "web-practical",
+        "html-headings",
+        "html-links",
+        "html-forms"
+      ],
+      "assumptions": "この設例は独自の練習用仮定です。記載したファイル構成・寸法・確認条件を使います。実在店舗・実物の個人情報・公式実技問題ではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "絶対パスはすべて著作権違反だから"
+        },
+        {
+          "id": "c2",
+          "text": "他のPCでも同じ構成から参照できるようにするため"
+        },
+        {
+          "id": "c3",
+          "text": "ファイル名を短くしないとHTMLが無効だから"
+        },
+        {
+          "id": "c4",
+          "text": "画像に必ず位置情報が付くから"
+        }
+      ],
+      "correctChoiceId": "c2"
+    },
+    {
+      "id": "web26-day13-q07",
+      "sectionId": "web26-day13-s2",
+      "category": "総合演習",
+      "prompt": "成果物の自己確認で、「画像の説明が目的に合うか」を調べる理由はどれですか。",
+      "explanation": "属性の有無と、説明の内容の妥当性は別です。人が読む目的を踏まえて点検します。",
+      "referenceIds": [
+        "web-scope",
+        "html-structure",
+        "wcag22",
+        "practice-assumptions",
+        "web-practical",
+        "html-headings",
+        "html-links",
+        "html-forms"
+      ],
+      "assumptions": "この設例は独自の練習用仮定です。記載したファイル構成・寸法・確認条件を使います。実在店舗・実物の個人情報・公式実技問題ではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "altがあれば意味は必ず正しい"
+        },
+        {
+          "id": "c2",
+          "text": "画像は文字で説明できない"
+        },
+        {
+          "id": "c3",
+          "text": "属性が存在するだけでは文脈に合う説明か分からない"
+        },
+        {
+          "id": "c4",
+          "text": "自動で合格率へ変換するため"
+        }
+      ],
+      "correctChoiceId": "c3"
+    },
+    {
+      "id": "web26-day13-q08",
+      "sectionId": "web26-day13-s2",
+      "category": "総合演習",
+      "prompt": "本アプリのPC制作課題の得点について、正しい説明はどれですか。",
+      "explanation": "アプリはPCの操作履歴を取得しません。理解確認と成果物の自己点検を区別します。",
+      "referenceIds": [
+        "web-scope",
+        "html-structure",
+        "wcag22",
+        "practice-assumptions",
+        "web-practical",
+        "html-headings",
+        "html-links",
+        "html-forms"
+      ],
+      "assumptions": "この設例は独自の練習用仮定です。記載したファイル構成・寸法・確認条件を使います。実在店舗・実物の個人情報・公式実技問題ではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "PC上の全操作を取得して自動採点する"
+        },
+        {
+          "id": "c2",
+          "text": "本試験と全く同じ点数を保証する"
+        },
+        {
+          "id": "c3",
+          "text": "完成例を見ただけで技能を証明する"
+        },
+        {
+          "id": "c4",
+          "text": "確認表で自己点検し、本試験の自動採点とは扱わない"
+        }
+      ],
+      "correctChoiceId": "c4"
+    }
+  ]
+}

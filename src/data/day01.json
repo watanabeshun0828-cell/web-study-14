@@ -1,0 +1,337 @@
+{
+  "schemaVersion": 1,
+  "id": "web26-day01",
+  "day": 1,
+  "title": "Webの道具と情報の通り道",
+  "category": "Webの基礎",
+  "goals": [
+    "ページの構造、見た目、動作と、情報を届ける役割を分けます。",
+    "手元だけで動く状態と、配信先で読める状態を分けて確認します。"
+  ],
+  "referenceIds": [
+    "web-scope",
+    "html-structure",
+    "http-semantics",
+    "web-practical"
+  ],
+  "sections": [
+    {
+      "id": "web26-day01-s1",
+      "title": "ブラウザーとサーバー",
+      "paragraphs": [
+        "Webページを見るブラウザーは、ファイルの内容を読み取って画面に表示するソフトです。サーバーは要求された情報を返す側です。両者を「見る道具」と「届ける側」に分けると、表示されない原因を考えやすくなります。",
+        "HTMLは文書の構造、CSSは見た目、JavaScriptは動作を担当します。役割を分けて保存しておくと、文字の修正なのか余白の変更なのかを切り分けられます。"
+      ],
+      "keyPoint": "ページの構造、見た目、動作と、情報を届ける役割を分けます。",
+      "referenceIds": [
+        "web-scope",
+        "html-structure",
+        "http-semantics"
+      ]
+    },
+    {
+      "id": "web26-day01-s2",
+      "title": "URLと手元のファイル",
+      "paragraphs": [
+        "URLは情報の場所を示す表し方です。Web上のページと、PC内のHTMLファイルは開き方が異なります。HTTPSは通信を保護する仕組みを含みますが、表示された内容そのものの正しさを保証する印ではありません。",
+        "制作中は自分のPCでHTMLを開いて確かめます。公開後は別の端末から同じページを開き、ファイルの場所や大小文字の違いも確認します。スマホで読む練習とPCで編集する練習を組み合わせましょう。"
+      ],
+      "keyPoint": "手元だけで動く状態と、配信先で読める状態を分けて確認します。",
+      "referenceIds": [
+        "web-scope",
+        "http-semantics",
+        "web-practical"
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "web26-day01-q01",
+      "sectionId": "web26-day01-s1",
+      "category": "Webの基礎",
+      "prompt": "架空店舗のページを見る道具に当たるものはどれですか。",
+      "explanation": "ブラウザーはページを読み取って表示するソフトです。ファイルを届けるサーバーとは役割を分けます。",
+      "referenceIds": [
+        "web-scope",
+        "html-structure",
+        "http-semantics",
+        "web-practical",
+        "practice-assumptions"
+      ],
+      "assumptions": "この設例は独自の練習用仮定です。記載したファイル構成・寸法・確認条件を使います。実在店舗・実物の個人情報・公式実技問題ではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Webブラウザー"
+        },
+        {
+          "id": "c2",
+          "text": "画像の著作権者"
+        },
+        {
+          "id": "c3",
+          "text": "サーバーの電源装置"
+        },
+        {
+          "id": "c4",
+          "text": "HTMLの見出しタグ"
+        }
+      ],
+      "correctChoiceId": "c1"
+    },
+    {
+      "id": "web26-day01-q02",
+      "sectionId": "web26-day01-s1",
+      "category": "Webの基礎",
+      "prompt": "ブラウザーからの要求に応じてページのデータを返す側はどれですか。",
+      "explanation": "要求する側と応答する側を分けて考えます。CSSやタグはサーバーそのものではありません。",
+      "referenceIds": [
+        "web-scope",
+        "html-structure",
+        "http-semantics",
+        "web-practical",
+        "practice-assumptions"
+      ],
+      "assumptions": "この設例は独自の練習用仮定です。記載したファイル構成・寸法・確認条件を使います。実在店舗・実物の個人情報・公式実技問題ではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "本文の段落"
+        },
+        {
+          "id": "c2",
+          "text": "Webサーバー"
+        },
+        {
+          "id": "c3",
+          "text": "画像のalt"
+        },
+        {
+          "id": "c4",
+          "text": "CSSの余白"
+        }
+      ],
+      "correctChoiceId": "c2"
+    },
+    {
+      "id": "web26-day01-q03",
+      "sectionId": "web26-day01-s1",
+      "category": "Webの基礎",
+      "prompt": "営業時間という見出しと、その説明の関係を表す役割に最も近いものはどれですか。",
+      "explanation": "HTMLで情報の構造や意味を表します。見た目の大きさや色はCSSで調整できます。",
+      "referenceIds": [
+        "web-scope",
+        "html-structure",
+        "http-semantics",
+        "web-practical",
+        "practice-assumptions"
+      ],
+      "assumptions": "この設例は独自の練習用仮定です。記載したファイル構成・寸法・確認条件を使います。実在店舗・実物の個人情報・公式実技問題ではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "CSSの背景色"
+        },
+        {
+          "id": "c2",
+          "text": "画像の圧縮率"
+        },
+        {
+          "id": "c3",
+          "text": "HTML"
+        },
+        {
+          "id": "c4",
+          "text": "サーバーの回線速度"
+        }
+      ],
+      "correctChoiceId": "c3"
+    },
+    {
+      "id": "web26-day01-q04",
+      "sectionId": "web26-day01-s1",
+      "category": "Webの基礎",
+      "prompt": "見出しの文字色と内側の余白を変えたい。中心となるものはどれですか。",
+      "explanation": "CSSは表示や配置の指定に使います。内容のまとまりを表すHTMLとは役割が違います。",
+      "referenceIds": [
+        "web-scope",
+        "html-structure",
+        "http-semantics",
+        "web-practical",
+        "practice-assumptions"
+      ],
+      "assumptions": "この設例は独自の練習用仮定です。記載したファイル構成・寸法・確認条件を使います。実在店舗・実物の個人情報・公式実技問題ではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "DNSの登録番号"
+        },
+        {
+          "id": "c2",
+          "text": "写真の撮影日"
+        },
+        {
+          "id": "c3",
+          "text": "ページの著作権表示だけ"
+        },
+        {
+          "id": "c4",
+          "text": "CSS"
+        }
+      ],
+      "correctChoiceId": "c4"
+    },
+    {
+      "id": "web26-day01-q05",
+      "sectionId": "web26-day01-s2",
+      "category": "Webの基礎",
+      "prompt": "HTTPSのページなら必ず正しい店舗だ、という判断について適切なのはどれですか。",
+      "explanation": "HTTPSは通信の保護に関わります。相手先や掲載情報の正当性まで自動で保証しません。",
+      "referenceIds": [
+        "web-scope",
+        "html-structure",
+        "http-semantics",
+        "web-practical",
+        "practice-assumptions"
+      ],
+      "assumptions": "この設例は独自の練習用仮定です。記載したファイル構成・寸法・確認条件を使います。実在店舗・実物の個人情報・公式実技問題ではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "通信の保護と相手・内容の正しさは別に確認する"
+        },
+        {
+          "id": "c2",
+          "text": "HTTPSなら運営者の説明はすべて正しい"
+        },
+        {
+          "id": "c3",
+          "text": "HTTPSなら個人情報を無条件に送ってよい"
+        },
+        {
+          "id": "c4",
+          "text": "HTTPSならリンク切れは起こらない"
+        }
+      ],
+      "correctChoiceId": "c1"
+    },
+    {
+      "id": "web26-day01-q06",
+      "sectionId": "web26-day01-s2",
+      "category": "Webの基礎",
+      "prompt": "自分のデスクトップにあるHTMLだけが開けた。次に分けて考えることはどれですか。",
+      "explanation": "手元の保存場所と配信先の場所は異なります。画像やCSSを含め、公開先から参照できるか確認します。",
+      "referenceIds": [
+        "web-scope",
+        "html-structure",
+        "http-semantics",
+        "web-practical",
+        "practice-assumptions"
+      ],
+      "assumptions": "この設例は独自の練習用仮定です。記載したファイル構成・寸法・確認条件を使います。実在店舗・実物の個人情報・公式実技問題ではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "手元で見えたので全端末でも必ず見える"
+        },
+        {
+          "id": "c2",
+          "text": "公開先でも必要なファイルが読めるか"
+        },
+        {
+          "id": "c3",
+          "text": "公開先ではCSSが不要になるか"
+        },
+        {
+          "id": "c4",
+          "text": "ファイル名をすべて同じにするか"
+        }
+      ],
+      "correctChoiceId": "c2"
+    },
+    {
+      "id": "web26-day01-q07",
+      "sectionId": "web26-day01-s2",
+      "category": "Webの基礎",
+      "prompt": "HTML・CSS・JavaScriptを分ける利点として適切なのはどれですか。",
+      "explanation": "役割を分けると修正箇所を判断しやすくなります。表示や利用条件の確認は別に必要です。",
+      "referenceIds": [
+        "web-scope",
+        "html-structure",
+        "http-semantics",
+        "web-practical",
+        "practice-assumptions"
+      ],
+      "assumptions": "この設例は独自の練習用仮定です。記載したファイル構成・寸法・確認条件を使います。実在店舗・実物の個人情報・公式実技問題ではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "すべてのファイルの容量が必ず0になる"
+        },
+        {
+          "id": "c2",
+          "text": "著作権の確認が不要になる"
+        },
+        {
+          "id": "c3",
+          "text": "構造・見た目・動作の変更を整理しやすい"
+        },
+        {
+          "id": "c4",
+          "text": "ブラウザーでの確認が不要になる"
+        }
+      ],
+      "correctChoiceId": "c3"
+    },
+    {
+      "id": "web26-day01-q08",
+      "sectionId": "web26-day01-s2",
+      "category": "Webの基礎",
+      "prompt": "スマホで理解確認を終えた。実技学習の次の行動はどれですか。",
+      "explanation": "このアプリの確認問題とPCでの制作操作は別の練習です。実際に保存や表示確認を行います。",
+      "referenceIds": [
+        "web-scope",
+        "html-structure",
+        "http-semantics",
+        "web-practical",
+        "practice-assumptions"
+      ],
+      "assumptions": "この設例は独自の練習用仮定です。記載したファイル構成・寸法・確認条件を使います。実在店舗・実物の個人情報・公式実技問題ではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "スマホの点数を本試験の点数に置き換える"
+        },
+        {
+          "id": "c2",
+          "text": "PCの操作はすべて省略する"
+        },
+        {
+          "id": "c3",
+          "text": "合格が保証されたと判断する"
+        },
+        {
+          "id": "c4",
+          "text": "PCで自作課題のファイルを編集し表示を確かめる"
+        }
+      ],
+      "correctChoiceId": "c4"
+    }
+  ]
+}

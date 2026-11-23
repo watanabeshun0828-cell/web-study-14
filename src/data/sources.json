@@ -1,0 +1,262 @@
+[
+  {
+    "id": "web-exam-index",
+    "title": "ウェブデザイン技能検定 試験要項一覧",
+    "url": "https://www.webdesign.gr.jp/application/items/",
+    "checkedAt": "2026-11-23",
+    "appliesTo": "2026年度第3回の現行掲載資料",
+    "location": "令和8年度第3回3級のリンクと試験細目",
+    "role": "出題範囲",
+    "notes": "知識の確認に参照。文章・図・設問は独自に作成し、資料の事例を書き換えていない。"
+  },
+  {
+    "id": "web-scope",
+    "title": "ウェブデザイン技能検定 試験細目",
+    "url": "https://www.webdesign.gr.jp/img/2025/03/20250318.pdf",
+    "checkedAt": "2026-11-23",
+    "appliesTo": "現行掲載細目。明示的な版番号は未確認",
+    "location": "PDFの10〜12枚目（0始まりのページ9〜11）、3級の範囲。上級の列と区別",
+    "role": "出題範囲",
+    "notes": "知識の確認に参照。文章・図・設問は独自に作成し、資料の事例を書き換えていない。"
+  },
+  {
+    "id": "web-outline",
+    "title": "2026年度第3回3級試験要項",
+    "url": "https://www.webdesign.gr.jp/img/2026/09/R08-3-3.pdf",
+    "checkedAt": "2026-11-23",
+    "appliesTo": "2026年度第3回",
+    "location": "PDFの12〜16枚目（0始まりのページ11〜15）、範囲・環境・対象規格",
+    "role": "出題範囲",
+    "notes": "知識の確認に参照。文章・図・設問は独自に作成し、資料の事例を書き換えていない。"
+  },
+  {
+    "id": "web-practical",
+    "title": "2026年度第3回3級実技試験概要",
+    "url": "https://www.webdesign.gr.jp/img/2026/10/R08-3-3_gaiyo.pdf",
+    "checkedAt": "2026-11-23",
+    "appliesTo": "2026年度第3回",
+    "location": "PDFの1〜2枚目（0始まりのページ0〜1）、環境・規格の説明のみ",
+    "role": "出題範囲",
+    "notes": "実技の環境を確認。公式問題・配付素材・答案の転載や書き換え元として使用していない。"
+  },
+  {
+    "id": "html-structure",
+    "title": "WHATWG HTML Standard：文書構造",
+    "url": "https://html.spec.whatwg.org/multipage/semantics.html",
+    "checkedAt": "2026-11-23",
+    "appliesTo": "Living Standard、閲覧時更新表示2026-11-22",
+    "location": "html、head、title、link、meta",
+    "role": "事実の根拠",
+    "notes": "知識の確認に参照。文章・図・設問は独自に作成し、資料の事例を書き換えていない。"
+  },
+  {
+    "id": "html-images",
+    "title": "WHATWG HTML Standard：画像と代替テキスト",
+    "url": "https://html.spec.whatwg.org/multipage/images.html",
+    "checkedAt": "2026-11-23",
+    "appliesTo": "Living Standard、閲覧時更新表示2026-11-22",
+    "location": "画像の代替テキスト要件",
+    "role": "事実の根拠",
+    "notes": "知識の確認に参照。文章・図・設問は独自に作成し、資料の事例を書き換えていない。"
+  },
+  {
+    "id": "css-selectors",
+    "title": "W3C Selectors Level 3",
+    "url": "https://www.w3.org/TR/selectors-3/",
+    "checkedAt": "2026-11-23",
+    "appliesTo": "W3C勧告2018-11-06",
+    "location": "クラス・ID・型・子孫セレクター",
+    "role": "事実の根拠",
+    "notes": "知識の確認に参照。文章・図・設問は独自に作成し、資料の事例を書き換えていない。"
+  },
+  {
+    "id": "css-box",
+    "title": "W3C CSS Box Model Level 3",
+    "url": "https://www.w3.org/TR/css-box-3/",
+    "checkedAt": "2026-11-23",
+    "appliesTo": "W3C勧告2024-04-11",
+    "location": "2〜5節：内容・padding・border・margin",
+    "role": "事実の根拠",
+    "notes": "知識の確認に参照。文章・図・設問は独自に作成し、資料の事例を書き換えていない。"
+  },
+  {
+    "id": "css-sizing",
+    "title": "W3C CSS Box Sizing Level 3",
+    "url": "https://www.w3.org/TR/css-sizing-3/",
+    "checkedAt": "2026-11-23",
+    "appliesTo": "2026-09-04作業草案",
+    "location": "3.3節 box-sizing。草案であることを区別",
+    "role": "事実の根拠",
+    "notes": "知識の確認に参照。文章・図・設問は独自に作成し、資料の事例を書き換えていない。"
+  },
+  {
+    "id": "css-snapshot",
+    "title": "W3C CSS Snapshot 2026",
+    "url": "https://www.w3.org/TR/css-2026/",
+    "checkedAt": "2026-11-23",
+    "appliesTo": "2026-06-22 Group Note",
+    "location": "2.1節：試験で指定されるCSS範囲",
+    "role": "出題範囲",
+    "notes": "知識の確認に参照。文章・図・設問は独自に作成し、資料の事例を書き換えていない。"
+  },
+  {
+    "id": "wcag22",
+    "title": "W3C WCAG 2.2",
+    "url": "https://www.w3.org/TR/WCAG22/",
+    "checkedAt": "2026-11-23",
+    "appliesTo": "W3C勧告2024-12-12",
+    "location": "1.1.1、1.3.1、2.1.1、ラベル・フォーカス等",
+    "role": "事実の根拠",
+    "notes": "知識の確認に参照。文章・図・設問は独自に作成し、資料の事例を書き換えていない。"
+  },
+  {
+    "id": "html-sandbox",
+    "title": "WHATWG HTML Standard：iframe",
+    "url": "https://html.spec.whatwg.org/multipage/iframe-embed-object.html",
+    "checkedAt": "2026-11-23",
+    "appliesTo": "Living Standard、閲覧時更新表示2026-11-22",
+    "location": "iframe、srcdoc、sandbox",
+    "role": "技術仕様",
+    "notes": "知識の確認に参照。文章・図・設問は独自に作成し、資料の事例を書き換えていない。"
+  },
+  {
+    "id": "csp3",
+    "title": "W3C Content Security Policy Level 3",
+    "url": "https://www.w3.org/TR/CSP3/",
+    "checkedAt": "2026-11-23",
+    "appliesTo": "2026-10-27作業草案",
+    "location": "default-src、script-src、connect-src、form-action等",
+    "role": "技術仕様",
+    "notes": "知識の確認に参照。文章・図・設問は独自に作成し、資料の事例を書き換えていない。"
+  },
+  {
+    "id": "ppc-personal",
+    "title": "個人情報保護委員会：個人向けFAQ",
+    "url": "https://www.ppc.go.jp/personalinfo/faq/kojin/",
+    "checkedAt": "2026-11-23",
+    "appliesTo": "2026-11-23に閲覧した現行掲載内容",
+    "location": "Q1-1・Q1-2の個人情報の定義",
+    "role": "事実の根拠",
+    "notes": "知識の確認に参照。文章・図・設問は独自に作成し、資料の事例を書き換えていない。"
+  },
+  {
+    "id": "bunka-copyright",
+    "title": "文化庁 著作権テキスト",
+    "url": "https://www.bunka.go.jp/seisaku/chosakuken/seidokaisetsu/pdf/94383901_01.pdf",
+    "checkedAt": "2026-11-23",
+    "appliesTo": "令和8年度版",
+    "location": "本文47〜49ページ：他人の著作物を利用する前の確認。基本原則のみ参照",
+    "role": "事実の根拠",
+    "notes": "知識の確認に参照。文章・図・設問は独自に作成し、資料の事例を書き換えていない。"
+  },
+  {
+    "id": "http-semantics",
+    "title": "IETF RFC9110：HTTP Semantics",
+    "url": "https://www.rfc-editor.org/rfc/rfc9110.html",
+    "checkedAt": "2026-11-23",
+    "appliesTo": "2022年6月",
+    "location": "HTTP、HTTPS、要求と応答の基本概念",
+    "role": "事実の根拠",
+    "notes": "知識の確認に参照。文章・図・設問は独自に作成し、資料の事例を書き換えていない。"
+  },
+  {
+    "id": "practice-assumptions",
+    "title": "この教材の独自練習条件",
+    "url": null,
+    "checkedAt": "2026-11-23",
+    "appliesTo": "本教材2026.1",
+    "location": "架空の店舗・ファイル構成・寸法・確認条件",
+    "role": "練習用の仮定",
+    "notes": "すべて独自の練習用データ。実際の店舗・個人情報・公式実技課題ではない。"
+  },
+  {
+    "id": "html-headings",
+    "title": "WHATWG HTML Standard：節と見出し",
+    "url": "https://html.spec.whatwg.org/multipage/sections.html",
+    "checkedAt": "2026-11-23",
+    "appliesTo": "Living Standard、閲覧時更新2026-11-22",
+    "location": "4.3 見出し・節",
+    "role": "事実の根拠",
+    "notes": "基本仕様の確認に参照。独自の設例・文章・図を作成。"
+  },
+  {
+    "id": "html-groups",
+    "title": "WHATWG HTML Standard：情報のまとまり",
+    "url": "https://html.spec.whatwg.org/multipage/grouping-content.html",
+    "checkedAt": "2026-11-23",
+    "appliesTo": "Living Standard、閲覧時更新2026-11-22",
+    "location": "4.4 段落・リスト・main",
+    "role": "事実の根拠",
+    "notes": "基本仕様の確認に参照。独自の設例・文章・図を作成。"
+  },
+  {
+    "id": "html-links",
+    "title": "WHATWG HTML Standard：リンク",
+    "url": "https://html.spec.whatwg.org/multipage/text-level-semantics.html",
+    "checkedAt": "2026-11-23",
+    "appliesTo": "Living Standard、閲覧時更新2026-11-22",
+    "location": "4.5.1 aとhref",
+    "role": "事実の根拠",
+    "notes": "基本仕様の確認に参照。独自の設例・文章・図を作成。"
+  },
+  {
+    "id": "html-forms",
+    "title": "WHATWG HTML Standard：入力とラベル",
+    "url": "https://html.spec.whatwg.org/multipage/forms.html",
+    "checkedAt": "2026-11-23",
+    "appliesTo": "Living Standard、閲覧時更新2026-11-22",
+    "location": "4.10 labelと入力部品の対応",
+    "role": "事実の根拠",
+    "notes": "基本仕様の確認に参照。独自の設例・文章・図を作成。"
+  },
+  {
+    "id": "html-tables",
+    "title": "WHATWG HTML Standard：表",
+    "url": "https://html.spec.whatwg.org/multipage/tables.html",
+    "checkedAt": "2026-11-23",
+    "appliesTo": "Living Standard、閲覧時更新2026-11-22",
+    "location": "4.9 caption・th・td",
+    "role": "事実の根拠",
+    "notes": "基本仕様の確認に参照。独自の設例・文章・図を作成。"
+  },
+  {
+    "id": "css-flex",
+    "title": "W3C CSS Flexible Box Layout Level 1",
+    "url": "https://www.w3.org/TR/css-flexbox-1/",
+    "checkedAt": "2026-11-23",
+    "appliesTo": "2025-10-14勧告候補草案",
+    "location": "flexコンテナと折返し",
+    "role": "事実の根拠",
+    "notes": "基本仕様の確認に参照。独自の設例・文章・図を作成。"
+  },
+  {
+    "id": "css-media",
+    "title": "W3C Media Queries Level 4",
+    "url": "https://www.w3.org/TR/mediaqueries-4/",
+    "checkedAt": "2026-11-23",
+    "appliesTo": "2026-02-19勧告候補草案",
+    "location": "画面幅等を条件にCSSを適用",
+    "role": "事実の根拠",
+    "notes": "基本仕様の確認に参照。独自の設例・文章・図を作成。"
+  },
+  {
+    "id": "css-grid",
+    "title": "W3C CSS Grid Layout Module Level 1",
+    "url": "https://www.w3.org/TR/css-grid-1/",
+    "checkedAt": "2026-11-23",
+    "appliesTo": "2025-03-26勧告候補草案",
+    "location": "2次元グリッド配置の基本",
+    "role": "事実の根拠",
+    "notes": "基本仕様の確認に参照。規格の例文は使用せず独自の設例・文章を作成。"
+  },
+  {
+    "id": "css-cascade",
+    "title": "W3C CSS Cascading and Inheritance Level 5",
+    "url": "https://www.w3.org/TR/css-cascade-5/",
+    "checkedAt": "2026-11-23",
+    "appliesTo": "2022-01-13勧告候補スナップショット",
+    "location": "カスケード順と継承",
+    "role": "事実の根拠",
+    "notes": "基本仕様の確認に参照。規格の例文は使用せず独自の設例・文章を作成。"
+  }
+]

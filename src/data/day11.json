@@ -1,0 +1,339 @@
+{
+  "schemaVersion": 1,
+  "id": "web26-day11",
+  "day": 11,
+  "title": "権利と情報を確かめて扱う",
+  "category": "情報の扱い",
+  "goals": [
+    "素材の出所と利用条件を確認してから使います。",
+    "通信先、公開範囲、入力する情報を分けて確認します。"
+  ],
+  "referenceIds": [
+    "web-scope",
+    "bunka-copyright",
+    "practice-assumptions",
+    "ppc-personal",
+    "http-semantics"
+  ],
+  "sections": [
+    {
+      "id": "web26-day11-s1",
+      "title": "素材の条件を記録する",
+      "paragraphs": [
+        "ネットで見られる写真や図でも、自由に再配布できるとは限りません。使う目的、改変、表示義務、配布条件を確認します。出典を書くだけで、利用条件の確認が不要になるわけではありません。",
+        "利用できる素材を選んだら、入手先や条件を記録します。この教材の課題では自作の単純な図を使い、公式の問題素材や他者の作品を取り込みません。個別の権利判断が必要な場合は適切な相談先へ確認します。"
+      ],
+      "keyPoint": "素材の出所と利用条件を確認してから使います。",
+      "referenceIds": [
+        "web-scope",
+        "bunka-copyright",
+        "practice-assumptions"
+      ]
+    },
+    {
+      "id": "web26-day11-s2",
+      "title": "個人情報と安全な確認",
+      "paragraphs": [
+        "氏名など個人を識別できる情報の扱いには配慮が必要です。ページを公開する前に、練習用の名前や住所を実物と取り違えていないか、必要な情報だけになっているかを確認します。",
+        "通信の安全性と、送信する内容・相手先の確認は別の観点です。HTTPSの表示だけで相手の正当性を判断せず、テストでは架空データを使います。許可のないサービスや他人の環境へ試しに送信しません。"
+      ],
+      "keyPoint": "通信先、公開範囲、入力する情報を分けて確認します。",
+      "referenceIds": [
+        "web-scope",
+        "ppc-personal",
+        "http-semantics",
+        "practice-assumptions"
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "web26-day11-q01",
+      "sectionId": "web26-day11-s1",
+      "category": "情報の扱い",
+      "prompt": "画像検索で見つけた写真を店舗ページへ使いたい。先に確認することはどれですか。",
+      "explanation": "ネットで閲覧できることと、その用途で利用できることは別です。利用条件を確認します。",
+      "referenceIds": [
+        "web-scope",
+        "bunka-copyright",
+        "practice-assumptions",
+        "ppc-personal",
+        "http-semantics"
+      ],
+      "assumptions": "この設例は独自の練習用仮定です。記載したファイル構成・寸法・確認条件を使います。実在店舗・実物の個人情報・公式実技問題ではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "利用目的に合う許諾・条件と出所"
+        },
+        {
+          "id": "c2",
+          "text": "検索結果に出たので自由と決める"
+        },
+        {
+          "id": "c3",
+          "text": "画像の横幅だけ"
+        },
+        {
+          "id": "c4",
+          "text": "ファイル名にfreeがあるかだけ"
+        }
+      ],
+      "correctChoiceId": "c1"
+    },
+    {
+      "id": "web26-day11-q02",
+      "sectionId": "web26-day11-s1",
+      "category": "情報の扱い",
+      "prompt": "写真の出典名を書いた。これで利用条件の確認を省けますか。",
+      "explanation": "必要な表示を守るだけでなく、利用する行為が認められるか確認します。個別判断は適切な相談先へ確認します。",
+      "referenceIds": [
+        "web-scope",
+        "bunka-copyright",
+        "practice-assumptions",
+        "ppc-personal",
+        "http-semantics"
+      ],
+      "assumptions": "この設例は独自の練習用仮定です。記載したファイル構成・寸法・確認条件を使います。実在店舗・実物の個人情報・公式実技問題ではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "出典さえあればすべて自由に転載できる"
+        },
+        {
+          "id": "c2",
+          "text": "出典表示と利用できる条件の確認は別である"
+        },
+        {
+          "id": "c3",
+          "text": "出典があれば写真の内容は必ず正しい"
+        },
+        {
+          "id": "c4",
+          "text": "文字が小さければ条件は不要になる"
+        }
+      ],
+      "correctChoiceId": "c2"
+    },
+    {
+      "id": "web26-day11-q03",
+      "sectionId": "web26-day11-s1",
+      "category": "情報の扱い",
+      "prompt": "練習用のお問い合わせ一覧へ実在する顧客情報を入れたい。適切な判断はどれですか。",
+      "explanation": "練習には実物の個人情報を使わない方針です。見えにくくするだけでは公開範囲の問題は解消しません。",
+      "referenceIds": [
+        "web-scope",
+        "bunka-copyright",
+        "practice-assumptions",
+        "ppc-personal",
+        "http-semantics"
+      ],
+      "assumptions": "この設例は独自の練習用仮定です。記載したファイル構成・寸法・確認条件を使います。実在店舗・実物の個人情報・公式実技問題ではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "短時間なら無条件で公開する"
+        },
+        {
+          "id": "c2",
+          "text": "姓だけ消せば常に個人情報でなくなる"
+        },
+        {
+          "id": "c3",
+          "text": "練習では独自の架空情報へ置き換える"
+        },
+        {
+          "id": "c4",
+          "text": "文字色を白にすれば安全"
+        }
+      ],
+      "correctChoiceId": "c3"
+    },
+    {
+      "id": "web26-day11-q04",
+      "sectionId": "web26-day11-s1",
+      "category": "情報の扱い",
+      "prompt": "氏名だけの情報について、注意する説明はどれですか。",
+      "explanation": "個人情報保護委員会のFAQでも氏名のみの場合を説明しています。情報の性質を確かめて扱います。",
+      "referenceIds": [
+        "web-scope",
+        "bunka-copyright",
+        "practice-assumptions",
+        "ppc-personal",
+        "http-semantics"
+      ],
+      "assumptions": "この設例は独自の練習用仮定です。記載したファイル構成・寸法・確認条件を使います。実在店舗・実物の個人情報・公式実技問題ではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "数字を含まなければ個人情報ではない"
+        },
+        {
+          "id": "c2",
+          "text": "ネットへ載せれば個人情報ではない"
+        },
+        {
+          "id": "c3",
+          "text": "法人の資料なら含まれる氏名も常に対象外"
+        },
+        {
+          "id": "c4",
+          "text": "通常は個人情報に当たり得るため適切に扱う"
+        }
+      ],
+      "correctChoiceId": "c4"
+    },
+    {
+      "id": "web26-day11-q05",
+      "sectionId": "web26-day11-s2",
+      "category": "情報の扱い",
+      "prompt": "制作素材の管理で記録しておくとよいものはどれですか。",
+      "explanation": "後から条件を追えるように出所と確認内容を残します。必要に応じて利用前に確認し直します。",
+      "referenceIds": [
+        "web-scope",
+        "bunka-copyright",
+        "practice-assumptions",
+        "ppc-personal",
+        "http-semantics"
+      ],
+      "assumptions": "この設例は独自の練習用仮定です。記載したファイル構成・寸法・確認条件を使います。実在店舗・実物の個人情報・公式実技問題ではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "入手先、利用条件、必要な表示、確認日"
+        },
+        {
+          "id": "c2",
+          "text": "背景色だけ"
+        },
+        {
+          "id": "c3",
+          "text": "作業した机の色だけ"
+        },
+        {
+          "id": "c4",
+          "text": "ブラウザーのウィンドウ数だけ"
+        }
+      ],
+      "correctChoiceId": "c1"
+    },
+    {
+      "id": "web26-day11-q06",
+      "sectionId": "web26-day11-s2",
+      "category": "情報の扱い",
+      "prompt": "知らない相手のフォームへテストデータを送る提案があった。適切な対応はどれですか。",
+      "explanation": "この教材では他人のサービスへ試しに送信しません。通信の保護と利用の許可を分けて確認します。",
+      "referenceIds": [
+        "web-scope",
+        "bunka-copyright",
+        "practice-assumptions",
+        "ppc-personal",
+        "http-semantics"
+      ],
+      "assumptions": "この設例は独自の練習用仮定です。記載したファイル構成・寸法・確認条件を使います。実在店舗・実物の個人情報・公式実技問題ではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "HTTPSなら無条件で実データを送る"
+        },
+        {
+          "id": "c2",
+          "text": "権限と送信先を確認し、許可のある練習環境を使う"
+        },
+        {
+          "id": "c3",
+          "text": "入力欄があれば自由に試す"
+        },
+        {
+          "id": "c4",
+          "text": "見えるリンクなら必ず正当と判断する"
+        }
+      ],
+      "correctChoiceId": "c2"
+    },
+    {
+      "id": "web26-day11-q07",
+      "sectionId": "web26-day11-s2",
+      "category": "情報の扱い",
+      "prompt": "自分で描いた簡単な店舗案内図を教材へ使う利点はどれですか。",
+      "explanation": "自作でも出所や経緯を記録します。公式の素材や公認表示と取り違えないことも大切です。",
+      "referenceIds": [
+        "web-scope",
+        "bunka-copyright",
+        "practice-assumptions",
+        "ppc-personal",
+        "http-semantics"
+      ],
+      "assumptions": "この設例は独自の練習用仮定です。記載したファイル構成・寸法・確認条件を使います。実在店舗・実物の個人情報・公式実技問題ではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "他のすべての権利確認が不要になる"
+        },
+        {
+          "id": "c2",
+          "text": "公式の認定ロゴとして使える"
+        },
+        {
+          "id": "c3",
+          "text": "作成経緯と利用する範囲を記録しやすい"
+        },
+        {
+          "id": "c4",
+          "text": "学習効果が必ず保証される"
+        }
+      ],
+      "correctChoiceId": "c3"
+    },
+    {
+      "id": "web26-day11-q08",
+      "sectionId": "web26-day11-s2",
+      "category": "情報の扱い",
+      "prompt": "写真ファイルに位置情報が含まれる可能性がある。公開前の確認として適切なのはどれですか。",
+      "explanation": "画面に見える文章だけでなく、配布するファイル全体の扱いを確認します。練習には架空の素材を使います。",
+      "referenceIds": [
+        "web-scope",
+        "bunka-copyright",
+        "practice-assumptions",
+        "ppc-personal",
+        "http-semantics"
+      ],
+      "assumptions": "この設例は独自の練習用仮定です。記載したファイル構成・寸法・確認条件を使います。実在店舗・実物の個人情報・公式実技問題ではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "本文に出ない情報は必ず安全と決める"
+        },
+        {
+          "id": "c2",
+          "text": "色だけ変えれば情報が消える"
+        },
+        {
+          "id": "c3",
+          "text": "拡張子を変えれば全情報が消える"
+        },
+        {
+          "id": "c4",
+          "text": "内容と付随情報も含め、公開してよい範囲を点検する"
+        }
+      ],
+      "correctChoiceId": "c4"
+    }
+  ]
+}

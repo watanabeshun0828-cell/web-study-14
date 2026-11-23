@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "id": {
+        "type": "string",
+        "minLength": 1
+      },
+      "title": {
+        "type": "string",
+        "minLength": 1
+      },
+      "url": {
+        "anyOf": [
+          {
+            "type": "string",
+            "format": "uri"
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "checkedAt": {
+        "type": "string",
+        "format": "date",
+        "pattern": "^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))$"
+      },
+      "appliesTo": {
+        "type": "string",
+        "minLength": 1
+      },
+      "location": {
+        "type": "string",
+        "minLength": 1
+      },
+      "role": {
+        "type": "string",
+        "minLength": 1
+      },
+      "notes": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "required": [
+      "id",
+      "title",
+      "url",
+      "checkedAt",
+      "appliesTo",
+      "location",
+      "role",
+      "notes"
+    ],
+    "additionalProperties": false
+  }
+}

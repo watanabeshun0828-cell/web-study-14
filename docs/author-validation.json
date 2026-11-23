@@ -1,0 +1,24 @@
+{
+  "checkedAt": "2026-11-23",
+  "days": 14,
+  "sections": 28,
+  "questions": 120,
+  "distinctPrompts": 120,
+  "positions": {
+    "1": 30,
+    "2": 30,
+    "3": 30,
+    "4": 30
+  },
+  "validatedCalculations": 4,
+  "practicePacks": 8,
+  "answerHtmlFilesWithResolvedLocalReferences": 9,
+  "zipIntegrity": "passed",
+  "glossaryTerms": 30,
+  "webSources": 26,
+  "ipSources": 11,
+  "externalRequestsInPracticeFiles": 0,
+  "scriptsInPracticeFiles": 0,
+  "browserVisualAndPwaChecks": "not performed in content subtask",
+  "expertReview": "not performed"
+}

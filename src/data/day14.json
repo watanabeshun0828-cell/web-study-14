@@ -1,0 +1,754 @@
+{
+  "schemaVersion": 1,
+  "id": "web26-day14",
+  "day": 14,
+  "title": "変更の理由まで説明する",
+  "category": "総復習",
+  "goals": [
+    "修正結果だけでなく、変更した目的と確かめ方を説明します。",
+    "知識確認とPCでの制作練習を組み合わせ、未収録分も確認します。"
+  ],
+  "referenceIds": [
+    "web-scope",
+    "wcag22",
+    "practice-assumptions",
+    "web-practical",
+    "html-headings",
+    "html-links",
+    "html-tables",
+    "html-forms",
+    "css-flex",
+    "css-media"
+  ],
+  "sections": [
+    {
+      "id": "web26-day14-s1",
+      "title": "読む順番を見直す",
+      "paragraphs": [
+        "最終日は、文書の構造、参照先、表示、操作、権利と情報の扱いを組み合わせて確認します。見た目だけで判断せず、どのHTMLとCSSがその結果を作っているかを言葉にしてみましょう。",
+        "修正前と修正後を比べ、どの条件を満たすために変えたかを記録します。完成例とは違う有効な方法もあります。機械の判定範囲を超える部分は確認表で自己点検します。"
+      ],
+      "keyPoint": "修正結果だけでなく、変更した目的と確かめ方を説明します。",
+      "referenceIds": [
+        "web-scope",
+        "wcag22",
+        "practice-assumptions",
+        "html-headings",
+        "html-links",
+        "html-tables",
+        "html-forms",
+        "css-flex",
+        "css-media"
+      ]
+    },
+    {
+      "id": "web26-day14-s2",
+      "title": "追加の学習へつなげる",
+      "paragraphs": [
+        "この14日は重点項目を分けた学習単位です。合格に必要な日数や本試験の点数を予測するものではありません。PC操作、時間配分、指定ブラウザーでの作業は別に繰り返す必要があります。",
+        "公式の現行細目と照らして、まだ扱っていないネットワークや画像・マルチメディア、運用、安全衛生などを確認します。できなかった理由をメモし、関連する節へ戻って学び直しましょう。"
+      ],
+      "keyPoint": "知識確認とPCでの制作練習を組み合わせ、未収録分も確認します。",
+      "referenceIds": [
+        "web-scope",
+        "web-practical",
+        "html-headings",
+        "html-links",
+        "html-tables",
+        "html-forms",
+        "css-flex",
+        "css-media"
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "web26-day14-q01",
+      "sectionId": "web26-day14-s1",
+      "category": "総復習",
+      "prompt": "このHTMLで、ページ内の営業時間へリンクする修正はどれですか。",
+      "explanation": "移動先のidと#を付けた参照を対応させます。修正後は実際に移動できるか確認します。",
+      "referenceIds": [
+        "web-scope",
+        "wcag22",
+        "practice-assumptions",
+        "web-practical",
+        "html-headings",
+        "html-links",
+        "html-tables",
+        "html-forms",
+        "css-flex",
+        "css-media"
+      ],
+      "assumptions": "この設例は独自の練習用仮定です。記載したファイル構成・寸法・確認条件を使います。実在店舗・実物の個人情報・公式実技問題ではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "hrefを#hoursにする"
+        },
+        {
+          "id": "c2",
+          "text": "hrefをstyle.cssにする"
+        },
+        {
+          "id": "c3",
+          "text": "idを削除する"
+        },
+        {
+          "id": "c4",
+          "text": "h2をmetaにする"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "code": "<a href=\"#time\">営業時間</a><h2 id=\"hours\">営業時間</h2>"
+    },
+    {
+      "id": "web26-day14-q02",
+      "sectionId": "web26-day14-s1",
+      "category": "総復習",
+      "prompt": "images/entry.svgへ移した図がindex.htmlから表示されない。srcをどう直しますか。",
+      "explanation": "この設例はindex.htmlとimagesフォルダが同じ階層です。保存場所と参照を一致させます。",
+      "referenceIds": [
+        "web-scope",
+        "wcag22",
+        "practice-assumptions",
+        "web-practical",
+        "html-headings",
+        "html-links",
+        "html-tables",
+        "html-forms",
+        "css-flex",
+        "css-media"
+      ],
+      "assumptions": "この設例は独自の練習用仮定です。記載したファイル構成・寸法・確認条件を使います。実在店舗・実物の個人情報・公式実技問題ではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "entry/images.html"
+        },
+        {
+          "id": "c2",
+          "text": "images/entry.svg"
+        },
+        {
+          "id": "c3",
+          "text": "../entry.css"
+        },
+        {
+          "id": "c4",
+          "text": "#entry"
+        }
+      ],
+      "correctChoiceId": "c2"
+    },
+    {
+      "id": "web26-day14-q03",
+      "sectionId": "web26-day14-s1",
+      "category": "総復習",
+      "prompt": "class=\"hours\"を選んで余白を付けるCSSはどれですか。",
+      "explanation": "クラスを選ぶ記号は.です。入力したHTML側の属性を確認してから修正します。",
+      "referenceIds": [
+        "web-scope",
+        "wcag22",
+        "practice-assumptions",
+        "web-practical",
+        "html-headings",
+        "html-links",
+        "html-tables",
+        "html-forms",
+        "css-flex",
+        "css-media"
+      ],
+      "assumptions": "この設例は独自の練習用仮定です。記載したファイル構成・寸法・確認条件を使います。実在店舗・実物の個人情報・公式実技問題ではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "#hours { padding: 12px; }"
+        },
+        {
+          "id": "c2",
+          "text": "hours { href: 12px; }"
+        },
+        {
+          "id": "c3",
+          "text": ".hours { padding: 12px; }"
+        },
+        {
+          "id": "c4",
+          "text": "@hours { alt: 12px; }"
+        }
+      ],
+      "correctChoiceId": "c3"
+    },
+    {
+      "id": "web26-day14-q04",
+      "sectionId": "web26-day14-s1",
+      "category": "総復習",
+      "prompt": "content-boxで幅240px、左右padding各8px、左右border各1px。枠までの幅はどれですか。",
+      "explanation": "240＋8＋8＋1＋1＝258pxです。marginを含めない本問の条件で計算します。",
+      "referenceIds": [
+        "web-scope",
+        "wcag22",
+        "practice-assumptions",
+        "web-practical",
+        "html-headings",
+        "html-links",
+        "html-tables",
+        "html-forms",
+        "css-flex",
+        "css-media"
+      ],
+      "assumptions": "この設例は独自の練習用仮定です。記載したファイル構成・寸法・確認条件を使います。実在店舗・実物の個人情報・公式実技問題ではありません。 寸法は整数pxで計算し、端数処理は行いません。",
+      "calculations": [
+        {
+          "expression": "240＋8＋8＋1＋1＝258",
+          "operator": "sum",
+          "operands": [
+            240,
+            8,
+            8,
+            1,
+            1
+          ],
+          "result": 258,
+          "unit": "px",
+          "rounding": "none"
+        }
+      ],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "240px"
+        },
+        {
+          "id": "c2",
+          "text": "248px"
+        },
+        {
+          "id": "c3",
+          "text": "276px"
+        },
+        {
+          "id": "c4",
+          "text": "258px"
+        }
+      ],
+      "correctChoiceId": "c4"
+    },
+    {
+      "id": "web26-day14-q05",
+      "sectionId": "web26-day14-s1",
+      "category": "総復習",
+      "prompt": "border-boxで幅300px、左右padding各16px、左右border各2px。内容幅はどれですか。",
+      "explanation": "300−16−16−2−2＝264pxです。指定幅が何を含むかを先に確認します。",
+      "referenceIds": [
+        "web-scope",
+        "wcag22",
+        "practice-assumptions",
+        "web-practical",
+        "html-headings",
+        "html-links",
+        "html-tables",
+        "html-forms",
+        "css-flex",
+        "css-media"
+      ],
+      "assumptions": "この設例は独自の練習用仮定です。記載したファイル構成・寸法・確認条件を使います。実在店舗・実物の個人情報・公式実技問題ではありません。 寸法は整数pxで計算し、端数処理は行いません。",
+      "calculations": [
+        {
+          "expression": "300−16−16−2−2＝264",
+          "operator": "difference",
+          "operands": [
+            300,
+            16,
+            16,
+            2,
+            2
+          ],
+          "result": 264,
+          "unit": "px",
+          "rounding": "none"
+        }
+      ],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "264px"
+        },
+        {
+          "id": "c2",
+          "text": "300px"
+        },
+        {
+          "id": "c3",
+          "text": "332px"
+        },
+        {
+          "id": "c4",
+          "text": "268px"
+        }
+      ],
+      "correctChoiceId": "c1"
+    },
+    {
+      "id": "web26-day14-q06",
+      "sectionId": "web26-day14-s1",
+      "category": "総復習",
+      "prompt": "要件は「装飾の画像を読み上げ説明から外す」。候補となる指定はどれですか。",
+      "explanation": "その画像が情報を伝えない装飾である条件なら、空のaltを検討できます。",
+      "referenceIds": [
+        "web-scope",
+        "wcag22",
+        "practice-assumptions",
+        "web-practical",
+        "html-headings",
+        "html-links",
+        "html-tables",
+        "html-forms",
+        "css-flex",
+        "css-media"
+      ],
+      "assumptions": "この設例は独自の練習用仮定です。記載したファイル構成・寸法・確認条件を使います。実在店舗・実物の個人情報・公式実技問題ではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "alt=\"装飾装飾装飾\""
+        },
+        {
+          "id": "c2",
+          "text": "alt=\"\""
+        },
+        {
+          "id": "c3",
+          "text": "altを店舗の住所にする"
+        },
+        {
+          "id": "c4",
+          "text": "titleだけに機密情報を書く"
+        }
+      ],
+      "correctChoiceId": "c2"
+    },
+    {
+      "id": "web26-day14-q07",
+      "sectionId": "web26-day14-s1",
+      "category": "総復習",
+      "prompt": "この表の目的を表す要素を追加したい。適切なのはどれですか。",
+      "explanation": "captionで表が何の情報をまとめたかを示せます。表の各セルの役割も合わせて確認します。",
+      "referenceIds": [
+        "web-scope",
+        "wcag22",
+        "practice-assumptions",
+        "web-practical",
+        "html-headings",
+        "html-links",
+        "html-tables",
+        "html-forms",
+        "css-flex",
+        "css-media"
+      ],
+      "assumptions": "この設例は独自の練習用仮定です。記載したファイル構成・寸法・確認条件を使います。実在店舗・実物の個人情報・公式実技問題ではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "script"
+        },
+        {
+          "id": "c2",
+          "text": "baseだけ"
+        },
+        {
+          "id": "c3",
+          "text": "caption"
+        },
+        {
+          "id": "c4",
+          "text": "iframeだけ"
+        }
+      ],
+      "correctChoiceId": "c3",
+      "code": "<table><tr><th>曜日</th><th>時間</th></tr><tr><td>火曜</td><td>10〜17時</td></tr></table>"
+    },
+    {
+      "id": "web26-day14-q08",
+      "sectionId": "web26-day14-s1",
+      "category": "総復習",
+      "prompt": "入力欄idがcontactなら、対応するラベルの指定はどれですか。",
+      "explanation": "labelのforと入力欄のidを一致させます。同じページでidを重複させないことも確認します。",
+      "referenceIds": [
+        "web-scope",
+        "wcag22",
+        "practice-assumptions",
+        "web-practical",
+        "html-headings",
+        "html-links",
+        "html-tables",
+        "html-forms",
+        "css-flex",
+        "css-media"
+      ],
+      "assumptions": "この設例は独自の練習用仮定です。記載したファイル構成・寸法・確認条件を使います。実在店舗・実物の個人情報・公式実技問題ではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "for=\"contact.css\""
+        },
+        {
+          "id": "c2",
+          "text": "src=\"contact\""
+        },
+        {
+          "id": "c3",
+          "text": "padding=\"contact\""
+        },
+        {
+          "id": "c4",
+          "text": "for=\"contact\""
+        }
+      ],
+      "correctChoiceId": "c4"
+    },
+    {
+      "id": "web26-day14-q09",
+      "sectionId": "web26-day14-s2",
+      "category": "総復習",
+      "prompt": "横並びが狭い画面で読めない。要件を保つ調整として適切なのはどれですか。",
+      "explanation": "情報や機能を失わずに読めるよう、配置や幅を変えて確かめます。",
+      "referenceIds": [
+        "web-scope",
+        "wcag22",
+        "practice-assumptions",
+        "web-practical",
+        "html-headings",
+        "html-links",
+        "html-tables",
+        "html-forms",
+        "css-flex",
+        "css-media"
+      ],
+      "assumptions": "この設例は独自の練習用仮定です。記載したファイル構成・寸法・確認条件を使います。実在店舗・実物の個人情報・公式実技問題ではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "条件に応じて1列へ並べ直し、文字と操作を保つ"
+        },
+        {
+          "id": "c2",
+          "text": "本文をすべて透明にする"
+        },
+        {
+          "id": "c3",
+          "text": "画像へ文字を貼って縮めるだけ"
+        },
+        {
+          "id": "c4",
+          "text": "操作部品を枠の外へ隠す"
+        }
+      ],
+      "correctChoiceId": "c1"
+    },
+    {
+      "id": "web26-day14-q10",
+      "sectionId": "web26-day14-s2",
+      "category": "総復習",
+      "prompt": "見た目を保ったままキーボードのフォーカスが分かるようにしたい。適切なのはどれですか。",
+      "explanation": "操作位置を把握できる手掛かりを保ちます。色だけでなく枠などの形も活用できます。",
+      "referenceIds": [
+        "web-scope",
+        "wcag22",
+        "practice-assumptions",
+        "web-practical",
+        "html-headings",
+        "html-links",
+        "html-tables",
+        "html-forms",
+        "css-flex",
+        "css-media"
+      ],
+      "assumptions": "この設例は独自の練習用仮定です。記載したファイル構成・寸法・確認条件を使います。実在店舗・実物の個人情報・公式実技問題ではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "すべてoutlineを消して終える"
+        },
+        {
+          "id": "c2",
+          "text": "フォーカス時に見える枠や背景などを用意する"
+        },
+        {
+          "id": "c3",
+          "text": "Tab操作を禁止する"
+        },
+        {
+          "id": "c4",
+          "text": "操作部品の名前を消す"
+        }
+      ],
+      "correctChoiceId": "c2"
+    },
+    {
+      "id": "web26-day14-q11",
+      "sectionId": "web26-day14-s2",
+      "category": "総復習",
+      "prompt": "外部から得た図へ出典を書いた。公開前の確認として正しいものはどれですか。",
+      "explanation": "出典の表示と利用条件の確認を分けます。不明な場合は利用前に適切な確認を行います。",
+      "referenceIds": [
+        "web-scope",
+        "wcag22",
+        "practice-assumptions",
+        "web-practical",
+        "html-headings",
+        "html-links",
+        "html-tables",
+        "html-forms",
+        "css-flex",
+        "css-media"
+      ],
+      "assumptions": "この設例は独自の練習用仮定です。記載したファイル構成・寸法・確認条件を使います。実在店舗・実物の個人情報・公式実技問題ではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "出典名があれば許諾条件はすべて不要"
+        },
+        {
+          "id": "c2",
+          "text": "図の色を変えれば権利は消える"
+        },
+        {
+          "id": "c3",
+          "text": "用途・改変・配布・表示の条件も確認する"
+        },
+        {
+          "id": "c4",
+          "text": "ファイル名を変えれば自作になる"
+        }
+      ],
+      "correctChoiceId": "c3"
+    },
+    {
+      "id": "web26-day14-q12",
+      "sectionId": "web26-day14-s2",
+      "category": "総復習",
+      "prompt": "HTML内のscriptを、学習用の表示例として安全に示したい。適切なのはどれですか。",
+      "explanation": "コードを読む練習と実行は別です。本アプリは初期版で任意JavaScriptの実行を許可しません。",
+      "referenceIds": [
+        "web-scope",
+        "wcag22",
+        "practice-assumptions",
+        "web-practical",
+        "html-headings",
+        "html-links",
+        "html-tables",
+        "html-forms",
+        "css-flex",
+        "css-media"
+      ],
+      "assumptions": "この設例は独自の練習用仮定です。記載したファイル構成・寸法・確認条件を使います。実在店舗・実物の個人情報・公式実技問題ではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "親画面のHTMLとしてそのまま挿入する"
+        },
+        {
+          "id": "c2",
+          "text": "学習記録の読込みを許可する"
+        },
+        {
+          "id": "c3",
+          "text": "外部送信を自由にする"
+        },
+        {
+          "id": "c4",
+          "text": "コードを文字列として表示し、実行しない"
+        }
+      ],
+      "correctChoiceId": "c4"
+    },
+    {
+      "id": "web26-day14-q13",
+      "sectionId": "web26-day14-s2",
+      "category": "総復習",
+      "prompt": "修正後の画面だけを見てすべて正しいと判断しない理由はどれですか。",
+      "explanation": "見た目に現れにくい条件もあります。確認表に沿って構造と操作を点検します。",
+      "referenceIds": [
+        "web-scope",
+        "wcag22",
+        "practice-assumptions",
+        "web-practical",
+        "html-headings",
+        "html-links",
+        "html-tables",
+        "html-forms",
+        "css-flex",
+        "css-media"
+      ],
+      "assumptions": "この設例は独自の練習用仮定です。記載したファイル構成・寸法・確認条件を使います。実在店舗・実物の個人情報・公式実技問題ではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "リンク先・意味構造・操作・公開範囲なども確認が必要だから"
+        },
+        {
+          "id": "c2",
+          "text": "画面が見えれば必ず全条件を満たすから"
+        },
+        {
+          "id": "c3",
+          "text": "ソースコードには情報がないから"
+        },
+        {
+          "id": "c4",
+          "text": "本試験は必ず見た目だけで採点するから"
+        }
+      ],
+      "correctChoiceId": "c1"
+    },
+    {
+      "id": "web26-day14-q14",
+      "sectionId": "web26-day14-s2",
+      "category": "総復習",
+      "prompt": "修正理由の記録として最も具体的なのはどれですか。",
+      "explanation": "満たしたい条件と変更点を対応させて説明します。結果を確かめる手順も記録すると振り返れます。",
+      "referenceIds": [
+        "web-scope",
+        "wcag22",
+        "practice-assumptions",
+        "web-practical",
+        "html-headings",
+        "html-links",
+        "html-tables",
+        "html-forms",
+        "css-flex",
+        "css-media"
+      ],
+      "assumptions": "この設例は独自の練習用仮定です。記載したファイル構成・寸法・確認条件を使います。実在店舗・実物の個人情報・公式実技問題ではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "なんとなく全部変えた"
+        },
+        {
+          "id": "c2",
+          "text": "入力欄とラベルを対応させ、目的が伝わるようにした"
+        },
+        {
+          "id": "c3",
+          "text": "完成例と同じ色だから"
+        },
+        {
+          "id": "c4",
+          "text": "ファイルを大きくしたかった"
+        }
+      ],
+      "correctChoiceId": "c2"
+    },
+    {
+      "id": "web26-day14-q15",
+      "sectionId": "web26-day14-s2",
+      "category": "総復習",
+      "prompt": "公式範囲にあるが、この重点教材で繰り返しが足りない項目を見つけた。どうしますか。",
+      "explanation": "重点教材の収録範囲と実試験の範囲は同一とは限りません。不足項目を把握して学習を続けます。",
+      "referenceIds": [
+        "web-scope",
+        "wcag22",
+        "practice-assumptions",
+        "web-practical",
+        "html-headings",
+        "html-links",
+        "html-tables",
+        "html-forms",
+        "css-flex",
+        "css-media"
+      ],
+      "assumptions": "この設例は独自の練習用仮定です。記載したファイル構成・寸法・確認条件を使います。実在店舗・実物の個人情報・公式実技問題ではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "アプリだけで全範囲を習得したと決める"
+        },
+        {
+          "id": "c2",
+          "text": "本試験の合格が保証されたとする"
+        },
+        {
+          "id": "c3",
+          "text": "coverageを確認して別の適切な教材や環境で追加練習する"
+        },
+        {
+          "id": "c4",
+          "text": "範囲の確認をやめる"
+        }
+      ],
+      "correctChoiceId": "c3"
+    },
+    {
+      "id": "web26-day14-q16",
+      "sectionId": "web26-day14-s2",
+      "category": "総復習",
+      "prompt": "14日分の講義と確認問題を終えたときの説明として適切なのはどれですか。",
+      "explanation": "14日は教材を分けた単位です。PCでの練習や実際の受検条件の確認を続けます。",
+      "referenceIds": [
+        "web-scope",
+        "wcag22",
+        "practice-assumptions",
+        "web-practical",
+        "html-headings",
+        "html-links",
+        "html-tables",
+        "html-forms",
+        "css-flex",
+        "css-media"
+      ],
+      "assumptions": "この設例は独自の練習用仮定です。記載したファイル構成・寸法・確認条件を使います。実在店舗・実物の個人情報・公式実技問題ではありません。",
+      "calculations": [],
+      "format": "choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "14日が全員の標準必要時間である"
+        },
+        {
+          "id": "c2",
+          "text": "本試験の得点がそのまま分かる"
+        },
+        {
+          "id": "c3",
+          "text": "他人のサイトを自由に変更できる"
+        },
+        {
+          "id": "c4",
+          "text": "学習の一区切りであり、合格や仕事の受注を保証しない"
+        }
+      ],
+      "correctChoiceId": "c4"
+    }
+  ]
+}
